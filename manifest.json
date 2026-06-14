@@ -1,0 +1,22 @@
+{
+  "name": "Bolão Copa do Mundo 2026",
+  "short_name": "Bolão Copa",
+  "description": "Dashboard do Bolão Copa 2026 - Claro Brasil",
+  "start_url": "/bolao-copa-2026/",
+  "scope": "/bolao-copa-2026/",
+  "display": "standalone",
+  "background_color": "#f5f6fa",
+  "theme_color": "#e60023",
+  "icons": [
+    {
+      "src": "claro.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "claro.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
