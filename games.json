@@ -1,0 +1,722 @@
+[
+  {
+    "date": "11/06",
+    "time": "16:00",
+    "group": "A",
+    "team1": "México",
+    "team2": "África do Sul",
+    "score1": 2,
+    "score2": 0,
+    "city": "Cidade do México"
+  },
+  {
+    "date": "11/06",
+    "time": "23:00",
+    "group": "A",
+    "team1": "Coreia do Sul",
+    "team2": "República Tcheca",
+    "score1": 2,
+    "score2": 1,
+    "city": "Guadalajara"
+  },
+  {
+    "date": "12/06",
+    "time": "16:00",
+    "group": "B",
+    "team1": "Canadá",
+    "team2": "Bósnia e Herzegovina",
+    "score1": 1,
+    "score2": 1,
+    "city": "Toronto"
+  },
+  {
+    "date": "12/06",
+    "time": "22:00",
+    "group": "D",
+    "team1": "EUA",
+    "team2": "Paraguai",
+    "score1": 4,
+    "score2": 1,
+    "city": "Los Angeles"
+  },
+  {
+    "date": "13/06",
+    "time": "16:00",
+    "group": "B",
+    "team1": "Catar",
+    "team2": "Suíça",
+    "score1": 1,
+    "score2": 1,
+    "city": "San Francisco"
+  },
+  {
+    "date": "13/06",
+    "time": "19:00",
+    "group": "C",
+    "team1": "Brasil",
+    "team2": "Marrocos",
+    "score1": 1,
+    "score2": 1,
+    "city": "Nova York/NJ"
+  },
+  {
+    "date": "13/06",
+    "time": "22:00",
+    "group": "C",
+    "team1": "Haiti",
+    "team2": "Escócia",
+    "score1": 0,
+    "score2": 1,
+    "city": "Boston"
+  },
+  {
+    "date": "14/06",
+    "time": "01:00",
+    "group": "D",
+    "team1": "Austrália",
+    "team2": "Turquia",
+    "score1": 2,
+    "score2": 0,
+    "city": "Vancouver"
+  },
+  {
+    "date": "14/06",
+    "time": "14:00",
+    "group": "E",
+    "team1": "Alemanha",
+    "team2": "Curaçao",
+    "score1": 7,
+    "score2": 1,
+    "city": "Houston"
+  },
+  {
+    "date": "14/06",
+    "time": "17:00",
+    "group": "F",
+    "team1": "Holanda",
+    "team2": "Japão",
+    "score1": 2,
+    "score2": 2,
+    "city": "Dallas"
+  },
+  {
+    "date": "14/06",
+    "time": "20:00",
+    "group": "E",
+    "team1": "Costa do Marfim",
+    "team2": "Equador",
+    "score1": 1,
+    "score2": 0,
+    "city": "Filadélfia"
+  },
+  {
+    "date": "14/06",
+    "time": "23:00",
+    "group": "F",
+    "team1": "Suécia",
+    "team2": "Tunísia",
+    "score1": 5,
+    "score2": 1,
+    "city": "Monterrey"
+  },
+  {
+    "date": "15/06",
+    "time": "13:00",
+    "group": "H",
+    "team1": "Espanha",
+    "team2": "Cabo Verde",
+    "score1": 0,
+    "score2": 0,
+    "city": "Atlanta"
+  },
+  {
+    "date": "15/06",
+    "time": "16:00",
+    "group": "G",
+    "team1": "Bélgica",
+    "team2": "Egito",
+    "score1": 1,
+    "score2": 1,
+    "city": "Seattle"
+  },
+  {
+    "date": "15/06",
+    "time": "19:00",
+    "group": "H",
+    "team1": "Arábia Saudita",
+    "team2": "Uruguai",
+    "score1": 1,
+    "score2": 1,
+    "city": "Miami"
+  },
+  {
+    "date": "15/06",
+    "time": "22:00",
+    "group": "G",
+    "team1": "Irã",
+    "team2": "Nova Zelândia",
+    "score1": 2,
+    "score2": 2,
+    "city": "Los Angeles"
+  },
+  {
+    "date": "16/06",
+    "time": "16:00",
+    "group": "I",
+    "team1": "França",
+    "team2": "Senegal",
+    "score1": 3,
+    "score2": 1,
+    "city": "Nova York/NJ"
+  },
+  {
+    "date": "16/06",
+    "time": "19:00",
+    "group": "I",
+    "team1": "Iraque",
+    "team2": "Noruega",
+    "score1": 0,
+    "score2": 1,
+    "city": "Boston"
+  },
+  {
+    "date": "16/06",
+    "time": "22:00",
+    "group": "J",
+    "team1": "Argentina",
+    "team2": "Argélia",
+    "score1": null,
+    "score2": null,
+    "city": "Kansas City"
+  },
+  {
+    "date": "17/06",
+    "time": "01:00",
+    "group": "J",
+    "team1": "Áustria",
+    "team2": "Jordânia",
+    "score1": null,
+    "score2": null,
+    "city": "San Francisco"
+  },
+  {
+    "date": "17/06",
+    "time": "14:00",
+    "group": "K",
+    "team1": "Portugal",
+    "team2": "RD Congo",
+    "score1": null,
+    "score2": null,
+    "city": "Houston"
+  },
+  {
+    "date": "17/06",
+    "time": "17:00",
+    "group": "L",
+    "team1": "Inglaterra",
+    "team2": "Croácia",
+    "score1": null,
+    "score2": null,
+    "city": "Dallas"
+  },
+  {
+    "date": "17/06",
+    "time": "20:00",
+    "group": "L",
+    "team1": "Gana",
+    "team2": "Panamá",
+    "score1": null,
+    "score2": null,
+    "city": "Toronto"
+  },
+  {
+    "date": "17/06",
+    "time": "23:00",
+    "group": "K",
+    "team1": "Uzbequistão",
+    "team2": "Colômbia",
+    "score1": null,
+    "score2": null,
+    "city": "Cidade do México"
+  },
+  {
+    "date": "18/06",
+    "time": "13:00",
+    "group": "A",
+    "team1": "República Tcheca",
+    "team2": "África do Sul",
+    "score1": null,
+    "score2": null,
+    "city": "Atlanta"
+  },
+  {
+    "date": "18/06",
+    "time": "16:00",
+    "group": "B",
+    "team1": "Suíça",
+    "team2": "Bósnia e Herzegovina",
+    "score1": null,
+    "score2": null,
+    "city": "Los Angeles"
+  },
+  {
+    "date": "18/06",
+    "time": "19:00",
+    "group": "B",
+    "team1": "Canadá",
+    "team2": "Catar",
+    "score1": null,
+    "score2": null,
+    "city": "Vancouver"
+  },
+  {
+    "date": "18/06",
+    "time": "22:00",
+    "group": "A",
+    "team1": "México",
+    "team2": "Coreia do Sul",
+    "score1": null,
+    "score2": null,
+    "city": "Guadalajara"
+  },
+  {
+    "date": "19/06",
+    "time": "16:00",
+    "group": "D",
+    "team1": "EUA",
+    "team2": "Austrália",
+    "score1": null,
+    "score2": null,
+    "city": "Seattle"
+  },
+  {
+    "date": "19/06",
+    "time": "19:00",
+    "group": "C",
+    "team1": "Escócia",
+    "team2": "Marrocos",
+    "score1": null,
+    "score2": null,
+    "city": "Boston"
+  },
+  {
+    "date": "19/06",
+    "time": "21:30",
+    "group": "C",
+    "team1": "Brasil",
+    "team2": "Haiti",
+    "score1": null,
+    "score2": null,
+    "city": "Filadélfia"
+  },
+  {
+    "date": "20/06",
+    "time": "01:00",
+    "group": "D",
+    "team1": "Turquia",
+    "team2": "Paraguai",
+    "score1": null,
+    "score2": null,
+    "city": "San Francisco"
+  },
+  {
+    "date": "20/06",
+    "time": "14:00",
+    "group": "E",
+    "team1": "Alemanha",
+    "team2": "Costa do Marfim",
+    "score1": null,
+    "score2": null,
+    "city": "Toronto"
+  },
+  {
+    "date": "20/06",
+    "time": "17:00",
+    "group": "E",
+    "team1": "Equador",
+    "team2": "Curaçao",
+    "score1": null,
+    "score2": null,
+    "city": "Kansas City"
+  },
+  {
+    "date": "20/06",
+    "time": "14:00",
+    "group": "F",
+    "team1": "Holanda",
+    "team2": "Suécia",
+    "score1": null,
+    "score2": null,
+    "city": "Houston"
+  },
+  {
+    "date": "21/06",
+    "time": "01:00",
+    "group": "F",
+    "team1": "Tunísia",
+    "team2": "Japão",
+    "score1": null,
+    "score2": null,
+    "city": "Monterrey"
+  },
+  {
+    "date": "21/06",
+    "time": "13:00",
+    "group": "H",
+    "team1": "Espanha",
+    "team2": "Arábia Saudita",
+    "score1": null,
+    "score2": null,
+    "city": "Atlanta"
+  },
+  {
+    "date": "21/06",
+    "time": "16:00",
+    "group": "G",
+    "team1": "Bélgica",
+    "team2": "Irã",
+    "score1": null,
+    "score2": null,
+    "city": "Los Angeles"
+  },
+  {
+    "date": "21/06",
+    "time": "19:00",
+    "group": "H",
+    "team1": "Uruguai",
+    "team2": "Cabo Verde",
+    "score1": null,
+    "score2": null,
+    "city": "Miami"
+  },
+  {
+    "date": "21/06",
+    "time": "22:00",
+    "group": "G",
+    "team1": "Nova Zelândia",
+    "team2": "Egito",
+    "score1": null,
+    "score2": null,
+    "city": "Vancouver"
+  },
+  {
+    "date": "22/06",
+    "time": "18:00",
+    "group": "I",
+    "team1": "França",
+    "team2": "Iraque",
+    "score1": null,
+    "score2": null,
+    "city": "Filadélfia"
+  },
+  {
+    "date": "22/06",
+    "time": "21:00",
+    "group": "I",
+    "team1": "Noruega",
+    "team2": "Senegal",
+    "score1": null,
+    "score2": null,
+    "city": "Nova York/NJ"
+  },
+  {
+    "date": "22/06",
+    "time": "18:00",
+    "group": "J",
+    "team1": "Argentina",
+    "team2": "Áustria",
+    "score1": null,
+    "score2": null,
+    "city": "Dallas"
+  },
+  {
+    "date": "22/06",
+    "time": "21:00",
+    "group": "J",
+    "team1": "Jordânia",
+    "team2": "Argélia",
+    "score1": null,
+    "score2": null,
+    "city": "San Francisco"
+  },
+  {
+    "date": "23/06",
+    "time": "16:00",
+    "group": "L",
+    "team1": "Inglaterra",
+    "team2": "Gana",
+    "score1": null,
+    "score2": null,
+    "city": "Boston"
+  },
+  {
+    "date": "23/06",
+    "time": "16:00",
+    "group": "L",
+    "team1": "Panamá",
+    "team2": "Croácia",
+    "score1": null,
+    "score2": null,
+    "city": "Toronto"
+  },
+  {
+    "date": "23/06",
+    "time": "16:00",
+    "group": "K",
+    "team1": "Portugal",
+    "team2": "Uzbequistão",
+    "score1": null,
+    "score2": null,
+    "city": "Houston"
+  },
+  {
+    "date": "23/06",
+    "time": "19:00",
+    "group": "K",
+    "team1": "Colômbia",
+    "team2": "RD Congo",
+    "score1": null,
+    "score2": null,
+    "city": "Guadalajara"
+  },
+  {
+    "date": "24/06",
+    "time": "19:00",
+    "group": "C",
+    "team1": "Escócia",
+    "team2": "Brasil",
+    "score1": null,
+    "score2": null,
+    "city": "Miami"
+  },
+  {
+    "date": "24/06",
+    "time": "19:00",
+    "group": "C",
+    "team1": "Marrocos",
+    "team2": "Haiti",
+    "score1": null,
+    "score2": null,
+    "city": "Atlanta"
+  },
+  {
+    "date": "24/06",
+    "time": "16:00",
+    "group": "B",
+    "team1": "Suíça",
+    "team2": "Canadá",
+    "score1": null,
+    "score2": null,
+    "city": "Vancouver"
+  },
+  {
+    "date": "24/06",
+    "time": "16:00",
+    "group": "B",
+    "team1": "Bósnia e Herzegovina",
+    "team2": "Catar",
+    "score1": null,
+    "score2": null,
+    "city": "Seattle"
+  },
+  {
+    "date": "24/06",
+    "time": "22:00",
+    "group": "A",
+    "team1": "República Tcheca",
+    "team2": "México",
+    "score1": null,
+    "score2": null,
+    "city": "Cidade do México"
+  },
+  {
+    "date": "24/06",
+    "time": "22:00",
+    "group": "A",
+    "team1": "África do Sul",
+    "team2": "Coreia do Sul",
+    "score1": null,
+    "score2": null,
+    "city": "Monterrey"
+  },
+  {
+    "date": "25/06",
+    "time": "17:00",
+    "group": "E",
+    "team1": "Curaçao",
+    "team2": "Costa do Marfim",
+    "score1": null,
+    "score2": null,
+    "city": "Filadélfia"
+  },
+  {
+    "date": "25/06",
+    "time": "17:00",
+    "group": "E",
+    "team1": "Equador",
+    "team2": "Alemanha",
+    "score1": null,
+    "score2": null,
+    "city": "Nova York/NJ"
+  },
+  {
+    "date": "25/06",
+    "time": "20:00",
+    "group": "F",
+    "team1": "Japão",
+    "team2": "Suécia",
+    "score1": null,
+    "score2": null,
+    "city": "Dallas"
+  },
+  {
+    "date": "25/06",
+    "time": "20:00",
+    "group": "F",
+    "team1": "Tunísia",
+    "team2": "Holanda",
+    "score1": null,
+    "score2": null,
+    "city": "Kansas City"
+  },
+  {
+    "date": "25/06",
+    "time": "23:00",
+    "group": "D",
+    "team1": "Turquia",
+    "team2": "EUA",
+    "score1": null,
+    "score2": null,
+    "city": "Los Angeles"
+  },
+  {
+    "date": "25/06",
+    "time": "23:00",
+    "group": "D",
+    "team1": "Paraguai",
+    "team2": "Austrália",
+    "score1": null,
+    "score2": null,
+    "city": "San Francisco"
+  },
+  {
+    "date": "26/06",
+    "time": "16:00",
+    "group": "I",
+    "team1": "Noruega",
+    "team2": "França",
+    "score1": null,
+    "score2": null,
+    "city": "Boston"
+  },
+  {
+    "date": "26/06",
+    "time": "16:00",
+    "group": "I",
+    "team1": "Senegal",
+    "team2": "Iraque",
+    "score1": null,
+    "score2": null,
+    "city": "Toronto"
+  },
+  {
+    "date": "27/06",
+    "time": "00:00",
+    "group": "G",
+    "team1": "Egito",
+    "team2": "Irã",
+    "score1": null,
+    "score2": null,
+    "city": "Seattle"
+  },
+  {
+    "date": "27/06",
+    "time": "00:00",
+    "group": "G",
+    "team1": "Nova Zelândia",
+    "team2": "Bélgica",
+    "score1": null,
+    "score2": null,
+    "city": "Vancouver"
+  },
+  {
+    "date": "26/06",
+    "time": "16:00",
+    "group": "H",
+    "team1": "Cabo Verde",
+    "team2": "Arábia Saudita",
+    "score1": null,
+    "score2": null,
+    "city": "Houston"
+  },
+  {
+    "date": "26/06",
+    "time": "16:00",
+    "group": "H",
+    "team1": "Uruguai",
+    "team2": "Espanha",
+    "score1": null,
+    "score2": null,
+    "city": "Guadalajara"
+  },
+  {
+    "date": "27/06",
+    "time": "16:00",
+    "group": "L",
+    "team1": "Panamá",
+    "team2": "Inglaterra",
+    "score1": null,
+    "score2": null,
+    "city": "Nova York/NJ"
+  },
+  {
+    "date": "27/06",
+    "time": "16:00",
+    "group": "L",
+    "team1": "Croácia",
+    "team2": "Gana",
+    "score1": null,
+    "score2": null,
+    "city": "Filadélfia"
+  },
+  {
+    "date": "27/06",
+    "time": "18:00",
+    "group": "J",
+    "team1": "Argélia",
+    "team2": "Áustria",
+    "score1": null,
+    "score2": null,
+    "city": "Kansas City"
+  },
+  {
+    "date": "27/06",
+    "time": "18:00",
+    "group": "J",
+    "team1": "Jordânia",
+    "team2": "Argentina",
+    "score1": null,
+    "score2": null,
+    "city": "Dallas"
+  },
+  {
+    "date": "27/06",
+    "time": "18:00",
+    "group": "K",
+    "team1": "Colômbia",
+    "team2": "Portugal",
+    "score1": null,
+    "score2": null,
+    "city": "Miami"
+  },
+  {
+    "date": "27/06",
+    "time": "18:00",
+    "group": "K",
+    "team1": "RD Congo",
+    "team2": "Uzbequistão",
+    "score1": null,
+    "score2": null,
+    "city": "Atlanta"
+  }
+]
