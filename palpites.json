@@ -1,0 +1,7222 @@
+{
+  "Cosman": [
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "África do Sul",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "Coreia do Sul",
+      "team2": "República Tcheca",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Paraguai",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo B",
+      "team1": "Catar",
+      "team2": "Suíça",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Marrocos",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Haiti",
+      "team2": "Escócia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo D",
+      "team1": "Austrália",
+      "team2": "Turquia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Curaçao",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Japão",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Costa do Marfim",
+      "team2": "Equador",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Suécia",
+      "team2": "Tunísia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Cabo Verde",
+      "palpite1": 6,
+      "palpite2": 0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Egito",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Arábia Saudita",
+      "team2": "Uruguai",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Irã",
+      "team2": "Nova Zelândia",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Senegal",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "Iraque",
+      "team2": "Noruega",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Argélia",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo J",
+      "team1": "Áustria",
+      "team2": "Jordânia",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "RD Congo",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Croácia",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Gana",
+      "team2": "Panamá",
+      "palpite1": 3,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Uzbequistão",
+      "team2": "Colômbia",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "África do Sul",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Catar",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "Coreia do Sul",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Austrália",
+      "palpite1": 3,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Marrocos",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Haiti",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "Paraguai",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Costa do Marfim",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Curaçao",
+      "palpite1": 4,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Suécia",
+      "palpite1": 3,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Japão",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Arábia Saudita",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Irã",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Cabo Verde",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Egito",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Iraque",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "Senegal",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Áustria",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argélia",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Gana",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Croácia",
+      "palpite1": 1,
+      "palpite2": 4,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "Uzbequistão",
+      "palpite1": 5,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "RD Congo",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Brasil",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Marrocos",
+      "team2": "Haiti",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Canadá",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Bósnia e Herzegovina",
+      "team2": "Catar",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "México",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "África do Sul",
+      "team2": "Coreia do Sul",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Curaçao",
+      "team2": "Costa do Marfim",
+      "palpite1": 2,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Alemanha",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Japão",
+      "team2": "Suécia",
+      "palpite1": 3,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Holanda",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "EUA",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Paraguai",
+      "team2": "Austrália",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "França",
+      "palpite1": 3,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Senegal",
+      "team2": "Iraque",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Egito",
+      "team2": "Irã",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Bélgica",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Cabo Verde",
+      "team2": "Arábia Saudita",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Espanha",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Inglaterra",
+      "palpite1": 1,
+      "palpite2": 5,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Croácia",
+      "team2": "Gana",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Argélia",
+      "team2": "Áustria",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argentina",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "Portugal",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "RD Congo",
+      "team2": "Uzbequistão",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    }
+  ],
+  "Andrey": [
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "África do Sul",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "Coreia do Sul",
+      "team2": "República Tcheca",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Paraguai",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo B",
+      "team1": "Catar",
+      "team2": "Suíça",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Marrocos",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Haiti",
+      "team2": "Escócia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo D",
+      "team1": "Austrália",
+      "team2": "Turquia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Curaçao",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Japão",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Costa do Marfim",
+      "team2": "Equador",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Suécia",
+      "team2": "Tunísia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Cabo Verde",
+      "palpite1": 5,
+      "palpite2": 1,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Egito",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Arábia Saudita",
+      "team2": "Uruguai",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Irã",
+      "team2": "Nova Zelândia",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Senegal",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "Iraque",
+      "team2": "Noruega",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Argélia",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo J",
+      "team1": "Áustria",
+      "team2": "Jordânia",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "RD Congo",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Croácia",
+      "palpite1": 0,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Gana",
+      "team2": "Panamá",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Uzbequistão",
+      "team2": "Colômbia",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "África do Sul",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Catar",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "Coreia do Sul",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Austrália",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Marrocos",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Haiti",
+      "palpite1": 4,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "Paraguai",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Costa do Marfim",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Curaçao",
+      "palpite1": 4,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Suécia",
+      "palpite1": 3,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Japão",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Arábia Saudita",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Irã",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Cabo Verde",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Egito",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Iraque",
+      "palpite1": 5,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "Senegal",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Áustria",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argélia",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Gana",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Croácia",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "Uzbequistão",
+      "palpite1": 4,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "RD Congo",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Brasil",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Marrocos",
+      "team2": "Haiti",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Canadá",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Bósnia e Herzegovina",
+      "team2": "Catar",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "México",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "África do Sul",
+      "team2": "Coreia do Sul",
+      "palpite1": 2,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Curaçao",
+      "team2": "Costa do Marfim",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Alemanha",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Japão",
+      "team2": "Suécia",
+      "palpite1": 3,
+      "palpite2": 4,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Holanda",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "EUA",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Paraguai",
+      "team2": "Austrália",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "França",
+      "palpite1": 4,
+      "palpite2": 4,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Senegal",
+      "team2": "Iraque",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Egito",
+      "team2": "Irã",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Bélgica",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Cabo Verde",
+      "team2": "Arábia Saudita",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Espanha",
+      "palpite1": 2,
+      "palpite2": 4,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Inglaterra",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Croácia",
+      "team2": "Gana",
+      "palpite1": 3,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Argélia",
+      "team2": "Áustria",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argentina",
+      "palpite1": 1,
+      "palpite2": 5,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "Portugal",
+      "palpite1": 2,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "RD Congo",
+      "team2": "Uzbequistão",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    }
+  ],
+  "Candido": [
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "África do Sul",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "Coreia do Sul",
+      "team2": "República Tcheca",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Paraguai",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo B",
+      "team1": "Catar",
+      "team2": "Suíça",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Marrocos",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Haiti",
+      "team2": "Escócia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo D",
+      "team1": "Austrália",
+      "team2": "Turquia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Curaçao",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Japão",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Costa do Marfim",
+      "team2": "Equador",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Suécia",
+      "team2": "Tunísia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Cabo Verde",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Egito",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Arábia Saudita",
+      "team2": "Uruguai",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Irã",
+      "team2": "Nova Zelândia",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Senegal",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "Iraque",
+      "team2": "Noruega",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Argélia",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo J",
+      "team1": "Áustria",
+      "team2": "Jordânia",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "RD Congo",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Croácia",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Gana",
+      "team2": "Panamá",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Uzbequistão",
+      "team2": "Colômbia",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "África do Sul",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Catar",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "Coreia do Sul",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Austrália",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Marrocos",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Haiti",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "Paraguai",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Costa do Marfim",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Curaçao",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Suécia",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Japão",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Arábia Saudita",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Irã",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Cabo Verde",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Egito",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Iraque",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "Senegal",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Áustria",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argélia",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Gana",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Croácia",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "Uzbequistão",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "RD Congo",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Brasil",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Marrocos",
+      "team2": "Haiti",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Canadá",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Bósnia e Herzegovina",
+      "team2": "Catar",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "México",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "África do Sul",
+      "team2": "Coreia do Sul",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Curaçao",
+      "team2": "Costa do Marfim",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Alemanha",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Japão",
+      "team2": "Suécia",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Holanda",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "EUA",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Paraguai",
+      "team2": "Austrália",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "França",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Senegal",
+      "team2": "Iraque",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Egito",
+      "team2": "Irã",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Bélgica",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Cabo Verde",
+      "team2": "Arábia Saudita",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Espanha",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Inglaterra",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Croácia",
+      "team2": "Gana",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Argélia",
+      "team2": "Áustria",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argentina",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "Portugal",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "RD Congo",
+      "team2": "Uzbequistão",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    }
+  ],
+  "Lona": [
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "África do Sul",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "Coreia do Sul",
+      "team2": "República Tcheca",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Paraguai",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo B",
+      "team1": "Catar",
+      "team2": "Suíça",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Marrocos",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Haiti",
+      "team2": "Escócia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo D",
+      "team1": "Austrália",
+      "team2": "Turquia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Curaçao",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Japão",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Costa do Marfim",
+      "team2": "Equador",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Suécia",
+      "team2": "Tunísia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Cabo Verde",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Egito",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Arábia Saudita",
+      "team2": "Uruguai",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Irã",
+      "team2": "Nova Zelândia",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Senegal",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "✅ Placar exato!",
+      "pontos": 5
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "Iraque",
+      "team2": "Noruega",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Argélia",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo J",
+      "team1": "Áustria",
+      "team2": "Jordânia",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "RD Congo",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Croácia",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Gana",
+      "team2": "Panamá",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Uzbequistão",
+      "team2": "Colômbia",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "África do Sul",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Catar",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "Coreia do Sul",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Austrália",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Marrocos",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Haiti",
+      "palpite1": 4,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "Paraguai",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Costa do Marfim",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Curaçao",
+      "palpite1": 5,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Suécia",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Japão",
+      "palpite1": 0,
+      "palpite2": 5,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Arábia Saudita",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Irã",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Cabo Verde",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Egito",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Iraque",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "Senegal",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Áustria",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argélia",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Gana",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Croácia",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "Uzbequistão",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "RD Congo",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Brasil",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Marrocos",
+      "team2": "Haiti",
+      "palpite1": 5,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Canadá",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Bósnia e Herzegovina",
+      "team2": "Catar",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "México",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "África do Sul",
+      "team2": "Coreia do Sul",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Curaçao",
+      "team2": "Costa do Marfim",
+      "palpite1": 0,
+      "palpite2": 5,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Alemanha",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Japão",
+      "team2": "Suécia",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Holanda",
+      "palpite1": 0,
+      "palpite2": 4,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "EUA",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Paraguai",
+      "team2": "Austrália",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "França",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Senegal",
+      "team2": "Iraque",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Egito",
+      "team2": "Irã",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Bélgica",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Cabo Verde",
+      "team2": "Arábia Saudita",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Espanha",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Inglaterra",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Croácia",
+      "team2": "Gana",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Argélia",
+      "team2": "Áustria",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argentina",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "Portugal",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "RD Congo",
+      "team2": "Uzbequistão",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    }
+  ],
+  "Isac": [
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "África do Sul",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "Coreia do Sul",
+      "team2": "República Tcheca",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Paraguai",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo B",
+      "team1": "Catar",
+      "team2": "Suíça",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Marrocos",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Haiti",
+      "team2": "Escócia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo D",
+      "team1": "Austrália",
+      "team2": "Turquia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Curaçao",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Japão",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Costa do Marfim",
+      "team2": "Equador",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Suécia",
+      "team2": "Tunísia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Cabo Verde",
+      "palpite1": 6,
+      "palpite2": 0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Egito",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Arábia Saudita",
+      "team2": "Uruguai",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Irã",
+      "team2": "Nova Zelândia",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Senegal",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "Iraque",
+      "team2": "Noruega",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Argélia",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo J",
+      "team1": "Áustria",
+      "team2": "Jordânia",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "RD Congo",
+      "palpite1": 7,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Croácia",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Gana",
+      "team2": "Panamá",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Uzbequistão",
+      "team2": "Colômbia",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "África do Sul",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Catar",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "Coreia do Sul",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Austrália",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Marrocos",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Haiti",
+      "palpite1": 4,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "Paraguai",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Costa do Marfim",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Curaçao",
+      "palpite1": 4,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Suécia",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Japão",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Arábia Saudita",
+      "palpite1": 4,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Irã",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Cabo Verde",
+      "palpite1": 4,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Egito",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Iraque",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "Senegal",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Áustria",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argélia",
+      "palpite1": 0,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Gana",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Croácia",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "Uzbequistão",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "RD Congo",
+      "palpite1": 4,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Brasil",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Marrocos",
+      "team2": "Haiti",
+      "palpite1": 4,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Canadá",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Bósnia e Herzegovina",
+      "team2": "Catar",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "México",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "África do Sul",
+      "team2": "Coreia do Sul",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Curaçao",
+      "team2": "Costa do Marfim",
+      "palpite1": 0,
+      "palpite2": 4,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Alemanha",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Japão",
+      "team2": "Suécia",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Holanda",
+      "palpite1": 1,
+      "palpite2": 4,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "EUA",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Paraguai",
+      "team2": "Austrália",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "França",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Senegal",
+      "team2": "Iraque",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Egito",
+      "team2": "Irã",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Bélgica",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Cabo Verde",
+      "team2": "Arábia Saudita",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Espanha",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Inglaterra",
+      "palpite1": 0,
+      "palpite2": 4,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Croácia",
+      "team2": "Gana",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Argélia",
+      "team2": "Áustria",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argentina",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "Portugal",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "RD Congo",
+      "team2": "Uzbequistão",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    }
+  ],
+  "PC": [
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "África do Sul",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "Coreia do Sul",
+      "team2": "República Tcheca",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Paraguai",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo B",
+      "team1": "Catar",
+      "team2": "Suíça",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Marrocos",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Haiti",
+      "team2": "Escócia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo D",
+      "team1": "Austrália",
+      "team2": "Turquia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Curaçao",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Japão",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Costa do Marfim",
+      "team2": "Equador",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Suécia",
+      "team2": "Tunísia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Cabo Verde",
+      "palpite1": 5,
+      "palpite2": 0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Egito",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Arábia Saudita",
+      "team2": "Uruguai",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "✅ Placar exato!",
+      "pontos": 5
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Irã",
+      "team2": "Nova Zelândia",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Senegal",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "Iraque",
+      "team2": "Noruega",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Argélia",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo J",
+      "team1": "Áustria",
+      "team2": "Jordânia",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "RD Congo",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Croácia",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Gana",
+      "team2": "Panamá",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Uzbequistão",
+      "team2": "Colômbia",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "África do Sul",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Catar",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "Coreia do Sul",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Austrália",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Marrocos",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Haiti",
+      "palpite1": 6,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "Paraguai",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Costa do Marfim",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Curaçao",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Suécia",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Japão",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Arábia Saudita",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Irã",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Cabo Verde",
+      "palpite1": 4,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Egito",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Iraque",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "Senegal",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Áustria",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argélia",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Gana",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Croácia",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "Uzbequistão",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "RD Congo",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Brasil",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Marrocos",
+      "team2": "Haiti",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Canadá",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Bósnia e Herzegovina",
+      "team2": "Catar",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "México",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "África do Sul",
+      "team2": "Coreia do Sul",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Curaçao",
+      "team2": "Costa do Marfim",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Alemanha",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Japão",
+      "team2": "Suécia",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Holanda",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "EUA",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Paraguai",
+      "team2": "Austrália",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "França",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Senegal",
+      "team2": "Iraque",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Egito",
+      "team2": "Irã",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Bélgica",
+      "palpite1": 0,
+      "palpite2": 4,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Cabo Verde",
+      "team2": "Arábia Saudita",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Espanha",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Inglaterra",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Croácia",
+      "team2": "Gana",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Argélia",
+      "team2": "Áustria",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argentina",
+      "palpite1": 0,
+      "palpite2": 4,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "Portugal",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "RD Congo",
+      "team2": "Uzbequistão",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    }
+  ],
+  "Eliana": [
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "África do Sul",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "Coreia do Sul",
+      "team2": "República Tcheca",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Paraguai",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo B",
+      "team1": "Catar",
+      "team2": "Suíça",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Marrocos",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Haiti",
+      "team2": "Escócia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo D",
+      "team1": "Austrália",
+      "team2": "Turquia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Curaçao",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Japão",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Costa do Marfim",
+      "team2": "Equador",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Suécia",
+      "team2": "Tunísia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Cabo Verde",
+      "palpite1": 5,
+      "palpite2": 0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Egito",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Arábia Saudita",
+      "team2": "Uruguai",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Irã",
+      "team2": "Nova Zelândia",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Senegal",
+      "palpite1": 4,
+      "palpite2": 0,
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "Iraque",
+      "team2": "Noruega",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Argélia",
+      "palpite1": 4,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo J",
+      "team1": "Áustria",
+      "team2": "Jordânia",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "RD Congo",
+      "palpite1": 4,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Croácia",
+      "palpite1": 4,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Gana",
+      "team2": "Panamá",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Uzbequistão",
+      "team2": "Colômbia",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "África do Sul",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Catar",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "Coreia do Sul",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Austrália",
+      "palpite1": 4,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Marrocos",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Haiti",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "Paraguai",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Costa do Marfim",
+      "palpite1": 4,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Curaçao",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Suécia",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Japão",
+      "palpite1": 0,
+      "palpite2": 4,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Arábia Saudita",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Irã",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Cabo Verde",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Egito",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Iraque",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "Senegal",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Áustria",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argélia",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Gana",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Croácia",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "Uzbequistão",
+      "palpite1": 4,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "RD Congo",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Brasil",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Marrocos",
+      "team2": "Haiti",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Canadá",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Bósnia e Herzegovina",
+      "team2": "Catar",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "México",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "África do Sul",
+      "team2": "Coreia do Sul",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Curaçao",
+      "team2": "Costa do Marfim",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Alemanha",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Japão",
+      "team2": "Suécia",
+      "palpite1": 5,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Holanda",
+      "palpite1": 0,
+      "palpite2": 4,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "EUA",
+      "palpite1": 1,
+      "palpite2": 5,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Paraguai",
+      "team2": "Austrália",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "França",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Senegal",
+      "team2": "Iraque",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Egito",
+      "team2": "Irã",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Bélgica",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Cabo Verde",
+      "team2": "Arábia Saudita",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Espanha",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Inglaterra",
+      "palpite1": 1,
+      "palpite2": 4,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Croácia",
+      "team2": "Gana",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Argélia",
+      "team2": "Áustria",
+      "palpite1": 0,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argentina",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "Portugal",
+      "palpite1": 2,
+      "palpite2": 5,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "RD Congo",
+      "team2": "Uzbequistão",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    }
+  ],
+  "Sandra": [
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "África do Sul",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "Coreia do Sul",
+      "team2": "República Tcheca",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Paraguai",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo B",
+      "team1": "Catar",
+      "team2": "Suíça",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Marrocos",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Haiti",
+      "team2": "Escócia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo D",
+      "team1": "Austrália",
+      "team2": "Turquia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Curaçao",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Japão",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Costa do Marfim",
+      "team2": "Equador",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Suécia",
+      "team2": "Tunísia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Cabo Verde",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Egito",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Arábia Saudita",
+      "team2": "Uruguai",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Irã",
+      "team2": "Nova Zelândia",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Senegal",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "Iraque",
+      "team2": "Noruega",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Argélia",
+      "palpite1": 4,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo J",
+      "team1": "Áustria",
+      "team2": "Jordânia",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "RD Congo",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Croácia",
+      "palpite1": 3,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Gana",
+      "team2": "Panamá",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Uzbequistão",
+      "team2": "Colômbia",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "África do Sul",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Catar",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "Coreia do Sul",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Austrália",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Marrocos",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Haiti",
+      "palpite1": 4,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "Paraguai",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Costa do Marfim",
+      "palpite1": 4,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Curaçao",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Suécia",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Japão",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Arábia Saudita",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Irã",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Cabo Verde",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Egito",
+      "palpite1": 0,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Iraque",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "Senegal",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Áustria",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argélia",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Gana",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Croácia",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "Uzbequistão",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "RD Congo",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Brasil",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Marrocos",
+      "team2": "Haiti",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Canadá",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Bósnia e Herzegovina",
+      "team2": "Catar",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "México",
+      "palpite1": 0,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "África do Sul",
+      "team2": "Coreia do Sul",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Curaçao",
+      "team2": "Costa do Marfim",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Alemanha",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Japão",
+      "team2": "Suécia",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Holanda",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "EUA",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Paraguai",
+      "team2": "Austrália",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "França",
+      "palpite1": 2,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Senegal",
+      "team2": "Iraque",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Egito",
+      "team2": "Irã",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Bélgica",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Cabo Verde",
+      "team2": "Arábia Saudita",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Espanha",
+      "palpite1": 2,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Inglaterra",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Croácia",
+      "team2": "Gana",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Argélia",
+      "team2": "Áustria",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argentina",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "Portugal",
+      "palpite1": 2,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "RD Congo",
+      "team2": "Uzbequistão",
+      "palpite1": 1,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    }
+  ],
+  "Vania": [
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "África do Sul",
+      "palpite1": 10.0,
+      "palpite2": 10.0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "Coreia do Sul",
+      "team2": "República Tcheca",
+      "palpite1": 10.0,
+      "palpite2": 10.0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 10.0,
+      "palpite2": 11.0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Paraguai",
+      "palpite1": 10.0,
+      "palpite2": 10.0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo B",
+      "team1": "Catar",
+      "team2": "Suíça",
+      "palpite1": 10.0,
+      "palpite2": 11.0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Marrocos",
+      "palpite1": 10.0,
+      "palpite2": 11.0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Haiti",
+      "team2": "Escócia",
+      "palpite1": 10.0,
+      "palpite2": 10.0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo D",
+      "team1": "Austrália",
+      "team2": "Turquia",
+      "palpite1": 10.0,
+      "palpite2": 10.0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Curaçao",
+      "palpite1": 10.0,
+      "palpite2": 10.0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Japão",
+      "palpite1": 10.0,
+      "palpite2": 11.0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Costa do Marfim",
+      "team2": "Equador",
+      "palpite1": 10.0,
+      "palpite2": 10.0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Suécia",
+      "team2": "Tunísia",
+      "palpite1": 10.0,
+      "palpite2": 10.0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Cabo Verde",
+      "palpite1": null,
+      "palpite2": null,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Egito",
+      "palpite1": null,
+      "palpite2": null,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Arábia Saudita",
+      "team2": "Uruguai",
+      "palpite1": null,
+      "palpite2": null,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Irã",
+      "team2": "Nova Zelândia",
+      "palpite1": null,
+      "palpite2": null,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Senegal",
+      "palpite1": 2.0,
+      "palpite2": 1.0,
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "Iraque",
+      "team2": "Noruega",
+      "palpite1": 1.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Argélia",
+      "palpite1": 3.0,
+      "palpite2": 0.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo J",
+      "team1": "Áustria",
+      "team2": "Jordânia",
+      "palpite1": 2.0,
+      "palpite2": 0.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "RD Congo",
+      "palpite1": 2.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Croácia",
+      "palpite1": 2.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Gana",
+      "team2": "Panamá",
+      "palpite1": 2.0,
+      "palpite2": 0.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Uzbequistão",
+      "team2": "Colômbia",
+      "palpite1": 0.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "África do Sul",
+      "palpite1": 1.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 2.0,
+      "palpite2": 0.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Catar",
+      "palpite1": 1.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "Coreia do Sul",
+      "palpite1": 2.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Austrália",
+      "palpite1": 2.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Marrocos",
+      "palpite1": 1.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Haiti",
+      "palpite1": 3.0,
+      "palpite2": 0.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "Paraguai",
+      "palpite1": 1.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Costa do Marfim",
+      "palpite1": 4.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Curaçao",
+      "palpite1": 2.0,
+      "palpite2": 0.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Suécia",
+      "palpite1": 2.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Japão",
+      "palpite1": 0.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Arábia Saudita",
+      "palpite1": 2.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Irã",
+      "palpite1": 1.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Cabo Verde",
+      "palpite1": 2.0,
+      "palpite2": 0.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Egito",
+      "palpite1": 1.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Iraque",
+      "palpite1": 3.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "Senegal",
+      "palpite1": 3.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Áustria",
+      "palpite1": 2.0,
+      "palpite2": 0.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argélia",
+      "palpite1": 1.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Gana",
+      "palpite1": 3.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Croácia",
+      "palpite1": 0.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "Uzbequistão",
+      "palpite1": 2.0,
+      "palpite2": 0.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "RD Congo",
+      "palpite1": 2.0,
+      "palpite2": 0.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Brasil",
+      "palpite1": 0.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Marrocos",
+      "team2": "Haiti",
+      "palpite1": 2.0,
+      "palpite2": 0.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Canadá",
+      "palpite1": 1.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Bósnia e Herzegovina",
+      "team2": "Catar",
+      "palpite1": 1.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "México",
+      "palpite1": 1.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "África do Sul",
+      "team2": "Coreia do Sul",
+      "palpite1": 1.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Curaçao",
+      "team2": "Costa do Marfim",
+      "palpite1": 0.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Alemanha",
+      "palpite1": 1.0,
+      "palpite2": 3.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Japão",
+      "team2": "Suécia",
+      "palpite1": 2.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Holanda",
+      "palpite1": 0.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "EUA",
+      "palpite1": 1.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Paraguai",
+      "team2": "Austrália",
+      "palpite1": 2.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "França",
+      "palpite1": 2.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Senegal",
+      "team2": "Iraque",
+      "palpite1": 1.0,
+      "palpite2": 0.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Egito",
+      "team2": "Irã",
+      "palpite1": 2.0,
+      "palpite2": 0.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Bélgica",
+      "palpite1": 1.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Cabo Verde",
+      "team2": "Arábia Saudita",
+      "palpite1": 0.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Espanha",
+      "palpite1": 1.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Inglaterra",
+      "palpite1": 0.0,
+      "palpite2": 3.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Croácia",
+      "team2": "Gana",
+      "palpite1": 2.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Argélia",
+      "team2": "Áustria",
+      "palpite1": 0.0,
+      "palpite2": 0.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argentina",
+      "palpite1": 0.0,
+      "palpite2": 3.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "Portugal",
+      "palpite1": 2.0,
+      "palpite2": 2.0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "RD Congo",
+      "team2": "Uzbequistão",
+      "palpite1": 2.0,
+      "palpite2": 1.0,
+      "resultado": "⏳",
+      "pontos": 0
+    }
+  ],
+  "Nataniele": [
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "África do Sul",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "11/06",
+      "group": "Grupo A",
+      "team1": "Coreia do Sul",
+      "team2": "República Tcheca",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "12/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Paraguai",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo B",
+      "team1": "Catar",
+      "team2": "Suíça",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Marrocos",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "13/06",
+      "group": "Grupo C",
+      "team1": "Haiti",
+      "team2": "Escócia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo D",
+      "team1": "Austrália",
+      "team2": "Turquia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Curaçao",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Japão",
+      "palpite1": 10,
+      "palpite2": 11,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo E",
+      "team1": "Costa do Marfim",
+      "team2": "Equador",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "14/06",
+      "group": "Grupo F",
+      "team1": "Suécia",
+      "team2": "Tunísia",
+      "palpite1": 10,
+      "palpite2": 10,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Cabo Verde",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Egito",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo H",
+      "team1": "Arábia Saudita",
+      "team2": "Uruguai",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "15/06",
+      "group": "Grupo G",
+      "team1": "Irã",
+      "team2": "Nova Zelândia",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "❌ Errou",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Senegal",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo I",
+      "team1": "Iraque",
+      "team2": "Noruega",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "16/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Argélia",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo J",
+      "team1": "Áustria",
+      "team2": "Jordânia",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "RD Congo",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Croácia",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo L",
+      "team1": "Gana",
+      "team2": "Panamá",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "17/06",
+      "group": "Grupo K",
+      "team1": "Uzbequistão",
+      "team2": "Colômbia",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "África do Sul",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Bósnia e Herzegovina",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo B",
+      "team1": "Canadá",
+      "team2": "Catar",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "18/06",
+      "group": "Grupo A",
+      "team1": "México",
+      "team2": "Coreia do Sul",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo D",
+      "team1": "EUA",
+      "team2": "Austrália",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Marrocos",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "19/06",
+      "group": "Grupo C",
+      "team1": "Brasil",
+      "team2": "Haiti",
+      "palpite1": 4,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "Paraguai",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Alemanha",
+      "team2": "Costa do Marfim",
+      "palpite1": 3,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Curaçao",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "20/06",
+      "group": "Grupo F",
+      "team1": "Holanda",
+      "team2": "Suécia",
+      "palpite1": 2,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Japão",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Espanha",
+      "team2": "Arábia Saudita",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Bélgica",
+      "team2": "Irã",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Cabo Verde",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "21/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Egito",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "França",
+      "team2": "Iraque",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "Senegal",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Argentina",
+      "team2": "Áustria",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "22/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argélia",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Inglaterra",
+      "team2": "Gana",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Croácia",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Portugal",
+      "team2": "Uzbequistão",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "23/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "RD Congo",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Escócia",
+      "team2": "Brasil",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo C",
+      "team1": "Marrocos",
+      "team2": "Haiti",
+      "palpite1": 3,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Suíça",
+      "team2": "Canadá",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo B",
+      "team1": "Bósnia e Herzegovina",
+      "team2": "Catar",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "República Tcheca",
+      "team2": "México",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "24/06",
+      "group": "Grupo A",
+      "team1": "África do Sul",
+      "team2": "Coreia do Sul",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Curaçao",
+      "team2": "Costa do Marfim",
+      "palpite1": 1,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo E",
+      "team1": "Equador",
+      "team2": "Alemanha",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Japão",
+      "team2": "Suécia",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo F",
+      "team1": "Tunísia",
+      "team2": "Holanda",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Turquia",
+      "team2": "EUA",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "25/06",
+      "group": "Grupo D",
+      "team1": "Paraguai",
+      "team2": "Austrália",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Noruega",
+      "team2": "França",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo I",
+      "team1": "Senegal",
+      "team2": "Iraque",
+      "palpite1": 2,
+      "palpite2": 0,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Egito",
+      "team2": "Irã",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo G",
+      "team1": "Nova Zelândia",
+      "team2": "Bélgica",
+      "palpite1": 0,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Cabo Verde",
+      "team2": "Arábia Saudita",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "26/06",
+      "group": "Grupo H",
+      "team1": "Uruguai",
+      "team2": "Espanha",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Panamá",
+      "team2": "Inglaterra",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo L",
+      "team1": "Croácia",
+      "team2": "Gana",
+      "palpite1": 2,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Argélia",
+      "team2": "Áustria",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo J",
+      "team1": "Jordânia",
+      "team2": "Argentina",
+      "palpite1": 0,
+      "palpite2": 3,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "Colômbia",
+      "team2": "Portugal",
+      "palpite1": 1,
+      "palpite2": 1,
+      "resultado": "⏳",
+      "pontos": 0
+    },
+    {
+      "date": "27/06",
+      "group": "Grupo K",
+      "team1": "RD Congo",
+      "team2": "Uzbequistão",
+      "palpite1": 1,
+      "palpite2": 2,
+      "resultado": "⏳",
+      "pontos": 0
+    }
+  ]
+}
