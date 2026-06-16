@@ -177,7 +177,11 @@
     "team2": "Noruega",
     "score1": 1,
     "score2": 2,
-    "city": "Boston"
+    "city": "Boston",
+    "live_score1": 1,
+    "live_score2": 2,
+    "status": "LIVE",
+    "minutes": ""
   },
   {
     "date": "16/06",
