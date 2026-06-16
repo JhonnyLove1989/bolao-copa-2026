@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Andrey",
+    "pts": 3,
+    "exact": 0,
+    "result": 1,
+    "wrong": 17
+  },
+  {
+    "name": "Nataniele",
+    "pts": 0,
+    "exact": 0,
+    "result": 0,
+    "wrong": 17
+  },
+  {
+    "name": "Candido",
+    "pts": 0,
+    "exact": 0,
+    "result": 0,
+    "wrong": 17
+  },
+  {
+    "name": "Cosman",
+    "pts": 0,
+    "exact": 0,
+    "result": 0,
+    "wrong": 17
+  },
+  {
+    "name": "Eliana",
+    "pts": 0,
+    "exact": 0,
+    "result": 0,
+    "wrong": 17
+  },
+  {
+    "name": "Isac",
+    "pts": 0,
+    "exact": 0,
+    "result": 0,
+    "wrong": 17
+  },
+  {
+    "name": "Lona",
+    "pts": 3,
+    "exact": 0,
+    "result": 1,
+    "wrong": 16
+  },
+  {
+    "name": "PC",
+    "pts": 8,
+    "exact": 1,
+    "result": 1,
+    "wrong": 15
+  },
+  {
+    "name": "Sandra",
+    "pts": 3,
+    "exact": 0,
+    "result": 1,
+    "wrong": 16
+  },
+  {
+    "name": "Vania",
+    "pts": 0,
+    "exact": 0,
+    "result": 0,
+    "wrong": 13
+  }
+]
