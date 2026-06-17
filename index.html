@@ -1481,80 +1481,94 @@ async function loadNextMatch(){
  const res=await fetch('games.json');
  const games=await res.json();
 
- // 1. Procura jogo AO VIVO
- const liveGame=games.find(g=>g.status==='LIVE'||g.status==='HALFTIME');
+// 1. Procura jogos AO VIVO
+const liveGames = games.filter(g =>
+ g.status === 'LIVE' ||
+ g.status === 'IN_PLAY' ||
+ g.status === 'PAUSED'
+);
 
-if(liveGame){
+if(liveGames.length > 0){
 
- const gameKey = liveGame.team1 + "_" + liveGame.team2;
+ let html = "";
 
- const s1 = liveGame.live_score1 ?? liveGame.score1;
- const s2 = liveGame.live_score2 ?? liveGame.score2;
+ liveGames.forEach(liveGame => {
+  const s1 = liveGame.live_score1 ?? liveGame.score1 ?? 0;
+  const s2 = liveGame.live_score2 ?? liveGame.score2 ?? 0;
 
- if (lastScores[gameKey]) {
+  const gameKey = liveGame.team1 + "_" + liveGame.team2;
 
+const currentScore = {
+ home: s1,
+ away: s2
+};
+
+// verifica mudança de placar
+if(lastScores[gameKey]){
   const prev = lastScores[gameKey];
 
-  if (
-   s1 !== null && s2 !== null &&
-   s1 !== undefined && s2 !== undefined &&
-   (prev.home !== s1 || prev.away !== s2)
-  ) {
+  if(
+    (prev.home !== currentScore.home || prev.away !== currentScore.away)
+    && (prev.home !== null && prev.away !== null)
+  ){
 
-   if (prev.home !== undefined) {
-
-    goalSound.play();
+    goalSound.play().catch(() => {});
 
     showGoalBanner(
-     "⚽ GOOOOL! " 
-     + liveGame.team1 + " " 
-     + s1 + " x " 
-     + s2 + " " 
-     + liveGame.team2
+      "⚽ GOOOOL! " 
+      + liveGame.team1 + " " 
+      + s1 + " x " 
+      + s2 + " " 
+      + liveGame.team2
     );
-   }
-  }
- }
 
- lastScores[gameKey] = {
-  home: s1,
-  away: s2
- };  
+  }
+}
   
+// atualiza cache
+lastScores[gameKey] = currentScore;
+
   const f1 = flag(liveGame.team1);
   const f2 = flag(liveGame.team2);
-  const isHT=liveGame.status==='HALFTIME';
-  const statusText=isHT?'⏸️ INTERVALO':'🔴 AO VIVO';
-  const minText=liveGame.minutes?` • ${liveGame.minutes}'`:'';
 
-  document.querySelector('#nextMatch div:first-child').innerHTML=statusText;
-  document.querySelector('#nextMatch div:first-child').style.color='#ff0000';
-  document.getElementById('nextMatch').style.borderTop='3px solid #ff0000';
-  document.getElementById('nextMatch').style.animation='liveGlow 1.5s ease-in-out infinite alternate';
-
-  document.getElementById('nextMatchContent').innerHTML=`
-   <div style="display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;">
-    <img src="${f1}" style="width:24px;border-radius:2px;">
+  html += `
+  <div style="
+   margin-bottom:10px;
+   padding:10px;
+   border-radius:10px;
+   background:#ffffff;
+   color:#111;
+   box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  ">
+   <div style="display:flex;align-items:center;justify-content:center;gap:8px;">
+    <img src="${f1}" style="width:24px;">
     <span>${liveGame.team1}</span>
+
     <span style="
      background:#ff0000;
      color:white;
-     padding:4px 12px;
+     padding:4px 10px;
      border-radius:8px;
-     font-size:18px;
-     font-weight:900;
-     animation:glowPulse 1s ease-in-out infinite alternate;
+     font-weight:800;
     ">${s1} x ${s2}</span>
-    <span>${liveGame.team2}</span>
-    <img src="${f2}" style="width:24px;border-radius:2px;">
-   </div>
-   <div style="font-size:11px;color:#888;margin-top:8px;">
-    📅 ${liveGame.date} • ⏰ ${liveGame.time}${minText}<br>🏟 ${liveGame.city} • Grupo ${liveGame.group}
-   </div>
-  `;
-  return;
- }
 
+    <span>${liveGame.team2}</span>
+    <img src="${f2}" style="width:24px;">
+   </div>
+  </div>
+  `;
+ });
+
+ document.querySelector('#nextMatch div:first-child').innerHTML = '🔴 AO VIVO';
+ document.querySelector('#nextMatch div:first-child').style.color = '#ff0000';
+ 
+ document.getElementById('nextMatch').style.borderTop = '3px solid #ff0000';
+ document.getElementById('nextMatch').style.animation = 'liveGlow 1.5s ease-in-out infinite alternate';
+ 
+ document.getElementById('nextMatchContent').innerHTML = html;
+
+ return;
+}
  // 2. Se não tem jogo ao vivo, mostra PRÓXIMO JOGO
  const hoje = new Date();
 hoje.setHours(0,0,0,0);
