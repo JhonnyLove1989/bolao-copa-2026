@@ -1498,7 +1498,7 @@ const next = games.find(g => {
   if (g.score1 !== null || g.score2 !== null) return false;
 
   const [dia, mes] = g.date.split('/');
-  const dataJogo = new Date(2026, mes - 1, dia);
+  const dataJogo = new Date(2026, parseInt(mes) - 1, parseInt(dia));
 
   return dataJogo >= hoje;
 });
