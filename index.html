@@ -1491,7 +1491,17 @@ async function loadNextMatch(){
  }
 
  // 2. Se não tem jogo ao vivo, mostra PRÓXIMO JOGO
- const next=games.find(g=>g.score1===null && g.score2===null && g.status!=='LIVE' && g.status!=='HALFTIME');
+ const hoje = new Date();
+hoje.setHours(0,0,0,0);
+
+const next = games.find(g => {
+  if (g.score1 !== null || g.score2 !== null) return false;
+
+  const [dia, mes] = g.date.split('/');
+  const dataJogo = new Date(2026, mes - 1, dia);
+
+  return dataJogo >= hoje;
+});
 
  if(!next){
   document.querySelector('#nextMatch div:first-child').innerHTML='🏆 ENCERRADO';
