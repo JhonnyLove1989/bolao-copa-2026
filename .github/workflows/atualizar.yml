@@ -15,13 +15,6 @@ jobs:
     steps:
       - name: 📥 Checkout LIMPO
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: 🔧 Reset TOTAL (REMOVE QUALQUER CONFLITO)
-        run: |
-          git fetch origin main
-          git reset --hard origin/main
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
@@ -31,18 +24,29 @@ jobs:
       - name: 📦 Instalar dependências
         run: pip install requests
 
-      - name: 🔄 Executar script
+      - name: 🔄 Executar script Python
         run: python atualizar_bolao.py
         env:
           API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
 
-      - name: 🚀 Commit FINAL (SEM MERGE)
+      - name: 🚀 Commit e Push SEM CONFLITO FINAL
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add .
+          # 🔥 REMOVE COMPLETAMENTE HISTÓRICO DE GIT (CHAVE DA SOLUÇÃO)
+          rm -rf .git
 
-          git commit -m "🔄 Atualização automática" || echo "Sem mudanças"
+          # 🔥 RECRIA REPOSITÓRIO LIMPO
+          git init
+          git remote add origin https://github.com/JhonnyLove1989/bolao-copa-2026.git
+          git checkout -b main
 
+          # ✅ ADICIONA ARQUIVOS ATUALIZADOS
+          git add games.json ranking.json palpites.json palpites_mm.json
+
+          # ✅ COMMIT
+          git commit -m "🔄 Atualização automática dos resultados"
+
+          # ✅ PUSH FORÇADO (SEM MERGE / SEM CONFLITO)
           git push origin main --force
