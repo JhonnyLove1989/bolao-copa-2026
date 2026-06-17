@@ -1,17 +1,18 @@
 import requests
 import json
 import os
+import subprocess
 import warnings
 warnings.filterwarnings("ignore")
 
 # ============================================
 # ⚙️ CONFIGURAÇÃO
 # ============================================
-API_KEY = os.environ.get("API_KEY", "SUA_API_KEY_AQUI")
+API_KEY = os.environ.get("API_KEY", "7986da72567f4d5ea156cbb8acef7948")
 API_URL = "https://api.football-data.org/v4/competitions/WC/matches"
 
 # ============================================
-# ✅ MAPA DE NOMES
+# ✅ MAPA DE NOMES (igual ao seu)
 # ============================================
 TEAM_MAP = {
     "Mexico": "México",
@@ -21,9 +22,11 @@ TEAM_MAP = {
     "Czech Republic": "República Tcheca",
     "Scotland": "Escócia",
     "Morocco": "Marrocos",
+    "Haiti": "Haiti",
     "Canada": "Canadá",
     "Switzerland": "Suíça",
     "Qatar": "Catar",
+    "Bosnia and Herzegovina": "Bósnia e Herzegovina",
     "United States": "EUA",
     "USA": "EUA",
     "Germany": "Alemanha",
@@ -64,11 +67,9 @@ def update_games(api_matches):
         local_games = json.load(f)
 
     for game in local_games:
-        # limpa dados antigos
         game.pop("status", None)
         game.pop("live_score1", None)
         game.pop("live_score2", None)
-        game.pop("minutes", None)
 
         for m in api_matches:
             home = translate(m["homeTeam"]["name"])
@@ -79,21 +80,18 @@ def update_games(api_matches):
 
             status = m["status"]
 
-            # ✅ FINALIZADO
             if status == "FINISHED":
                 ft = m["score"]["fullTime"]
                 game["score1"] = ft["home"]
                 game["score2"] = ft["away"]
                 game["status"] = "FINISHED"
 
-            # 🔴 AO VIVO
             elif status in ["IN_PLAY", "PAUSED"]:
                 ft = m["score"]["fullTime"]
                 game["live_score1"] = ft["home"] or 0
                 game["live_score2"] = ft["away"] or 0
                 game["status"] = "LIVE"
 
-            # ⏸️ INTERVALO
             elif status == "HALFTIME":
                 ht = m["score"]["halfTime"]
                 game["live_score1"] = ht["home"] or 0
@@ -108,7 +106,7 @@ def update_games(api_matches):
     print("✅ games.json atualizado")
 
 # ============================================
-# ✅ CALCULAR RANKING
+# ✅ CALCULAR RANKING (SEU ORIGINAL)
 # ============================================
 def calculate_points():
     with open("games.json", "r", encoding="utf-8") as f:
@@ -124,9 +122,9 @@ def calculate_points():
             results[key] = (g["score1"], g["score2"])
 
     ranking = {}
-
     for nome, jogos in palpites.items():
-        pts = 0
+        total_pts = 0
+
         for p in jogos:
             key = f"{p['team1']}_{p['team2']}"
             if key not in results:
@@ -134,12 +132,11 @@ def calculate_points():
 
             real = results[key]
 
-            if p["palpite1"] == real[0] and p["palpite2"] == real[1]:
-                pts += 5
+            if p["palpite1"] == real[0] and p["palpite2"] == realtotal_pts += 5
             elif ((p["palpite1"] > p["palpite2"]) == (real[0] > real[1])):
-                pts += 3
+                total_pts += 3
 
-        ranking[nome] = pts
+        ranking[nome] = total_pts
 
     ranking_list = [{"name": k, "pts": v} for k, v in ranking.items()]
     ranking_list.sort(key=lambda x: -x["pts"])
@@ -159,6 +156,12 @@ if __name__ == "__main__":
     if api_matches:
         update_games(api_matches)
         calculate_points()
+
+        # ⚠️ ESSA LINHA É A CHAVE:
+        # Só faz push se NÃO estiver rodando no GitHub Actions
+        if not os.environ.get("GITHUB_ACTIONS"):
+            print("💻 Rodando local - pode fazer push manual")
+
     else:
         print("❌ Falha API")
 
