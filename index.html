@@ -121,15 +121,10 @@ body{
 /* ANIMAÇÃO CONTÍNUA */
 @keyframes glowPulse{
  0%{
-@keyframes liveGlow{
- 0%{ box-shadow:0 0 5px rgba(255,0,0,0.2); }
- 100%{ box-shadow:0 0 15px rgba(255,0,0,0.5); }
-}
   text-shadow:
     0 4px 10px rgba(0,0,0,0.8),
     0 0 10px var(--vermelho-claro),
     0 0 20px var(--vermelho-claro);
-
  }
  100%{
   text-shadow:
@@ -137,6 +132,10 @@ body{
     0 0 20px var(--vermelho-claro),
     0 0 40px var(--vermelho-claro);
  }
+}
+@keyframes liveGlow{
+ 0%{ box-shadow:0 0 5px rgba(255,0,0,0.2); }
+ 100%{ box-shadow:0 0 15px rgba(255,0,0,0.5); }
 }
 
 /* HOVER INTERATIVO (🔥 transmissão) */
@@ -1452,44 +1451,59 @@ function closeModal(e){
 async function loadNextMatch(){
  const res=await fetch('games.json');
  const games=await res.json();
- const next=games.find(g=>g.score1===null && g.score2===null);
- if(!next){
-  document.getElementById('nextMatchContent').innerHTML='✅ Todos os jogos finalizados!';
-  document.querySelector('#nextMatch div:first-child').innerHTML='🏆 ENCERRADO';
+
+ // 1. Procura jogo AO VIVO
+ const liveGame=games.find(g=>g.status==='LIVE'||g.status==='HALFTIME');
+
+ if(liveGame){
+  const f1=flag(liveGame.team1);
+  const f2=flag(liveGame.team2);
+  const isHT=liveGame.status==='HALFTIME';
+  const statusText=isHT?'⏸️ INTERVALO':'🔴 AO VIVO';
+  const minText=liveGame.minutes?` • ${liveGame.minutes}'`:'';
+
+  document.querySelector('#nextMatch div:first-child').innerHTML=statusText;
+  document.querySelector('#nextMatch div:first-child').style.color='#ff0000';
+  document.getElementById('nextMatch').style.borderTop='3px solid #ff0000';
+  document.getElementById('nextMatch').style.animation='liveGlow 1.5s ease-in-out infinite alternate';
+
+  document.getElementById('nextMatchContent').innerHTML=`
+   <div style="display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;">
+    <img src="${f1}" style="width:24px;border-radius:2px;">
+    <span>${liveGame.team1}</span>
+    <span style="
+     background:#ff0000;
+     color:white;
+     padding:4px 12px;
+     border-radius:8px;
+     font-size:18px;
+     font-weight:900;
+     animation:glowPulse 1s ease-in-out infinite alternate;
+    ">${liveGame.live_score1} x ${liveGame.live_score2}</span>
+    <span>${liveGame.team2}</span>
+    <img src="${f2}" style="width:24px;border-radius:2px;">
+   </div>
+   <div style="font-size:11px;color:#888;margin-top:8px;">
+    📅 ${liveGame.date} • ⏰ ${liveGame.time}${minText}<br>🏟 ${liveGame.city} • Grupo ${liveGame.group}
+   </div>
+  `;
   return;
  }
 
- // Verifica se o jogo está AO VIVO
- const now=new Date();
- const [dia,mes]=next.date.split('/').map(Number);
- const [hora,min]=(next.time||'00:00').split(':').map(Number);
- const gameStart=new Date(2026, mes-1, dia, hora, min);
- const gameEnd=new Date(gameStart.getTime() + 120*60000); // +2 horas
+ // 2. Se não tem jogo ao vivo, mostra PRÓXIMO JOGO
+ const next=games.find(g=>g.score1===null && g.score2===null);
 
- let status, statusColor, statusIcon;
- if(now >= gameStart && now <= gameEnd){
-  status='AO VIVO';
-  statusColor='#ff0000';
-  statusIcon='🔴';
- } else if(now > gameEnd){
-  status='PRÓXIMO JOGO';
-  statusColor='var(--vermelho-claro)';
-  statusIcon='🟡';
- } else {
-  status='PRÓXIMO JOGO';
-  statusColor='var(--vermelho-claro)';
-  statusIcon='🟡';
+ if(!next){
+  document.querySelector('#nextMatch div:first-child').innerHTML='🏆 ENCERRADO';
+  document.getElementById('nextMatchContent').innerHTML='Todos os jogos finalizados!';
+  return;
  }
 
- // Atualiza o título
- document.querySelector('#nextMatch div:first-child').innerHTML=`${statusIcon} ${status}`;
- document.querySelector('#nextMatch div:first-child').style.color=statusColor;
-
- // Atualiza estilo se AO VIVO
- if(status==='AO VIVO'){
-  document.getElementById('nextMatch').style.borderTop='3px solid #ff0000';
-  document.getElementById('nextMatch').style.animation='liveGlow 1.5s ease-in-out infinite alternate';
- }
+ // Reset estilo
+ document.querySelector('#nextMatch div:first-child').innerHTML='🟡 PRÓXIMO JOGO';
+ document.querySelector('#nextMatch div:first-child').style.color='var(--vermelho-claro)';
+ document.getElementById('nextMatch').style.borderTop='3px solid var(--vermelho-claro)';
+ document.getElementById('nextMatch').style.animation='none';
 
  const f1=flag(next.team1);
  const f2=flag(next.team2);
@@ -1498,12 +1512,11 @@ async function loadNextMatch(){
    <img src="${f1}" style="width:24px;border-radius:2px;">
    <span>${next.team1}</span>
    <span style="
-    background:${status==='AO VIVO'?'#ff0000':'var(--vermelho-claro)'};
+    background:var(--vermelho-claro);
     color:white;
     padding:2px 8px;
     border-radius:6px;
     font-size:12px;
-    ${status==='AO VIVO'?'animation:glowPulse 1s ease-in-out infinite alternate;':''}
    ">VS</span>
    <span>${next.team2}</span>
    <img src="${f2}" style="width:24px;border-radius:2px;">
@@ -1513,6 +1526,14 @@ async function loadNextMatch(){
   </div>
  `;
 }
+
+// ✅ AUTO-REFRESH A CADA 60 SEGUNDOS
+setInterval(()=>{
+ loadNextMatch();
+ loadGroup();
+ loadMatches();
+ loadRanking();
+}, 60000);
 
 loadNextMatch();
 loadRanking();
