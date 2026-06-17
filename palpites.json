@@ -187,8 +187,8 @@
       "team2": "Argélia",
       "palpite1": 1,
       "palpite2": 0,
-      "resultado": "⏳",
-      "pontos": 0
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
     },
     {
       "date": "17/06",
@@ -909,7 +909,7 @@
       "team2": "Argélia",
       "palpite1": 2,
       "palpite2": 2,
-      "resultado": "⏳",
+      "resultado": "❌ Errou",
       "pontos": 0
     },
     {
@@ -1631,8 +1631,8 @@
       "team2": "Argélia",
       "palpite1": 2,
       "palpite2": 0,
-      "resultado": "⏳",
-      "pontos": 0
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
     },
     {
       "date": "17/06",
@@ -2353,8 +2353,8 @@
       "team2": "Argélia",
       "palpite1": 2,
       "palpite2": 0,
-      "resultado": "⏳",
-      "pontos": 0
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
     },
     {
       "date": "17/06",
@@ -3075,8 +3075,8 @@
       "team2": "Argélia",
       "palpite1": 2,
       "palpite2": 0,
-      "resultado": "⏳",
-      "pontos": 0
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
     },
     {
       "date": "17/06",
@@ -3797,8 +3797,8 @@
       "team2": "Argélia",
       "palpite1": 3,
       "palpite2": 1,
-      "resultado": "⏳",
-      "pontos": 0
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
     },
     {
       "date": "17/06",
@@ -4519,8 +4519,8 @@
       "team2": "Argélia",
       "palpite1": 4,
       "palpite2": 1,
-      "resultado": "⏳",
-      "pontos": 0
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
     },
     {
       "date": "17/06",
@@ -5241,8 +5241,8 @@
       "team2": "Argélia",
       "palpite1": 4,
       "palpite2": 0,
-      "resultado": "⏳",
-      "pontos": 0
+      "resultado": "🟡 Acertou resultado",
+      "pontos": 3
     },
     {
       "date": "17/06",
@@ -5963,8 +5963,8 @@
       "team2": "Argélia",
       "palpite1": 3.0,
       "palpite2": 0.0,
-      "resultado": "⏳",
-      "pontos": 0
+      "resultado": "✅ Placar exato!",
+      "pontos": 5
     },
     {
       "date": "17/06",
@@ -6685,8 +6685,8 @@
       "team2": "Argélia",
       "palpite1": 3,
       "palpite2": 0,
-      "resultado": "⏳",
-      "pontos": 0
+      "resultado": "✅ Placar exato!",
+      "pontos": 5
     },
     {
       "date": "17/06",

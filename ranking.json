@@ -1,65 +1,65 @@
 [
   {
     "name": "PC",
-    "pts": 16,
+    "pts": 19,
     "exact": 2,
-    "result": 2,
+    "result": 3,
     "wrong": 14
   },
   {
     "name": "Lona",
-    "pts": 9,
+    "pts": 12,
     "exact": 0,
-    "result": 3,
+    "result": 4,
     "wrong": 15
   },
   {
     "name": "Cosman",
-    "pts": 8,
+    "pts": 11,
     "exact": 1,
-    "result": 1,
-    "wrong": 16
-  },
-  {
-    "name": "Isac",
-    "pts": 8,
-    "exact": 1,
-    "result": 1,
-    "wrong": 16
-  },
-  {
-    "name": "Sandra",
-    "pts": 8,
-    "exact": 1,
-    "result": 1,
-    "wrong": 16
-  },
-  {
-    "name": "Candido",
-    "pts": 6,
-    "exact": 0,
     "result": 2,
     "wrong": 16
   },
   {
-    "name": "Eliana",
-    "pts": 6,
-    "exact": 0,
+    "name": "Isac",
+    "pts": 11,
+    "exact": 1,
+    "result": 2,
+    "wrong": 16
+  },
+  {
+    "name": "Sandra",
+    "pts": 11,
+    "exact": 1,
     "result": 2,
     "wrong": 16
   },
   {
     "name": "Vania",
-    "pts": 6,
-    "exact": 0,
+    "pts": 11,
+    "exact": 1,
     "result": 2,
     "wrong": 16
   },
   {
     "name": "Nataniele",
-    "pts": 6,
-    "exact": 0,
+    "pts": 11,
+    "exact": 1,
     "result": 2,
+    "wrong": 16
+  },
+  {
+    "name": "Candido",
+    "pts": 9,
+    "exact": 0,
+    "result": 3,
+    "wrong": 16
+  },
+  {
+    "name": "Eliana",
+    "pts": 9,
+    "exact": 0,
+    "result": 3,
     "wrong": 16
   },
   {
@@ -67,6 +67,6 @@
     "pts": 3,
     "exact": 0,
     "result": 1,
-    "wrong": 17
+    "wrong": 18
   }
 ]

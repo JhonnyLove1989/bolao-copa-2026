@@ -201,13 +201,10 @@
     "group": "J",
     "team1": "Argentina",
     "team2": "Argélia",
-    "score1": null,
-    "score2": null,
+    "score1": 3,
+    "score2": 0,
     "city": "Kansas City",
-    "live_score1": 1,
-    "live_score2": 0,
-    "status": "LIVE",
-    "minutes": ""
+    "status": "FINISHED"
   },
   {
     "date": "17/06",
