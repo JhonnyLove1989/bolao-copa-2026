@@ -11,7 +11,7 @@ warnings.filterwarnings("ignore")
 API_KEY = os.environ.get("API_KEY", "7986da72567f4d5ea156cbb8acef7948")
 API_URL = "https://api.football-data.org/v4/competitions/WC/matches"
 
-# ✅ MAPA DE NOMES (API → SEU DASHBOARD)
+# ✅ MAPA DE NOMES
 TEAM_MAP = {
     "Mexico": "México",
     "South Africa": "África do Sul",
@@ -76,7 +76,7 @@ def translate(name):
     return TEAM_MAP.get(name, name)
 
 # ============================================
-# ✅ 1. BUSCAR PLACARES DA API
+# ✅ BUSCAR API
 # ============================================
 def fetch_scores():
     print("🔄 Buscando placares da API...")
@@ -89,22 +89,17 @@ def fetch_scores():
 
     data = r.json()
     matches = data.get("matches", [])
-    played = len([m for m in matches if m["status"] == "FINISHED"])
-    live = len([m for m in matches if m["status"] in ["IN_PLAY", "PAUSED", "HALFTIME"]])
-    print(f"✅ {len(matches)} jogos encontrados ({played} finalizados, {live} ao vivo)")
+    print(f"✅ {len(matches)} jogos encontrados")
     return matches
 
 # ============================================
-# ✅ 2. ATUALIZAR GAMES.JSON
+# ✅ ATUALIZAR GAMES.JSON
 # ============================================
 def update_games(api_matches):
     print("🔄 Atualizando games.json...")
 
     with open("games.json", "r", encoding="utf-8") as f:
         local_games = json.load(f)
-
-    updated = 0
-    live = 0
 
     for game in local_games:
         game.pop("status", None)
@@ -125,32 +120,28 @@ def update_games(api_matches):
                 ft = m["score"]["fullTime"]
                 game["score1"] = ft["home"]
                 game["score2"] = ft["away"]
-                game["status"] = "FINISHED"
-                updated += 1
 
             elif status in ["IN_PLAY", "PAUSED"]:
                 ft = m["score"]["fullTime"]
                 game["live_score1"] = ft["home"] or 0
                 game["live_score2"] = ft["away"] or 0
                 game["status"] = "LIVE"
-                live += 1
 
             elif status == "HALFTIME":
                 ht = m["score"]["halfTime"]
                 game["live_score1"] = ht["home"] or 0
                 game["live_score2"] = ht["away"] or 0
                 game["status"] = "HALFTIME"
-                live += 1
 
             break
 
     with open("games.json", "w", encoding="utf-8") as f:
         json.dump(local_games, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ {updated} jogos finalizados | {live} jogos ao vivo")
+    print("✅ games.json atualizado")
 
 # ============================================
-# ✅ 3. CALCULAR PONTOS
+# ✅ CALCULAR PONTOS (CORRIGIDO)
 # ============================================
 def calculate_points():
     print("🔄 Calculando pontos...")
@@ -163,26 +154,38 @@ def calculate_points():
 
     results = {}
     for g in games:
-        if g["score1"] is not None:
+        if g["score1"] is not None and g["score2"] is not None:
             results[f"{g['team1']}_{g['team2']}"] = (g["score1"], g["score2"])
 
     ranking = {}
 
     for nome, jogos in palpites.items():
         pts = 0
+
         for p in jogos:
             key = f"{p['team1']}_{p['team2']}"
+
             if key not in results:
                 continue
 
-            real = results[key]
+            real_s1, real_s2 = results[key]
 
-            if p["palpite1"] == real[0] and p["palpite2"] == real[1]:
+            p1 = p.get("palpite1")
+            p2 = p.get("palpite2")
+
+            if p1 is None or p2 is None:
+                continue
+
+            # ✅ placar exato
+            if p1 == real_s1 and p2 == real_s2:
                 pts += 5
-elif p.get("palpite1") is not None and p.get("palpite2") is not None:
-    if (p["palpite1"] > p["palpite2"]) == (real[0] > real[1]):
-        pts += 3
-        
+
+            # ✅ resultado correto
+            elif (p1 > p2 and real_s1 > real_s2) or \
+                 (p1 < p2 and real_s1 < real_s2) or \
+                 (p1 == p2 and real_s1 == real_s2):
+                pts += 3
+
         ranking[nome] = pts
 
     ranking_list = [{"name": k, "pts": v} for k, v in ranking.items()]
