@@ -138,6 +138,12 @@ body{
  100%{ box-shadow:0 0 15px rgba(255,0,0,0.5); }
 }
 
+ @keyframes goalFlash{
+ 0%{ transform:scale(1); }
+ 50%{ transform:scale(1.05); background:#fff3cd; }
+ 100%{ transform:scale(1); }
+}
+ 
 /* HOVER INTERATIVO (🔥 transmissão) */
 .titulo:hover{
  transform:scale(1.03);
@@ -320,6 +326,18 @@ body{
  transition:0.2s;
 }
 
+ .match.live{
+ border-left:4px solid red;
+ box-shadow:0 0 12px rgba(255,0,0,0.3);
+ animation: liveGlow 1.2s ease-in-out infinite alternate;
+}
+
+ .match.goal{
+ animation: goalFlash 0.6s ease-in-out 3;
+ box-shadow:0 0 25px rgba(255,215,0,0.9);
+ border-left:4px solid gold;
+}
+ 
 .match:hover{
  transform:translateY(-3px);
  box-shadow:0 10px 25px rgba(0,0,0,0.15);
@@ -988,7 +1006,12 @@ function flag(name){
  };
  return `https://flagcdn.com/w40/${map[name] || 'un'}.png`;
 }
-
+function safeId(text){
+  return text
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]/g, '');
+}
 async function loadGroup(){
  const res=await fetch('groups.json');
  const data=await res.json();
@@ -1082,23 +1105,32 @@ async function loadMatches(){
   for(let j=0;j<2;j++){
    const g=groupGames[i+j];
    if(!g) continue;
+   const isLive = ['LIVE','IN_PLAY','PAUSED'].includes(g.status);
+   
+   let scoreHTML = '<span class="score-vs">VS</span>';
+   let matchClass = '';
+   
+   const s1 = g.score1 ?? g.live_score1;
+   const s2 = g.score2 ?? g.live_score2;
+   
+   if(s1 !== null && s2 !== null){
 
-   let scoreHTML='<span class="score-vs">VS</span>';
-   let matchClass='';
-
-   if(g.score1!==null && g.score2!==null){
-    if(g.score1>g.score2 || g.score2>g.score1){
-     scoreHTML=`<span class="score-win">${g.score1} x ${g.score2}</span>`;
-     matchClass='win';
-    } else {
-     scoreHTML=`<span class="score-draw">${g.score1} x ${g.score2}</span>`;
-     matchClass='draw';
-    }
+     if(s1 !== s2){
+       scoreHTML = `<span class="score-win">${s1} x ${s2}</span>`;
+       matchClass = 'win';
+     } else {
+       scoreHTML = `<span class="score-draw">${s1} x ${s2}</span>`;
+       matchClass = 'draw';
+     }
+   
    }
 
    html+=`
-   <div class="match ${matchClass}">
-    <div>${g.date} ${g.time}</div>
+   <div id="match-${safeId(g.team1)}-${safeId(g.team2)}" class="match ${matchClass} ${isLive ? 'live' : ''}">
+    <div>
+      ${g.date} ${g.time}
+      ${isLive ? '<span style="color:red; font-weight:bold; margin-left:6px;">🔴 AO VIVO</span>' : ''}
+   </div>
     <div class="vs">
      <div class="team-line">
       <img class="flag" src="${flag(g.team1)}">${g.team1}
@@ -1521,7 +1553,17 @@ if(lastScores[gameKey]){
       + s2 + " " 
       + liveGame.team2
     );
+const matchEl = document.getElementById(
+  `match-${safeId(liveGame.team1)}-${safeId(liveGame.team2)}`
+);
 
+if(matchEl){
+  matchEl.classList.add('goal');
+
+  setTimeout(()=>{
+    matchEl.classList.remove('goal');
+  }, 2000);
+}
   }
 }
   
