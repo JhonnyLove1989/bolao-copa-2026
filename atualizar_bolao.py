@@ -179,9 +179,10 @@ def calculate_points():
 
             if p["palpite1"] == real[0] and p["palpite2"] == real[1]:
                 pts += 5
-            elif ((p["palpite1"] > p["palpite2"]) == (real[0] > real[1])):
-                pts += 3
-
+            elif p.get("palpite1") is not None and p.get("palpite2") is not None:
+    if (p["palpite1"] > p["palpite2"]) == (real[0] > real[1]):
+        pts += 3
+        
         ranking[nome] = pts
 
     ranking_list = [{"name": k, "pts": v} for k, v in ranking.items()]
