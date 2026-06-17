@@ -1107,6 +1107,8 @@ async function loadMatches(){
    if(!g) continue;
    const isLive = ['LIVE','IN_PLAY','PAUSED'].includes(g.status);
    
+   const isFinished = g.status === 'FINISHED' || g.status === 'COMPLETED';
+   
    let scoreHTML = '<span class="score-vs">VS</span>';
    let matchClass = '';
    
@@ -1134,8 +1136,10 @@ async function loadMatches(){
    <div id="match-${safeId(g.team1)}-${safeId(g.team2)}" class="match ${matchClass} ${isLive ? 'live' : ''}">
     <div>
       ${g.date} ${g.time}
-      ${isLive ? '<span style="color:red; font-weight:bold; margin-left:6px;">🔴 AO VIVO</span>' : ''}
-   </div>
+      <span style="margin-left:6px; font-weight:bold;">
+        ${isLive ? '🔴 AO VIVO' : (isFinished ? '✅ FINAL' : '⏳')}
+      </span>
+    </div>
     <div class="vs">
      <div class="team-line">
       <img class="flag" src="${flag(g.team1)}">${g.team1}
