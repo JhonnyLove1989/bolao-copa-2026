@@ -2,7 +2,7 @@ name: 🏆 Bolão Copa 2026 - Atualização Automática
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/8 * * * *'
   workflow_dispatch:
 
 jobs:
