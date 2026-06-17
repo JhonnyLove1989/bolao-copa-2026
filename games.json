@@ -205,12 +205,9 @@
     "group": "K",
     "team1": "Portugal",
     "team2": "RD Congo",
-    "score1": null,
-    "score2": null,
-    "city": "Houston",
-    "live_score1": 1,
-    "live_score2": 1,
-    "status": "LIVE"
+    "score1": 1,
+    "score2": 1,
+    "city": "Houston"
   },
   {
     "date": "17/06",
