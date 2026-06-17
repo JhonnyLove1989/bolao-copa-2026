@@ -215,12 +215,9 @@
     "group": "L",
     "team1": "Inglaterra",
     "team2": "Croácia",
-    "score1": null,
-    "score2": null,
-    "city": "Dallas",
-    "live_score1": 3,
-    "live_score2": 2,
-    "status": "LIVE"
+    "score1": 4,
+    "score2": 2,
+    "city": "Dallas"
   },
   {
     "date": "17/06",
