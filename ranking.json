@@ -1,72 +1,42 @@
 [
   {
     "name": "PC",
-    "pts": 19,
-    "exact": 2,
-    "result": 3,
-    "wrong": 14
+    "pts": 22
   },
   {
     "name": "Lona",
-    "pts": 12,
-    "exact": 0,
-    "result": 4,
-    "wrong": 15
+    "pts": 15
   },
   {
     "name": "Cosman",
-    "pts": 11,
-    "exact": 1,
-    "result": 2,
-    "wrong": 16
+    "pts": 14
   },
   {
     "name": "Isac",
-    "pts": 11,
-    "exact": 1,
-    "result": 2,
-    "wrong": 16
-  },
-  {
-    "name": "Sandra",
-    "pts": 11,
-    "exact": 1,
-    "result": 2,
-    "wrong": 16
+    "pts": 14
   },
   {
     "name": "Vania",
-    "pts": 11,
-    "exact": 1,
-    "result": 2,
-    "wrong": 16
+    "pts": 14
   },
   {
     "name": "Nataniele",
-    "pts": 11,
-    "exact": 1,
-    "result": 2,
-    "wrong": 16
+    "pts": 14
   },
   {
     "name": "Candido",
-    "pts": 9,
-    "exact": 0,
-    "result": 3,
-    "wrong": 16
+    "pts": 12
   },
   {
     "name": "Eliana",
-    "pts": 9,
-    "exact": 0,
-    "result": 3,
-    "wrong": 16
+    "pts": 12
+  },
+  {
+    "name": "Sandra",
+    "pts": 11
   },
   {
     "name": "Andrey",
-    "pts": 3,
-    "exact": 0,
-    "result": 1,
-    "wrong": 18
+    "pts": 6
   }
 ]

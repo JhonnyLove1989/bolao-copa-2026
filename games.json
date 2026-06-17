@@ -7,8 +7,7 @@
     "team2": "África do Sul",
     "score1": 2,
     "score2": 0,
-    "city": "Cidade do México",
-    "status": "FINISHED"
+    "city": "Cidade do México"
   },
   {
     "date": "11/06",
@@ -26,10 +25,9 @@
     "group": "B",
     "team1": "Canadá",
     "team2": "Bósnia e Herzegovina",
-    "score1": 1,
-    "score2": 1,
-    "city": "Toronto",
-    "status": "FINISHED"
+    "score1": null,
+    "score2": null,
+    "city": "Toronto"
   },
   {
     "date": "12/06",
@@ -39,8 +37,7 @@
     "team2": "Paraguai",
     "score1": 4,
     "score2": 1,
-    "city": "Los Angeles",
-    "status": "FINISHED"
+    "city": "Los Angeles"
   },
   {
     "date": "13/06",
@@ -50,8 +47,7 @@
     "team2": "Suíça",
     "score1": 1,
     "score2": 1,
-    "city": "San Francisco",
-    "status": "FINISHED"
+    "city": "San Francisco"
   },
   {
     "date": "13/06",
@@ -61,8 +57,7 @@
     "team2": "Marrocos",
     "score1": 1,
     "score2": 1,
-    "city": "Nova York/NJ",
-    "status": "FINISHED"
+    "city": "Nova York/NJ"
   },
   {
     "date": "13/06",
@@ -72,8 +67,7 @@
     "team2": "Escócia",
     "score1": 0,
     "score2": 1,
-    "city": "Boston",
-    "status": "FINISHED"
+    "city": "Boston"
   },
   {
     "date": "14/06",
@@ -83,8 +77,7 @@
     "team2": "Turquia",
     "score1": 2,
     "score2": 0,
-    "city": "Vancouver",
-    "status": "FINISHED"
+    "city": "Vancouver"
   },
   {
     "date": "14/06",
@@ -94,8 +87,7 @@
     "team2": "Curaçao",
     "score1": 7,
     "score2": 1,
-    "city": "Houston",
-    "status": "FINISHED"
+    "city": "Houston"
   },
   {
     "date": "14/06",
@@ -105,8 +97,7 @@
     "team2": "Japão",
     "score1": 2,
     "score2": 2,
-    "city": "Dallas",
-    "status": "FINISHED"
+    "city": "Dallas"
   },
   {
     "date": "14/06",
@@ -116,8 +107,7 @@
     "team2": "Equador",
     "score1": 1,
     "score2": 0,
-    "city": "Filadélfia",
-    "status": "FINISHED"
+    "city": "Filadélfia"
   },
   {
     "date": "14/06",
@@ -127,8 +117,7 @@
     "team2": "Tunísia",
     "score1": 5,
     "score2": 1,
-    "city": "Monterrey",
-    "status": "FINISHED"
+    "city": "Monterrey"
   },
   {
     "date": "15/06",
@@ -148,8 +137,7 @@
     "team2": "Egito",
     "score1": 1,
     "score2": 1,
-    "city": "Seattle",
-    "status": "FINISHED"
+    "city": "Seattle"
   },
   {
     "date": "15/06",
@@ -159,8 +147,7 @@
     "team2": "Uruguai",
     "score1": 1,
     "score2": 1,
-    "city": "Miami",
-    "status": "FINISHED"
+    "city": "Miami"
   },
   {
     "date": "15/06",
@@ -170,8 +157,7 @@
     "team2": "Nova Zelândia",
     "score1": 2,
     "score2": 2,
-    "city": "Los Angeles",
-    "status": "FINISHED"
+    "city": "Los Angeles"
   },
   {
     "date": "16/06",
@@ -181,8 +167,7 @@
     "team2": "Senegal",
     "score1": 3,
     "score2": 1,
-    "city": "Nova York/NJ",
-    "status": "FINISHED"
+    "city": "Nova York/NJ"
   },
   {
     "date": "16/06",
@@ -192,8 +177,7 @@
     "team2": "Noruega",
     "score1": 1,
     "score2": 4,
-    "city": "Boston",
-    "status": "FINISHED"
+    "city": "Boston"
   },
   {
     "date": "16/06",
@@ -203,8 +187,7 @@
     "team2": "Argélia",
     "score1": 3,
     "score2": 0,
-    "city": "Kansas City",
-    "status": "FINISHED"
+    "city": "Kansas City"
   },
   {
     "date": "17/06",
@@ -212,8 +195,8 @@
     "group": "J",
     "team1": "Áustria",
     "team2": "Jordânia",
-    "score1": null,
-    "score2": null,
+    "score1": 3,
+    "score2": 1,
     "city": "San Francisco"
   },
   {
