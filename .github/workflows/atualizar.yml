@@ -13,40 +13,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout LIMPO
-        uses: actions/checkout@v4
-
-      - name: 🐍 Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: 📦 Instalar dependências
-        run: pip install requests
-
-      - name: 🔄 Executar script Python
-        run: python atualizar_bolao.py
-        env:
-          API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
-
-      - name: 🚀 Commit e Push SEM CONFLITO FINAL
+      - name: 📥 Clonar repositório LIMPO
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git clone https://github.com/JhonnyLove1989/bolao-copa-2026.git repo
+          cd repo
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # 🔥 REMOVE COMPLETAMENTE HISTÓRICO DE GIT (CHAVE DA SOLUÇÃO)
-          rm -rf .git
+          # Instalar Python
+          sudo apt-get update
+          sudo apt-get install -y python3 python3-pip
 
-          # 🔥 RECRIA REPOSITÓRIO LIMPO
-          git init
-          git remote add origin https://github.com/JhonnyLove1989/bolao-copa-2026.git
-          git checkout -b main
+          pip3 install requests
 
-          # ✅ ADICIONA ARQUIVOS ATUALIZADOS
+          # Rodar seu script
+          python3 atualizar_bolao.py
+
+          # Commit direto SEM merge
           git add games.json ranking.json palpites.json palpites_mm.json
+          git commit -m "🔄 Atualização automática dos resultados" || echo "Sem mudanças"
 
-          # ✅ COMMIT
-          git commit -m "🔄 Atualização automática dos resultados"
-
-          # ✅ PUSH FORÇADO (SEM MERGE / SEM CONFLITO)
+          # PUSH FORÇADO (sem histórico, sem conflito)
           git push origin main --force
