@@ -10,24 +10,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🚀 CLONAR REPO LIMPO
+      - name: 🚀 Clonar repo LIMPO (diferente do padrão)
         run: |
           git clone https://github.com/JhonnyLove1989/bolao-copa-2026.git repo
 
-      - name: 🐍 INSTALAR PYTHON
+      - name: 🐍 Instalar Python
         run: |
           sudo apt-get update
           sudo apt-get install -y python3 python3-pip
           pip3 install requests
 
-      - name: 🔄 RODAR SCRIPT
+      - name: 🔄 Rodar atualização
         run: |
           cd repo
           python3 atualizar_bolao.py
         env:
           API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
 
-      - name: 🚀 COMMIT E PUSH SEM CONFLITO
+      - name: 🚀 Commit e Push (SEM REBASE)
         run: |
           cd repo
 
@@ -36,6 +36,6 @@ jobs:
 
           git add games.json ranking.json palpites.json palpites_mm.json
 
-          git commit -m "🔄 Atualização automática dos resultados" || echo "Sem mudança"
+          git commit -m "🔄 Atualização automática dos resultados" || echo "Sem alteração"
 
           git push origin main --force
