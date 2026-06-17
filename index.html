@@ -939,6 +939,22 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15) !important;
 
 <script>
 
+ let lastScores = {};
+
+const goalSound = new Audio("https://actions.google.com/sounds/v1/sports/crowd_cheer.ogg");
+goalSound.volume = 1;
+
+function showGoalBanner(text){
+ const el = document.getElementById("goalBanner");
+
+ el.innerText = text;
+ el.style.transform = "translate(-50%,-50%) scale(1)";
+
+ setTimeout(()=>{
+  el.style.transform = "translate(-50%,-50%) scale(0)";
+ }, 2500);
+}
+ 
 // (SEU JS ORIGINAL — NÃO FOI MEXIDO)
 
 let grupoAtual='A';
@@ -1455,9 +1471,45 @@ async function loadNextMatch(){
  // 1. Procura jogo AO VIVO
  const liveGame=games.find(g=>g.status==='LIVE'||g.status==='HALFTIME');
 
- if(liveGame){
-  const f1=flag(liveGame.team1);
-  const f2=flag(liveGame.team2);
+if(liveGame){
+
+ const gameKey = liveGame.team1 + "_" + liveGame.team2;
+
+ const s1 = liveGame.live_score1 ?? liveGame.score1;
+ const s2 = liveGame.live_score2 ?? liveGame.score2;
+
+ if (lastScores[gameKey]) {
+
+  const prev = lastScores[gameKey];
+
+  if (
+   s1 !== null && s2 !== null &&
+   s1 !== undefined && s2 !== undefined &&
+   (prev.home !== s1 || prev.away !== s2)
+  ) {
+
+   if (prev.home !== undefined) {
+
+    goalSound.play();
+
+    showGoalBanner(
+     "⚽ GOOOOL! " 
+     + liveGame.team1 + " " 
+     + s1 + " x " 
+     + s2 + " " 
+     + liveGame.team2
+    );
+   }
+  }
+ }
+
+ lastScores[gameKey] = {
+  home: s1,
+  away: s2
+ };  
+  
+  const f1 = flag(liveGame.team1);
+  const f2 = flag(liveGame.team2);
   const isHT=liveGame.status==='HALFTIME';
   const statusText=isHT?'⏸️ INTERVALO':'🔴 AO VIVO';
   const minText=liveGame.minutes?` • ${liveGame.minutes}'`:'';
@@ -1479,7 +1531,7 @@ async function loadNextMatch(){
      font-size:18px;
      font-weight:900;
      animation:glowPulse 1s ease-in-out infinite alternate;
-    ">${liveGame.live_score1} x ${liveGame.live_score2}</span>
+    ">${s1} x ${s2}</span>
     <span>${liveGame.team2}</span>
     <img src="${f2}" style="width:24px;border-radius:2px;">
    </div>
@@ -1552,6 +1604,21 @@ loadGroup();
 loadMatches();	
 
 </script>
-
+<div id="goalBanner" style="
+ position:fixed;
+ top:50%;
+ left:50%;
+ transform:translate(-50%,-50%) scale(0);
+ background:#ff0000;
+ color:white;
+ font-size:40px;
+ font-weight:bold;
+ padding:30px 60px;
+ border-radius:15px;
+ z-index:9999;
+ text-align:center;
+ box-shadow:0 0 40px rgba(255,0,0,0.8);
+ transition:0.4s;
+"></div>
 </body>
 </html>
