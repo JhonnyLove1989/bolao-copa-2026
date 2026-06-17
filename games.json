@@ -203,7 +203,11 @@
     "team2": "Argélia",
     "score1": null,
     "score2": null,
-    "city": "Kansas City"
+    "city": "Kansas City",
+    "live_score1": 1,
+    "live_score2": 0,
+    "status": "LIVE",
+    "minutes": ""
   },
   {
     "date": "17/06",
