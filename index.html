@@ -984,22 +984,22 @@ async function loadGroup(){
 
   const groupGames=allGames.filter(m=>m.group===g);
 
-  groupGames.forEach(m=>{
-   if(m.score1===null || m.score2===null) return;
-
+groupGames.forEach(m=>{
+   let s1=m.score1, s2=m.score2;
+   if(s1===null && (m.status==='LIVE'||m.status==='HALFTIME')){
+    s1=m.live_score1||0; s2=m.live_score2||0;
+   }
+   if(s1===null || s2===null) return;
    const t1=group.find(t=>normalize(t.team)===normalize(m.team1));
    const t2=group.find(t=>normalize(t.team)===normalize(m.team2));
-
    if(!t1||!t2) return;
-
-   t1.gp+=m.score1; t1.gc+=m.score2;
-   t2.gp+=m.score2; t2.gc+=m.score1;
+   t1.gp+=s1; t1.gc+=s2;
+   t2.gp+=s2; t2.gc+=s1;
    t1.sg=t1.gp-t1.gc;
    t2.sg=t2.gp-t2.gc;
-
-   if(m.score1>m.score2){
+   if(s1>s2){
     t1.pts+=3; t1.v+=1; t2.d+=1;
-   } else if(m.score2>m.score1){
+   } else if(s2>s1){
     t2.pts+=3; t2.v+=1; t1.d+=1;
    } else {
     t1.pts+=1; t2.pts+=1; t1.e+=1; t2.e+=1;
@@ -1491,7 +1491,7 @@ async function loadNextMatch(){
  }
 
  // 2. Se não tem jogo ao vivo, mostra PRÓXIMO JOGO
- const next=games.find(g=>g.score1===null && g.score2===null);
+ const next=games.find(g=>g.score1===null && g.score2===null && g.status!=='LIVE' && g.status!=='HALFTIME');
 
  if(!next){
   document.querySelector('#nextMatch div:first-child').innerHTML='🏆 ENCERRADO';
@@ -1533,7 +1533,7 @@ setInterval(()=>{
  loadGroup();
  loadMatches();
  loadRanking();
-}, 60000);
+}, 30000);
 
 loadNextMatch();
 loadRanking();
