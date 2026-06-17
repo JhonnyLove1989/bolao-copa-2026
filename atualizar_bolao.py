@@ -179,7 +179,7 @@ def calculate_points():
 
             if p["palpite1"] == real[0] and p["palpite2"] == real[1]:
                 pts += 5
-            elif p.get("palpite1") is not None and p.get("palpite2") is not None:
+elif p.get("palpite1") is not None and p.get("palpite2") is not None:
     if (p["palpite1"] > p["palpite2"]) == (real[0] > real[1]):
         pts += 3
         
