@@ -13,8 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout
+      
+      - name: 📥 Checkout (SEM HISTÓRICO)
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: 🔧 Resetar repositório
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+    
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v5
