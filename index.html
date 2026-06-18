@@ -1112,13 +1112,13 @@ async function loadMatches(){
    let scoreHTML = '<span class="score-vs">VS</span>';
    let matchClass = '';
    
-   const s1 = (g.score1 !== null && g.score1 !== undefined)
-     ? g.score1
-     : (g.live_score1 !== undefined ? g.live_score1 : null);
+   const s1 = Number.isFinite(g.score1) ? g.score1
+         : Number.isFinite(g.live_score1) ? g.live_score1
+         : null;
 
-   const s2 = (g.score2 !== null && g.score2 !== undefined)
-     ? g.score2
-     : (g.live_score2 !== undefined ? g.live_score2 : null);
+   const s2 = Number.isFinite(g.score2) ? g.score2
+         : Number.isFinite(g.live_score2) ? g.live_score2
+         : null;
    
    if(s1 !== null && s2 !== null){
 
