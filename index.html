@@ -1219,6 +1219,21 @@ async function loadRanking(){
  document.getElementById('rankingBody').innerHTML=html;
 }
 
+ async function loadMenu(){
+ const res=await fetch('groups.json');
+ const data=await res.json();
+
+ let html='';
+
+ Object.keys(data).forEach(g=>{
+  html+=`<button onclick="changeGroup('${g}')">${g}</button>`;
+ });
+
+ html+=`<button onclick="showBracket()" style="background:gold;color:#111;font-weight:bold;">⚔️ Mata-Mata</button>`;
+
+ document.getElementById('menu').innerHTML=html;
+}
+ 
 function changeGroup(g){
  grupoAtual=g;
  document.getElementById('groupsContainer').style.display='grid';
