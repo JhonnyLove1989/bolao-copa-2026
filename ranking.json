@@ -1,18 +1,22 @@
 [
   {
     "name": "PC",
+    "pts": 31
+  },
+  {
+    "name": "Eliana",
     "pts": 28
   },
   {
     "name": "Cosman",
-    "pts": 23
+    "pts": 26
+  },
+  {
+    "name": "Vania",
+    "pts": 25
   },
   {
     "name": "Isac",
-    "pts": 23
-  },
-  {
-    "name": "Eliana",
     "pts": 23
   },
   {
@@ -21,10 +25,6 @@
   },
   {
     "name": "Sandra",
-    "pts": 20
-  },
-  {
-    "name": "Vania",
     "pts": 20
   },
   {

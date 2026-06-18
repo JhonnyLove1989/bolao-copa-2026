@@ -245,12 +245,9 @@
     "group": "A",
     "team1": "República Tcheca",
     "team2": "África do Sul",
-    "score1": null,
-    "score2": null,
-    "city": "Atlanta",
-    "live_score1": 1,
-    "live_score2": 1,
-    "status": "LIVE"
+    "score1": 1,
+    "score2": 1,
+    "city": "Atlanta"
   },
   {
     "date": "18/06",
