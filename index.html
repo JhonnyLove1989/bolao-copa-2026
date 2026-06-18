@@ -1035,7 +1035,7 @@ async function loadGroup(){
 
 groupGames.forEach(m=>{
    let s1=m.score1, s2=m.score2;
-   if(s1===null && (m.status==='LIVE'||m.status==='HALFTIME')){
+   if(s1 === null && m.status === 'LIVE'){
     s1=m.live_score1||0; s2=m.live_score2||0;
    }
    if(s1===null || s2===null) return;
@@ -1102,20 +1102,14 @@ async function loadMatches(){
   for(let j=0;j<2;j++){
    const g=groupGames[i+j];
    if(!g) continue;
-   const isLive = ['LIVE','IN_PLAY','PAUSED'].includes(g.status);
+   const isLive = g.status === 'LIVE';
 
 let scoreHTML = '<span class="score-vs">VS</span>';
 let matchClass = '';
 
-const s1 = Number.isFinite(g.score1) ? g.score1
-      : Number.isFinite(g.live_score1) ? g.live_score1
-      : null;
-
-const s2 = Number.isFinite(g.score2) ? g.score2
-      : Number.isFinite(g.live_score2) ? g.live_score2
-      : null;
-
-const hasScore = (s1 !== null && s2 !== null);
+const s1 = (g.live_score1 !== null && g.live_score1 !== undefined) ? g.live_score1 : g.score1;
+const s2 = (g.live_score2 !== null && g.live_score2 !== undefined) ? g.live_score2 : g.score2;
+   const hasScore = (s1 !== null && s2 !== null);
    
    if(hasScore){
     
@@ -1564,11 +1558,9 @@ async function loadNextMatch(){
 
 // 1. Procura jogos AO VIVO
 const liveGames = games.filter(g =>
- g.status === 'LIVE' ||
- g.status === 'IN_PLAY' ||
- g.status === 'PAUSED'
+ g.status === 'LIVE'
 );
-
+ 
 if(liveGames.length > 0){
 
  let html = "";
@@ -1722,9 +1714,10 @@ const next = games.find(g => {
 
 // ✅ Atualização leve (placar ao vivo)
 setInterval(()=>{
+ refreshGamesCache();   // ✅ ADICIONAR
  loadNextMatch();
 }, 30000);
-
+ 
 // ✅ Atualização completa (dados grandes)
 setInterval(()=>{
  loadGroup();
@@ -1744,6 +1737,11 @@ async function init(){
 }
 
 init();
+
+ async function refreshGamesCache(){
+  const res = await fetch('games.json');
+  gamesCache = await res.json();
+}
  
  async function openMatchPalpites(team1, team2, date){
 
