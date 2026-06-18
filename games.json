@@ -225,12 +225,9 @@
     "group": "L",
     "team1": "Gana",
     "team2": "Panamá",
-    "score1": null,
-    "score2": null,
-    "city": "Toronto",
-    "live_score1": 0,
-    "live_score2": 0,
-    "status": "LIVE"
+    "score1": 1,
+    "score2": 0,
+    "city": "Toronto"
   },
   {
     "date": "17/06",
@@ -238,8 +235,8 @@
     "group": "K",
     "team1": "Uzbequistão",
     "team2": "Colômbia",
-    "score1": null,
-    "score2": null,
+    "score1": 1,
+    "score2": 3,
     "city": "Cidade do México"
   },
   {
