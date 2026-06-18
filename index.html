@@ -1207,7 +1207,7 @@ async function loadRanking(){
     <tr class="${extraClass || ''}">
       <td>${medal || (i+1)}</td>
       <td>
-        <span class="ranking-name" onclick="openPalpites('${p.name.replace(/'/g,"\\'")}')"
+        <span class="ranking-name" onclick="openPalpites('${p.name.replace(/'/g,"\\'")}')">
           ${p.name || ''}${nameExtra || ''}
         </span>
       </td>
