@@ -1207,7 +1207,7 @@ async function loadRanking(){
     <tr class="${extraClass || ''}">
       <td>${medal || (i+1)}</td>
       <td>
-        <span class="ranking-name" onclick="openPalpites(${JSON.stringify(p.name)})"
+        <span class="ranking-name" onclick="openPalpites(${JSON.stringify(p.name)})">
           ${p.name || ''}${nameExtra || ''}
         </span>
       </td>
