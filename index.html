@@ -1148,7 +1148,7 @@ const s2 = (g.live_score2 !== null && g.live_score2 !== undefined) ? g.live_scor
 
    html+=`
    <div id="match-${safeId(g.team1)}-${safeId(g.team2)}"
-    onclick="openMatchPalpites(${JSON.stringify(g.team1)},${JSON.stringify(g.team2)},${JSON.stringify(g.date)})"
+    onclick="openMatchPalpites('${g.team1}','${g.team2}','${g.date}')"
     style="cursor:pointer;"
     class="match ${matchClass} ${isLive ? 'live' : ''}">
     <div>
@@ -1207,7 +1207,7 @@ async function loadRanking(){
     <tr class="${extraClass || ''}">
       <td>${medal || (i+1)}</td>
       <td>
-        <span class="ranking-name" onclick="openPalpites(${JSON.stringify(p.name)})">
+        <span class="ranking-name" onclick="openPalpites('${p.name.replace(/'/g, "\\'")}')"
           ${p.name || ''}${nameExtra || ''}
         </span>
       </td>
