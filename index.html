@@ -454,6 +454,29 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15) !important;
 }
 
 /* ========================= */
+/* ✅ RANKING DESTAQUE */
+/* ========================= */
+
+.top-ranking{
+ background:rgba(0,200,80,0.12) !important;
+ border-left:4px solid #00c850;
+}
+
+/* 🔴 ÚLTIMO LUGAR */
+.last-ranking{
+ background:rgba(255,0,0,0.10) !important;
+ border-left:4px solid #ff4444;
+ animation: blinkLast 1s infinite;
+}
+
+/* animação piscando */
+@keyframes blinkLast{
+ 0%{ background:rgba(255,0,0,0.05); }
+ 50%{ background:rgba(255,0,0,0.18); }
+ 100%{ background:rgba(255,0,0,0.05); }
+}
+ 
+/* ========================= */
 /* ✅ CORES NOS JOGOS */
 /* ========================= */
 .match.win{
@@ -1157,18 +1180,38 @@ async function loadRanking(){
  data.sort((a,b)=>b.pts-a.pts);
  let html='';
  data.forEach((p,i)=>{
+
   let medal = '';
   if(i === 0) medal = '🥇';
   else if(i === 1) medal = '🥈';
   else if(i === 2) medal = '🥉';
-  html+=`<tr>
-   <td>${medal || i+1}</td>
-   <td><span class="ranking-name" onclick="openPalpites('${p.name}')">${p.name}</span></td>
-   <td><b>${p.pts}</b></td>
-  </tr>`;
- });
- document.getElementById('rankingBody').innerHTML=html;
+
+  // ✅ DESTQUES
+  let extraClass = '';
+  let nameExtra = '';
+
+  if(i === 0 || i === 1){
+    extraClass = 'top-ranking';
+  }
+
+  const lastPts = data[data.length - 1].pts;
+
+if(p.pts === lastPts){
+  extraClass = 'last-ranking';
+  nameExtra = ' 🔦';
 }
+
+  html+=`
+   <tr class="${extraClass}">
+    <td>${medal || i+1}</td>
+    <td>
+      <span class="ranking-name" onclick="openPalpites('${p.name}')">
+        ${p.name}${nameExtra}
+      </span>
+    </td>
+    <td><b>${p.pts}</b></td>
+   </tr>`;
+});
 
 async function loadMenu(){
  const res=await fetch('groups.json');
