@@ -1662,13 +1662,17 @@ const next = games.find(g => {
  `;
 }
 
-// ✅ AUTO-REFRESH A CADA 60 SEGUNDOS
+// ✅ Atualização leve (placar ao vivo)
 setInterval(()=>{
  loadNextMatch();
+}, 30000);
+
+// ✅ Atualização completa (dados grandes)
+setInterval(()=>{
  loadGroup();
  loadMatches();
  loadRanking();
-}, 30000);
+}, 300000);
 
 loadNextMatch();
 loadRanking();
