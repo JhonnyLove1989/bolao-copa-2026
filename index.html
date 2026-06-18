@@ -1469,7 +1469,12 @@ function renderPalpites(){
  faseAtual.jogos.forEach(p=>{
   let ptsClass='pts-pending', ptsLabel='⏳';
 
- const finished = (p.score1 !== null && p.score2 !== null);
+ const finished = (
+  p.score1 !== null &&
+  p.score2 !== null &&
+  p.score1 !== 10 &&   // evita fake
+  p.score2 !== 10
+);
  
  if(finished){
  
@@ -1492,10 +1497,24 @@ function renderPalpites(){
   const p2=p.palpite2!==null?p.palpite2:'?';
 
   let resultIcon='⏳';
-  if(p.resultado&&p.resultado.includes('✅')) resultIcon='✅';
-  else if(p.resultado&&p.resultado.includes('🟡')) resultIcon='🟡';
-  else if(p.resultado&&p.resultado.includes('❌')) resultIcon='❌';
 
+if(finished){
+
+  if(p.score1 === p.palpite1 && p.score2 === p.palpite2){
+    resultIcon='✅';
+  }
+  else if(
+    (p.score1 > p.score2 && p.palpite1 > p.palpite2) ||
+    (p.score2 > p.score1 && p.palpite2 > p.palpite1) ||
+    (p.score1 === p.score2 && p.palpite1 === p.palpite2)
+  ){
+    resultIcon='🟡';
+  }
+  else{
+    resultIcon='❌';
+  }
+
+}
   const dateLabel = faseAtual.tipo==='grupos' ? (p.date||'') : (p.fase||'');
 
   html+=`
@@ -1732,7 +1751,6 @@ loadMatches();
  if(!encontrou){
   html += `<p>Nenhum palpite encontrado.</p>`;
  }
-
  
 function forceRefresh(){
 
