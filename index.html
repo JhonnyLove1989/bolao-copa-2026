@@ -1113,22 +1113,10 @@ const s2 = Number.isFinite(g.score2) ? g.score2
       : Number.isFinite(g.live_score2) ? g.live_score2
       : null;
 
-// ✅ COLE AQUI (IMPORTANTE!)
-const isFinished = (s1 !== null && s2 !== null) && !isLive;
+const hasScore = (s1 !== null && s2 !== null);
    
-   let scoreHTML = '<span class="score-vs">VS</span>';
-   let matchClass = '';
-   
-   const s1 = Number.isFinite(g.score1) ? g.score1
-         : Number.isFinite(g.live_score1) ? g.live_score1
-         : null;
-
-   const s2 = Number.isFinite(g.score2) ? g.score2
-         : Number.isFinite(g.live_score2) ? g.live_score2
-         : null;
-   
-   if(s1 !== null && s2 !== null){
-
+   if(hasScore){
+    
      if(s1 !== s2){
        scoreHTML = `<span class="score-win">${s1} x ${s2}</span>`;
        matchClass = 'win';
@@ -1144,7 +1132,7 @@ const isFinished = (s1 !== null && s2 !== null) && !isLive;
     <div>
       ${g.date} ${g.time}
       <span style="margin-left:6px; font-weight:bold;">
-        ${isLive ? '🔴 AO VIVO' : (isFinished ? '✅ FINAL' : '⏳')}
+        ${isLive ? '🔴 AO VIVO' : (hasScore ? '✅ FINAL' : '⏳')}
       </span>
     </div>
     <div class="vs">
