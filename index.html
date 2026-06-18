@@ -967,6 +967,8 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15) !important;
 
  let lastScores = {};
 
+ let gamesCache = [];
+
 const goalSound = new Audio("https://actions.google.com/sounds/v1/sports/crowd_cheer.ogg");
 goalSound.volume = 1;
 
@@ -1469,22 +1471,27 @@ function renderPalpites(){
  faseAtual.jogos.forEach(p=>{
   let ptsClass='pts-pending', ptsLabel='⏳';
 
+ const jogoReal = gamesCache.find(g =>
+  g.team1 === p.team1 &&
+  g.team2 === p.team2 &&
+  g.date === p.date
+);
+
  const finished = (
-  p.score1 !== null &&
-  p.score2 !== null &&
-  p.score1 !== 10 &&   // evita fake
-  p.score2 !== 10
+  jogoReal &&
+  jogoReal.score1 !== null &&
+  jogoReal.score2 !== null
 );
  
  if(finished){
  
-   if(p.score1 === p.palpite1 && p.score2 === p.palpite2){
+   if(jogoReal.score1 === p.palpite1 && jogoReal.score2 === p.palpite2){
      ptsClass='pts-5'; ptsLabel='+5';
    }
    else if(
-     (p.score1 > p.score2 && p.palpite1 > p.palpite2) ||
-     (p.score2 > p.score1 && p.palpite2 > p.palpite1) ||
-     (p.score1 === p.score2 && p.palpite1 === p.palpite2)
+     (jogoReal.score1 > jogoReal.score2 && p.palpite1 > p.palpite2) ||
+     (jogoReal.score2 > jogoReal.score1 && p.palpite2 > p.palpite1) ||
+     (jogoReal.score1 === jogoReal.score2 && p.palpite1 === p.palpite2)
    ){
      ptsClass='pts-3'; ptsLabel='+3';
    }
@@ -1500,13 +1507,13 @@ function renderPalpites(){
 
 if(finished){
 
-  if(p.score1 === p.palpite1 && p.score2 === p.palpite2){
+  if(jogoReal.score1 === p.palpite1 && jogoReal.score2 === p.palpite2){
     resultIcon='✅';
   }
   else if(
-    (p.score1 > p.score2 && p.palpite1 > p.palpite2) ||
-    (p.score2 > p.score1 && p.palpite2 > p.palpite1) ||
-    (p.score1 === p.score2 && p.palpite1 === p.palpite2)
+    (jogoReal.score1 > jogoReal.score2 && p.palpite1 > p.palpite2) ||
+    (jogoReal.score2 > jogoReal.score1 && p.palpite2 > p.palpite1) ||
+    (jogoReal.score1 === jogoReal.score2 && p.palpite1 === p.palpite2)
   ){
     resultIcon='🟡';
   }
@@ -1712,12 +1719,19 @@ setInterval(()=>{
  loadRanking();
 }, 300000);
 
-loadNextMatch();
-loadRanking();
-loadMenu();
-loadGroup();
-loadMatches();	
+async function init(){
+  const res = await fetch('games.json');
+  gamesCache = await res.json();
 
+  loadNextMatch();
+  loadRanking();
+  loadMenu();
+  loadGroup();
+  loadMatches();
+}
+
+init();
+ 
  async function openMatchPalpites(team1, team2, date){
 
  const res = await fetch('palpites.json');
@@ -1751,12 +1765,13 @@ loadMatches();
  if(!encontrou){
   html += `<p>Nenhum palpite encontrado.</p>`;
  }
- 
-function forceRefresh(){
 
+ 
  document.getElementById('modalContent').innerHTML = html;
  document.getElementById('modalOverlay').classList.add('active');
 }
+
+function forceRefresh(){
 
  loadNextMatch();
  loadGroup();
