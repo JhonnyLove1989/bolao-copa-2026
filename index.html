@@ -1148,7 +1148,7 @@ const s2 = (g.live_score2 !== null && g.live_score2 !== undefined) ? g.live_scor
 
    html+=`
    <div id="match-${safeId(g.team1)}-${safeId(g.team2)}"
-    onclick="openMatchPalpites('${g.team1}','${g.team2}','${g.date}')"
+    onclick="openMatchPalpites('${g.team1.replace(/'/g,"\\'")}','${g.team2.replace(/'/g,"\\'")}','${g.date}')"
     style="cursor:pointer;"
     class="match ${matchClass} ${isLive ? 'live' : ''}">
     <div>
