@@ -247,7 +247,10 @@
     "team2": "África do Sul",
     "score1": null,
     "score2": null,
-    "city": "Atlanta"
+    "city": "Atlanta",
+    "live_score1": 0,
+    "live_score2": 0,
+    "status": "LIVE"
   },
   {
     "date": "18/06",
