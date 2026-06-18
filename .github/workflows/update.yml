@@ -2,7 +2,7 @@ name: Atualizar jogos Copa
 
 on:
   schedule:
-    - cron: "*/15 * * * *"  # a cada 15 min
+    - cron: "*/8 * * * *"  # a cada 15 min
   workflow_dispatch:       # botão manual
 
 jobs:
