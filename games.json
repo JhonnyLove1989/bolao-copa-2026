@@ -267,7 +267,10 @@
     "team2": "Catar",
     "score1": null,
     "score2": null,
-    "city": "Vancouver"
+    "city": "Vancouver",
+    "live_score1": 2,
+    "live_score2": 0,
+    "status": "LIVE"
   },
   {
     "date": "18/06",
