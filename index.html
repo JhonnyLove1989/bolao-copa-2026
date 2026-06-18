@@ -1801,6 +1801,93 @@ init();
  const res = await fetch('palpites.json');
  const data = await res.json();
 
+ const jogoReal = gamesCache.find(g =>
+  g.team1 === team1 &&
+  g.team2 === team2 &&
+  g.date === date
+ );
+
+ let ranking = [];
+
+ Object.keys(data).forEach(nome=>{
+  const jogos = data[nome];
+
+  jogos.forEach(p=>{
+    if(p.team1 === team1 && p.team2 === team2){
+
+      let pts = 0;
+      let icon = '⏳';
+
+      if(jogoReal && jogoReal.score1 !== null && jogoReal.score2 !== null){
+
+        if(jogoReal.score1 === p.palpite1 && jogoReal.score2 === p.palpite2){
+          pts = 5;
+          icon = '✅';
+        }
+        else if(
+          (jogoReal.score1 > jogoReal.score2 && p.palpite1 > p.palpite2) ||
+          (jogoReal.score2 > jogoReal.score1 && p.palpite2 > p.palpite1) ||
+          (jogoReal.score1 === jogoReal.score2 && p.palpite1 === p.palpite2)
+        ){
+          pts = 3;
+          icon = '🟡';
+        }
+        else{
+          pts = 0;
+          icon = '❌';
+        }
+
+      }
+
+      ranking.push({
+        nome,
+        p1: p.palpite1 ?? '?',
+        p2: p.palpite2 ?? '?',
+        pts,
+        icon
+      });
+    }
+  });
+ });
+
+ // ✅ ordena por pontuação
+ ranking.sort((a,b)=>b.pts-a.pts);
+
+ let html = `<div class="modal-title">🏆 Ranking do Jogo</div>`;
+ html += `<div class="modal-subtitle">${team1} x ${team2} — ${date}</div>`;
+
+ ranking.forEach((p,i)=>{
+
+  let medal = '';
+  if(i === 0) medal = '🥇';
+  else if(i === 1) medal = '🥈';
+  else if(i === 2) medal = '🥉';
+  else medal = `${i+1}º`;
+
+  html += `
+  <div class="palpite-row">
+    <div style="width:40px;">${medal}</div>
+    <div style="width:120px;font-weight:bold;">${p.nome}</div>
+    <div class="palpite-score">${p.p1} x ${p.p2}</div>
+    <div style="width:40px;text-align:center;">${p.icon}</div>
+    <div class="palpite-pts ${p.pts === 5 ? 'pts-5' : p.pts === 3 ? 'pts-3' : 'pts-0'}">
+      +${p.pts}
+    </div>
+  </div>
+  `;
+ });
+
+ if(ranking.length === 0){
+  html += `<p>Nenhum palpite encontrado.</p>`;
+ }
+
+ document.getElementById('modalContent').innerHTML = html;
+ document.getElementById('modalOverlay').classList.add('active');
+}
+
+ const res = await fetch('palpites.json');
+ const data = await res.json();
+
  let html = `<div class="modal-title">📊 Palpites do Jogo</div>`;
  html += `<div class="modal-subtitle">${team1} x ${team2} — ${date}</div>`;
 
