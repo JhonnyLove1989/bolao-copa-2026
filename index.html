@@ -1665,14 +1665,27 @@ lastScores[gameKey] = currentScore;
 hoje.setHours(0,0,0,0);
 
 const next = games.find(g => {
-  if (g.score1 !== null || g.score2 !== null) return false;
 
-  const [dia, mes] = g.date.split('/');
-  const dataJogo = new Date(2026, parseInt(mes) - 1, parseInt(dia));
+ if (g.score1 !== null || g.score2 !== null) return false;
 
-  return dataJogo >= hoje;
+ const agora = new Date();
+
+ const [dia, mes] = g.date.split('/');
+ const [hora, min] = g.time.split(':');
+
+ const dataJogo = new Date(
+  2026,
+  parseInt(mes) - 1,
+  parseInt(dia),
+  parseInt(hora),
+  parseInt(min)
+ );
+
+ const isStarted = agora >= dataJogo;
+ 
+ return !isStarted; // 
 });
-
+ 
  if(!next){
   document.querySelector('#nextMatch div:first-child').innerHTML='🏆 ENCERRADO';
   document.getElementById('nextMatchContent').innerHTML='Todos os jogos finalizados!';
