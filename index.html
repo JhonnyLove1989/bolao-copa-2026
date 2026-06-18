@@ -1177,51 +1177,46 @@ const s2 = (g.live_score2 !== null && g.live_score2 !== undefined) ? g.live_scor
 async function loadRanking(){
  const res=await fetch('ranking.json');
  const data=await res.json();
+
  data.sort((a,b)=>b.pts-a.pts);
+
  let html='';
+
  data.forEach((p,i)=>{
 
-  let medal = '';
-  if(i === 0) medal = '🥇';
-  else if(i === 1) medal = '🥈';
-  else if(i === 2) medal = '🥉';
+  let medal='';
+  if(i===0) medal='🥇';
+  else if(i===1) medal='🥈';
+  else if(i===2) medal='🥉';
 
-  // ✅ DESTQUES
-  let extraClass = '';
-  let nameExtra = '';
+  let extraClass='';
+  let nameExtra='';
 
-  if(i === 0 || i === 1){
-    extraClass = 'top-ranking';
+  // ✅ TOP 2
+  if(i===0 || i===1){
+    extraClass='top-ranking';
   }
 
-  const lastPts = data[data.length - 1].pts;
+  // ✅ ÚLTIMO
+  if(i===data.length-1){
+    extraClass='last-ranking';
+    nameExtra=' 🔦';
+  }
 
-if(p.pts === lastPts){
-  extraClass = 'last-ranking';
-  nameExtra = ' 🔦';
-}
-
-  html+=`
-   <tr class="${extraClass}">
-    <td>${medal || i+1}</td>
-    <td>
-      <span class="ranking-name" onclick="openPalpites('${p.name}')">
-        ${p.name}${nameExtra}
-      </span>
-    </td>
-    <td><b>${p.pts}</b></td>
-   </tr>`;
-});
-
-async function loadMenu(){
- const res=await fetch('groups.json');
- const data=await res.json();
- let html='';
- Object.keys(data).forEach(g=>{
-  html+=`<button onclick="changeGroup('${g}')">${g}</button>`;
+  html += `
+    <tr class="${extraClass || ''}">
+      <td>${medal || (i+1)}</td>
+      <td>
+        <span class="ranking-name" onclick="openPalpites('${p.name}')">
+          ${p.name || ''}${nameExtra || ''}
+        </span>
+      </td>
+      <td><b>${p.pts ?? 0}</b></td>
+    </tr>
+  `;
  });
- html+=`<button onclick="showBracket()" style="background:gold;color:#111;font-weight:bold;">⚔️ Mata-Mata</button>`;
- document.getElementById('menu').innerHTML=html;
+
+ document.getElementById('rankingBody').innerHTML=html;
 }
 
 function changeGroup(g){
