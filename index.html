@@ -1699,8 +1699,6 @@ loadMenu();
 loadGroup();
 loadMatches();	
 
-function forceRefresh(){
-
  async function openMatchPalpites(team1, team2, date){
 
  const res = await fetch('palpites.json');
@@ -1734,6 +1732,9 @@ function forceRefresh(){
  if(!encontrou){
   html += `<p>Nenhum palpite encontrado.</p>`;
  }
+
+ 
+function forceRefresh(){
 
  document.getElementById('modalContent').innerHTML = html;
  document.getElementById('modalOverlay').classList.add('active');
