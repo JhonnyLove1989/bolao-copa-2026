@@ -1500,9 +1500,33 @@ function renderPalpites(){
 
  // Calcula total GERAL (todas as fases)
  let totalGeral = 0;
- todasFases.forEach(f=>{
-  f.jogos.forEach(p=>{ totalGeral += (p.pontos||0); });
- });
+
+todasFases.forEach(f=>{
+  f.jogos.forEach(p=>{
+
+    const jogoReal = gamesCache.find(g =>
+      g.team1 === p.team1 &&
+      g.team2 === p.team2 &&
+      g.date === p.date
+    );
+
+    if(jogoReal && jogoReal.score1 !== null && jogoReal.score2 !== null){
+
+      if(jogoReal.score1 === p.palpite1 && jogoReal.score2 === p.palpite2){
+        totalGeral += 5;
+      }
+      else if(
+        (jogoReal.score1 > jogoReal.score2 && p.palpite1 > p.palpite2) ||
+        (jogoReal.score2 > jogoReal.score1 && p.palpite2 > p.palpite1) ||
+        (jogoReal.score1 === jogoReal.score2 && p.palpite1 === p.palpite2)
+      ){
+        totalGeral += 3;
+      }
+
+    }
+
+  });
+});
 
  let html = `<div class="modal-title">📋 Palpites — ${nome}</div>`;
 
