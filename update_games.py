@@ -25,49 +25,44 @@ if response.status_code != 200:
 data = response.json()
 
 games = []
+*****for m in data.get("matches", []):
 
-for m in data.get("matches", []):
+    status_api = m["status"]
 
-    try:
-        team1 = m["homeTeam"]["name"]
-        team2 = m["awayTeam"]["name"]
+    # ✅ NORMALIZA STATUS
+    if status_api in ["IN_PLAY", "PAUSED"]:
+        status = "LIVE"
+    else:
+        status = status_api
 
-        # ✅ conversão de data UTC → formato DD/MM
-        dt = datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00"))
+    # ✅ PEGA SCORE
+    score1 = m["score"]["fullTime"]["home"]
+    score2 = m["score"]["fullTime"]["away"]
 
-        date_str = dt.strftime("%d/%m")
-        time_str = dt.strftime("%H:%M")
+    game = {
+        "date": m["utcDate"][8:10] + "/" + m["utcDate"][5:7],
+        "time": m["utcDate"][11:16],
+        "team1": translate(m["homeTeam"]["name"]),
+        "team2": translate(m["awayTeam"]["name"]),
+        "score1": score1,
+        "score2": score2,
 
-        score_full = m["score"]["fullTime"]
-        score_live = m["score"]["regularTime"]
+        # ✅ ESSENCIAL
+        "live_score1": score1,
+        "live_score2": score2,
 
-        game = {
-            "date": date_str,
-            "time": time_str,
-            "team1": team1,
-            "team2": team2,
-            "score1": score_full["home"],
-            "score2": score_full["away"],
-            "live_score1": score_live["home"],
-            "live_score2": score_live["away"],
-            "status": m["status"],
+        "status": status,
+        "group": m.get("group", "A"),  # ajuste se necessário
+        "city": ""
+    }
 
-            # ✅ evita erro se não tiver grupo
-            "group": m.get("group", ""),
-
-            # ✅ opcional (não vem sempre)
-            "city": (
-                m.get("area", {}).get("name", "")
-            )
-        }
-
-        games.append(game)
-
+    games.append(game)
+    
     except Exception as e:
         print("Erro ao processar jogo:", e)
 
 # ✅ salva JSON
 with open("games.json", "w", encoding="utf-8") as f:
-    json.dump(games, f, indent=2, ensure_ascii=False)
+    json.dump(games, f, ensure_ascii=False, indent=2)
 
 print("games.json atualizado ✅")
