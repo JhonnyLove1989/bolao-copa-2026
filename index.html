@@ -1233,7 +1233,8 @@ async function loadRanking(){
 if(jogadorAtivo){
   selectJogador(jogadorAtivo);
 }
-
+}
+ 
 async function loadMenu(){
  const res=await fetch('groups.json');
  const data=await res.json();
