@@ -1107,20 +1107,12 @@ async function loadMatches(){
 let scoreHTML = '<span class="score-vs">VS</span>';
 let matchClass = '';
 
-const s1 = g.score1 != null ? Number(g.score1)
-      : g.live_score1 != null ? Number(g.live_score1)
-      : null;
-
-const s2 = g.score2 != null ? Number(g.score2)
-      : g.live_score2 != null ? Number(g.live_score2)
-      : null;
+const s1 = parseInt(g.score1 ?? g.live_score1);
+const s2 = parseInt(g.score2 ?? g.live_score2);
    
 const finishedByStatus = g.status === 'FINISHED';
 
-const hasScore = (
-  (s1 != null && !isNaN(s1) && s2 != null && !isNaN(s2))
-  || finishedByStatus
-);
+const hasScore = (!isNaN(s1) && !isNaN(s2));
    
    if(hasScore){
     
