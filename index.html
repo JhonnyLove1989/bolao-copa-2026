@@ -1692,7 +1692,7 @@ todasFases.forEach(f=>{
 
   html+=`
   <div class="palpite-row">
-   <div class="palpite-date" style="font-size:10px;">${faseAtual.tipo==='grupos' ? (p.date||'') : (p.fase||'')}</div>
+   <div class="palpite-date" style="font-size:10px;">${faseAtual.tipo === 'grupos' ? (p.date || '') : (p.fase || '')}</div>
    <div class="palpite-teams">
     <img class="flag" src="${flag(p.team1)}">${p.team1}
    </div>
