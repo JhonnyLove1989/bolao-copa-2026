@@ -1729,9 +1729,20 @@ const finished = (
  if(finished){
 
   if(s1 === p.palpite1 && s2 === p.palpite2){
-    ptsClass='pts-5';
-    ptsLabel='+5';
+    resultIcon='✅';
   }
+  else if(
+    (s1 > s2 && p.palpite1 > p.palpite2) ||
+    (s2 > s1 && p.palpite2 > p.palpite1) ||
+    (s1 === s2 && p.palpite1 === p.palpite2)
+  ){
+    resultIcon='🟡';
+  }
+  else{
+    resultIcon='❌';
+  }
+
+}
   else if(
     (s1 > s2 && p.palpite1 > p.palpite2) ||
     (s2 > s1 && p.palpite2 > p.palpite1) ||
