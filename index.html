@@ -869,6 +869,28 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15) !important;
  }
 }
 
+ /* 🏆 TOP 2 */
+.rank-top1{
+ background:rgba(0,200,80,0.15) !important;
+ border-left:4px solid #00c850;
+ font-weight:bold;
+}
+
+.rank-top2{
+ background:rgba(0,200,80,0.08) !important;
+ border-left:4px solid #00c850;
+}
+
+/* 🔥 LANTERNA */
+.rank-last{
+ background:rgba(255,0,0,0.10) !important;
+ border-left:4px solid #ff2d2d;
+}
+
+.lanterna{
+ margin-left:5px;
+}
+ 
 </style>
 </head>
 
@@ -1160,16 +1182,38 @@ async function loadRanking(){
  data.sort((a,b)=>b.pts-a.pts);
  let html='';
  data.forEach((p,i)=>{
+
   let medal = '';
   if(i === 0) medal = '🥇';
   else if(i === 1) medal = '🥈';
   else if(i === 2) medal = '🥉';
-  html+=`<tr>
+
+  let rowClass = '';
+
+  // 🏆 TOP 1
+  if(i === 0){
+    rowClass = 'rank-top1';
+  }
+  // 🥈 TOP 2
+  else if(i === 1){
+    rowClass = 'rank-top2';
+  }
+  // 🔥 ÚLTIMO
+  else if(i === data.length - 1){
+    rowClass = 'rank-last';
+  }
+
+  html+=`<tr class="${rowClass}">
    <td>${medal || i+1}</td>
-   <td><span class="ranking-name" onclick="openPalpites('${p.name}')">${p.name}</span></td>
+   <td>
+     <span class="ranking-name" onclick="openPalpites('${p.name}')">
+       ${p.name}
+       ${i === data.length-1 ? '<span class="lanterna">🏮</span>' : ''}
+     </span>
+   </td>
    <td><b>${p.pts}</b></td>
   </tr>`;
- });
+});
  document.getElementById('rankingBody').innerHTML=html;
 }
 
