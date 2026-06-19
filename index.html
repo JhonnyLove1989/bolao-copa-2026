@@ -2078,14 +2078,27 @@ init();
 
   // ✅ API tem prioridade
   if(live){
+
+  // ✅ SE JOGO TERMINOU → grava no score oficial
+  if(live.status === 'FINISHED'){
     return {
       ...g,
-      live_score1: live.live_score1,
-      live_score2: live.live_score2,
-      status: live.status
+      score1: live.live_score1,
+      score2: live.live_score2,
+      live_score1: null,
+      live_score2: null,
+      status: 'FINISHED'
     };
   }
 
+  // ✅ SE ESTÁ AO VIVO → usa live_score
+  return {
+    ...g,
+    live_score1: live.live_score1,
+    live_score2: live.live_score2,
+    status: live.status
+  };
+}
   const agora = new Date();
 
   // ✅ fallback FINAL (ÚNICO lugar correto)
