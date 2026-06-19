@@ -1813,21 +1813,16 @@ lastScores[gameKey] = currentScore;
 
 <span>${liveGame.team2}</span>
 
-<span style="
- font-size:12px;
- font-weight:bold;
- color:#ff0000;
- margin-left:8px;
-">
- ${minuto}
-</span>
     <img src="${f2}" style="width:24px;">
    </div>
   </div>
   `;
  });
 
- document.querySelector('#nextMatch div:first-child').innerHTML = '🔴 AO VIVO';
+ const primeiroMinuto = getMatchMinute(liveGames[0]);
+
+document.querySelector('#nextMatch div:first-child').innerHTML =
+  '🔴 AO VIVO' + (primeiroMinuto ? ' • ' + primeiroMinuto : '');
  document.querySelector('#nextMatch div:first-child').style.color = '#ff0000';
  
  document.getElementById('nextMatch').style.borderTop = '3px solid #ff0000';
