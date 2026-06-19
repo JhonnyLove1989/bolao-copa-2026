@@ -1802,16 +1802,6 @@ lastScores[gameKey] = currentScore;
     <span>${liveGame.team1}</span>
 
     <span style="
- background:#ff0000;
- color:white;
- padding:4px 10px;
- border-radius:8px;
- font-weight:800;
-">
- ${s1} x ${s2}
-</span>
-
-<span style="
  font-size:12px;
  font-weight:bold;
  color:#ff0000;
@@ -1827,7 +1817,7 @@ lastScores[gameKey] = currentScore;
   `;
  });
 
- document.querySelector('#nextMatch div:first-child').innerHTML = '🔴 AO VIVO • ' + minuto;
+ document.querySelector('#nextMatch div:first-child').innerHTML = '🔴 AO VIVO';
  document.querySelector('#nextMatch div:first-child').style.color = '#ff0000';
  
  document.getElementById('nextMatch').style.borderTop = '3px solid #ff0000';
@@ -1922,7 +1912,6 @@ async function init(){
 
   await updateLiveHybrid(); // ✅ CORRETO
 
-  loadNextMatch();
   loadNextMatch();
   loadRanking();
   loadMenu();
