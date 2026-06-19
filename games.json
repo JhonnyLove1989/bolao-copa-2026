@@ -288,7 +288,7 @@
     "score1": null,
     "score2": null,
     "city": "Seattle",
-    "live_score1": 0,
+    "live_score1": 1,
     "live_score2": 0,
     "status": "LIVE"
   },
