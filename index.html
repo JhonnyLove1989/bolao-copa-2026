@@ -1822,15 +1822,8 @@ const next = games.find(g => {
 setInterval(async ()=>{
 
  try{
-   const res = await fetch('games.json');
-   const baseGames = await res.json();
-
-   const hasLive = baseGames.some(g => g.status === 'LIVE');
-
-   if(hasLive){
-     updateLiveHybrid();
-   }
-
+   await updateLiveHybrid(); // ✅ SEM CONDIÇÃO
+  
  }catch(e){
    console.log("Erro checando live");
  }
@@ -1847,6 +1840,8 @@ setInterval(()=>{
 async function init(){
   const res = await fetch('games.json');
   gamesCache = await res.json();
+
+  wait updateLiveHybrid(); // 🔥 ADICIONAR AQUI
 
   loadNextMatch();
   loadRanking();
