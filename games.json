@@ -265,12 +265,9 @@
     "group": "B",
     "team1": "Canadá",
     "team2": "Catar",
-    "score1": null,
-    "score2": null,
-    "city": "Vancouver",
-    "live_score1": 6,
-    "live_score2": 0,
-    "status": "LIVE"
+    "score1": 6,
+    "score2": 0,
+    "city": "Vancouver"
   },
   {
     "date": "18/06",
