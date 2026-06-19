@@ -1091,8 +1091,8 @@ groupGames.forEach(m=>{
 }
 
 async function loadMatches(){
- const res=await fetch('games.json');
- const games=await res.json();
+ const games = gamesCache;
+ 
  const groupGames = games.filter(g => g.group === grupoAtual);
 
  let html='';
