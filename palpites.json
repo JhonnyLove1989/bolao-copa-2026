@@ -5901,8 +5901,8 @@
       "group": "Grupo H",
       "team1": "Espanha",
       "team2": "Cabo Verde",
-      "palpite1": null,
-      "palpite2": null,
+      "palpite1": 10.0,
+      "palpite2": 9.0,
       "resultado": "❌ Errou",
       "pontos": 0
     },
@@ -5911,8 +5911,8 @@
       "group": "Grupo G",
       "team1": "Bélgica",
       "team2": "Egito",
-      "palpite1": null,
-      "palpite2": null,
+      "palpite1": 10.0,
+      "palpite2": 10.0,
       "resultado": "❌ Errou",
       "pontos": 0
     },
@@ -5921,8 +5921,8 @@
       "group": "Grupo H",
       "team1": "Arábia Saudita",
       "team2": "Uruguai",
-      "palpite1": null,
-      "palpite2": null,
+      "palpite1": 10.0,
+      "palpite2": 9.0,
       "resultado": "❌ Errou",
       "pontos": 0
     },
@@ -5931,8 +5931,8 @@
       "group": "Grupo G",
       "team1": "Irã",
       "team2": "Nova Zelândia",
-      "palpite1": null,
-      "palpite2": null,
+      "palpite1": 10.0,
+      "palpite2": 9.0,
       "resultado": "❌ Errou",
       "pontos": 0
     },
