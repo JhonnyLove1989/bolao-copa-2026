@@ -1216,7 +1216,7 @@ async function loadRanking(){
     rowClass = 'rank-last';
   }
 
-  html+=`<tr class="${rowClass}">
+  html+=`<tr class="${rowClass}" data-nome="${p.name}">
    <td>${medal || i+1}</td>
    <td>
      <span class="ranking-name" onclick="selectJogador('${p.name}'); openPalpites('${p.name}')">
@@ -1960,7 +1960,7 @@ resultados.forEach((r, i)=>{
   rows.forEach(row=>{
     row.classList.remove("ranking-active");
 
-    if(row.innerText.includes(nome)){
+    if(row.dataset.nome === nome){
       row.classList.add("ranking-active");
     }
   });
