@@ -285,12 +285,9 @@
     "group": "D",
     "team1": "EUA",
     "team2": "Austrália",
-    "score1": null,
-    "score2": null,
-    "city": "Seattle",
-    "live_score1": 2,
-    "live_score2": 0,
-    "status": "LIVE"
+    "score1": 2,
+    "score2": 0,
+    "city": "Seattle"
   },
   {
     "date": "19/06",
