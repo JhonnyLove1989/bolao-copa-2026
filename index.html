@@ -893,12 +893,13 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15) !important;
  
 /* ✅ RANKING INTERATIVO */
 .ranking-active{
- background:rgba(230,0,35,0.08) !important;
- border-left:4px solid var(--vermelho-claro);
- transform:scale(1.02);
+ background:rgba(230,0,35,0.15) !important;
+ border-left:6px solid var(--vermelho-claro);
+ transform:scale(1.05);
  transition:0.2s;
+ box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
-
+ 
 .ranking-active td{
  font-weight:bold;
 }
@@ -1217,7 +1218,7 @@ async function loadRanking(){
     rowClass = 'rank-last';
   }
 
-  html+=`<tr class="${rowClass}">
+  html+=`<tr class="${rowClass}" data-nome="${p.name}">
    <td>${medal || i+1}</td>
    <td>
      <span class="ranking-name" onclick="selectJogador('${p.name}'); openPalpites('${p.name}')">
@@ -1229,9 +1230,10 @@ async function loadRanking(){
   </tr>`;
 });
  document.getElementById('rankingBody').innerHTML=html;
- // ✅ reaplica seleção após reload
+
+// ✅ reaplica seleção corretamente
 if(jogadorAtivo){
-  selectJogador(jogadorAtivo);
+  atualizarSelecaoRanking();
 }
 }
  
@@ -1960,18 +1962,24 @@ resultados.forEach((r, i)=>{
 
   jogadorAtivo = nome;
 
+  atualizarSelecaoRanking();
+
+}
+
+function atualizarSelecaoRanking(){
+
   const rows = document.querySelectorAll("#rankingBody tr");
 
   rows.forEach(row=>{
     row.classList.remove("ranking-active");
 
-    if(row.innerText.includes(nome)){
+    if(row.dataset.nome === jogadorAtivo){
       row.classList.add("ranking-active");
     }
   });
 
 }
-
+ 
 function forceRefresh(){
 
  loadNextMatch();
