@@ -1674,6 +1674,9 @@ todasFases.forEach(f=>{
  // JOGOS DA FASE ATUAL
  faseAtual.jogos.forEach(p=>{
 
+  let ptsClass='pts-pending', ptsLabel='⏳';
+  let resultIcon='⏳';
+
   if(
   p.palpite1 === null ||
   p.palpite2 === null ||
@@ -1723,10 +1726,7 @@ const finished = (
   s2 !== null &&
   hasValidPalpite
 );
-
-  let ptsClass='pts-pending', ptsLabel='⏳';
-let resultIcon='⏳';
-
+  
 if(finished){
 
   if(s1 === p.palpite1 && s2 === p.palpite2){
