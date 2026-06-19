@@ -352,15 +352,10 @@ body{
 .team-line{
  display:flex;
  align-items:center;
- gap:6px;
+ gap:8px;
  width:40%;
- font-size:14px; /* um pouco menor no geral */
+ font-size:16px;
  font-weight:600;
-
- /* ✅ CORREÇÃO MOBILE */
- white-space:nowrap;
- overflow:hidden;
- text-overflow:ellipsis;
 }
  
 .team-line:last-child{
@@ -801,13 +796,17 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15) !important;
  }
 
  .team-line{
-  font-size:13px !important;
-  width:38% !important;
- }
+ font-size:13px !important;
+ width:38% !important;
 
- .score{
-  font-size:18px !important;
- }
+ white-space:nowrap;
+ overflow:hidden;
+ text-overflow:ellipsis;
+}
+
+.score{
+ width:24% !important;
+}
 
  .flag{
   width:22px !important;
