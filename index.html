@@ -1991,7 +1991,51 @@ const live = liveGames.find(l =>
         status: live.status
       };
     }
+const agora = new Date();
 
+const merged = baseGames.map(g => {
+
+  const normalize = s =>
+    s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+
+  const live = liveGames.find(l =>
+    normalize(l.team1).includes(normalize(g.team1)) &&
+    normalize(l.team2).includes(normalize(g.team2))
+  );
+
+  // ✅ SE ACHAR NA API
+  if(live){
+    return {
+      ...g,
+      live_score1: live.live_score1,
+      live_score2: live.live_score2,
+      status: live.status
+    };
+  }
+
+  // ✅ 👉 COLE AQUI (fallback de FINAL)
+  if(g.date && g.time){
+
+    const [dia, mes] = g.date.split('/');
+    const [hora, min] = g.time.split(':');
+
+    const dataJogo = new Date(
+      2026,
+      parseInt(mes) - 1,
+      parseInt(dia),
+      parseInt(hora),
+      parseInt(min)
+    );
+
+    const diffMin = (agora - dataJogo) / 60000;
+
+    if(diffMin > 105){
+      return {
+        ...g,
+        status: 'FINISHED'
+      };
+    }
+  }
     return g;
   });
 
