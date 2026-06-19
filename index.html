@@ -1115,7 +1115,12 @@ const s2 = g.score2 != null ? Number(g.score2)
       : g.live_score2 != null ? Number(g.live_score2)
       : null;
    
-const hasScore = (s1 !== null && s2 !== null);
+const finishedByStatus = g.status === 'FINISHED';
+
+const hasScore = (
+  (s1 != null && !isNaN(s1) && s2 != null && !isNaN(s2))
+  || finishedByStatus
+);
    
    if(hasScore){
     
@@ -1137,7 +1142,7 @@ const hasScore = (s1 !== null && s2 !== null);
     <div>
       ${g.date} ${g.time}
       <span style="margin-left:6px; font-weight:bold;">
-        ${isLive ? '🔴 AO VIVO' : (hasScore ? '✅ FINAL' : '⏳')}
+        ${isLive ? '🔴 AO VIVO' : (g.status === 'FINISHED' || hasScore ? '✅ FINAL' : '⏳')}
       </span>
     </div>
     <div class="vs">
