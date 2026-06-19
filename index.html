@@ -357,7 +357,7 @@ body{
  font-size:16px;
  font-weight:600;
 }
- 
+
 .team-line:last-child{
  justify-content:flex-end;
 }
@@ -453,29 +453,6 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15) !important;
  border-left:4px solid #00c850;
 }
 
-/* ========================= */
-/* ✅ RANKING DESTAQUE */
-/* ========================= */
-
-.top-ranking{
- background:rgba(0,200,80,0.12) !important;
- border-left:4px solid #00c850;
-}
-
-/* 🔴 ÚLTIMO LUGAR */
-.last-ranking{
- background:rgba(255,0,0,0.10) !important;
- border-left:4px solid #ff4444;
- animation: blinkLast 1s infinite;
-}
-
-/* animação piscando */
-@keyframes blinkLast{
- 0%{ background:rgba(255,0,0,0.05); }
- 50%{ background:rgba(255,0,0,0.18); }
- 100%{ background:rgba(255,0,0,0.05); }
-}
- 
 /* ========================= */
 /* ✅ CORES NOS JOGOS */
 /* ========================= */
@@ -796,17 +773,13 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15) !important;
  }
 
  .team-line{
- font-size:13px !important;
- width:38% !important;
+  font-size:13px !important;
+  width:38% !important;
+ }
 
- white-space:nowrap;
- overflow:hidden;
- text-overflow:ellipsis;
-}
-
-.score{
- width:24% !important;
-}
+ .score{
+  font-size:18px !important;
+ }
 
  .flag{
   width:22px !important;
@@ -980,7 +953,7 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15) !important;
 <div class="card">✅<br>Placar Exato<br><b style="color:#00ff88;">5 pts</b></div>
 <div class="card">🟡<br>Resultado<br><b style="color:#ffd700;">3 pts</b></div>
 <div class="card">❌<br>Erro<br><b style="color:#ff2d2d;">0 pts</b></div>
-<div class="card">🎯<br>Máx<br><b style="color:#00bfff;">300</b></div>
+<div class="card">🎯<br>Máx<br><b style="color:#00bfff;">360</b></div>
 </div>
 
 <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
@@ -995,8 +968,6 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15) !important;
  let lastScores = {};
 
  let gamesCache = [];
-
- let lastRankingState = {}; //
 
 const goalSound = new Audio("https://actions.google.com/sounds/v1/sports/crowd_cheer.ogg");
 goalSound.volume = 1;
@@ -1015,46 +986,6 @@ function showGoalBanner(text){
 // (SEU JS ORIGINAL — NÃO FOI MEXIDO)
 
 let grupoAtual='A';
-
- function getMatchMinute(game){
-
- if(!game.date || !game.time) return '';
-
- const agora = new Date();
-
- const [dia, mes] = game.date.split('/');
- const [hora, min] = game.time.split(':');
-
- const inicio = new Date(
-   2026,
-   parseInt(mes) - 1,
-   parseInt(dia),
-   parseInt(hora),
-   parseInt(min)
- );
-
- const diffMin = Math.floor((agora - inicio) / 60000);
-
- if(diffMin < 0) return '';
-
- // ⏱ 1º tempo
- if(diffMin <= 45){
-   return `${diffMin}'`;
- }
-
- // ⏸ Intervalo
- if(diffMin > 45 && diffMin <= 60){
-   return 'Intervalo';
- }
-
- // ⏱ 2º tempo
- if(diffMin > 60 && diffMin <= 105){
-   return `${diffMin - 15}'`;
- }
-
- // 🏁 Final
- return null;
-}
 
 function flag(name){
  const map={
@@ -1082,7 +1013,8 @@ async function loadGroup(){
  const res=await fetch('groups.json');
  const data=await res.json();
 
- const allGames = gamesCache;
+ const resGames=await fetch('games.json');
+ const allGames=await resGames.json();
 
  const keys=Object.keys(data);
  const index=keys.indexOf(grupoAtual);
@@ -1103,7 +1035,7 @@ async function loadGroup(){
 
 groupGames.forEach(m=>{
    let s1=m.score1, s2=m.score2;
-   if(s1 === null && m.status === 'LIVE'){
+   if(s1===null && (m.status==='LIVE'||m.status==='HALFTIME')){
     s1=m.live_score1||0; s2=m.live_score2||0;
    }
    if(s1===null || s2===null) return;
@@ -1159,31 +1091,34 @@ groupGames.forEach(m=>{
 }
 
 async function loadMatches(){
-
- const games = gamesCache;
-
- const groupGames = games.filter(g => g.group === grupoAtual);
+ const res=await fetch('games.json');
+ const games=await res.json();
+ const groupGames=games.filter(g=>g.group===grupoAtual);
 
  let html='';
-
  for(let i=0;i<groupGames.length;i+=2){
   html+=`<div class="round">`;
 
   for(let j=0;j<2;j++){
    const g=groupGames[i+j];
    if(!g) continue;
+   const isLive = ['LIVE','IN_PLAY','PAUSED'].includes(g.status);
 
-   const isLive = g.status === 'LIVE';
+let scoreHTML = '<span class="score-vs">VS</span>';
+let matchClass = '';
 
-   let scoreHTML = '<span class="score-vs">VS</span>';
-   let matchClass = '';
+const s1 = Number.isFinite(g.score1) ? g.score1
+      : Number.isFinite(g.live_score1) ? g.live_score1
+      : null;
 
-   const s1 = (g.live_score1 !== null && g.live_score1 !== undefined) ? g.live_score1 : g.score1;
-   const s2 = (g.live_score2 !== null && g.live_score2 !== undefined) ? g.live_score2 : g.score2;
+const s2 = Number.isFinite(g.score2) ? g.score2
+      : Number.isFinite(g.live_score2) ? g.live_score2
+      : null;
 
-   const hasScore = (s1 !== null && s2 !== null);
-
+const hasScore = (s1 !== null && s2 !== null);
+   
    if(hasScore){
+    
      if(s1 !== s2){
        scoreHTML = `<span class="score-win">${s1} x ${s2}</span>`;
        matchClass = 'win';
@@ -1191,171 +1126,67 @@ async function loadMatches(){
        scoreHTML = `<span class="score-draw">${s1} x ${s2}</span>`;
        matchClass = 'draw';
      }
+   
    }
 
    html+=`
    <div id="match-${safeId(g.team1)}-${safeId(g.team2)}"
-    onclick='openMatchPalpites("${g.team1}","${g.team2}","${g.date}")'
+    onclick="openMatchPalpites('${g.team1}','${g.team2}','${g.date}')"
     style="cursor:pointer;"
     class="match ${matchClass} ${isLive ? 'live' : ''}">
-    
     <div>
       ${g.date} ${g.time}
       <span style="margin-left:6px; font-weight:bold;">
         ${isLive ? '🔴 AO VIVO' : (hasScore ? '✅ FINAL' : '⏳')}
       </span>
     </div>
-
     <div class="vs">
-      <div class="team-line">
-        <img class="flag" src="${flag(g.team1)}">${g.team1}
-      </div>
-
-      <div class="score">${scoreHTML}</div>
-
-      <div class="team-line">
-        ${g.team2}<img class="flag" src="${flag(g.team2)}">
-      </div>
+     <div class="team-line">
+      <img class="flag" src="${flag(g.team1)}">${g.team1}
+     </div>
+     <div class="score">${scoreHTML}</div>
+     <div class="team-line">
+      ${g.team2}<img class="flag" src="${flag(g.team2)}">
+     </div>
     </div>
-
    </div>`;
   }
-
   html+=`</div>`;
  }
 
  document.getElementById('matches').innerHTML=html;
 }
+
 async function loadRanking(){
- let currentState = {}; // ✅ FALTAVA ISSO
- const res = await fetch('palpites.json');
- const palpitesData = await res.json();
- 
- let data = [];
-
- Object.keys(palpitesData).forEach(nome => {
-
-  let total = 0;
-
-  const palpites = palpitesData[nome];
-
-  palpites.forEach(p => {
-
-   if(
-  p.palpite1 === null ||
-  p.palpite2 === null ||
-  isNaN(p.palpite1) ||
-  isNaN(p.palpite2)
-) return;
-
-    const jogoReal = gamesCache.find(g =>
-      g.team1 === p.team1 &&
-      g.team2 === p.team2 &&
-      g.date === p.date
-    );
-
-    if(!jogoReal) return;
-
-    const s1 = (jogoReal.live_score1 ?? jogoReal.score1);
-    const s2 = (jogoReal.live_score2 ?? jogoReal.score2);
-
-    if(s1 == null || s2 == null) return;
-
-    // ✅ regra pontuação
-    if(s1 === p.palpite1 && s2 === p.palpite2){
-  total += 5;
-}
-else if(
-  (s1 > s2 && p.palpite1 > p.palpite2) ||
-  (s2 > s1 && p.palpite2 > p.palpite1) ||
-  (s1 === s2 && p.palpite1 === p.palpite2)
-){
-  total += 3;
-}
-
-  });
-
-  data.push({ name:nome, pts:total });
-
-});
-
+ const res=await fetch('ranking.json');
+ const data=await res.json();
  data.sort((a,b)=>b.pts-a.pts);
-
  let html='';
-
  data.forEach((p,i)=>{
-
-  currentState[p.name] = p.pts; // ✅ AQUI
-
-  let medal='';
-  if(i===0) medal='🥇';
-  else if(i===1) medal='🥈';
-  else if(i===2) medal='🥉';
-
-  
-let extraClass='';
-let nameExtra='';
-
-// 🔥 DETECTA MUDANÇA AO VIVO
-if(lastRankingState[p.name] !== undefined){
-
- if(p.pts > lastRankingState[p.name]){
-   extraClass = 'top-ranking'; // subiu
- }
-
- if(p.pts < lastRankingState[p.name]){
-   extraClass = 'last-ranking'; // caiu
- }
-
-}
-
-// ✅ fallback visual (posição atual)
-if(!extraClass){
-
- if(i === 0 || i === 1){
-   extraClass='top-ranking';
- }
-
- if(i === data.length-1){
-   extraClass='last-ranking';
-   nameExtra=' 🔦';
- }
-
-}
-
-  html += `
-    <tr class="${extraClass || ''}">
-      <td>${medal || (i+1)}</td>
-      <td>
-        <span class="ranking-name" onclick='openPalpites("${p.name}")'
-          ${p.name || ''}${nameExtra || ''}
-        </span>
-      </td>
-      <td><b>${p.pts ?? 0}</b></td>
-    </tr>
-  `;
+  let medal = '';
+  if(i === 0) medal = '🥇';
+  else if(i === 1) medal = '🥈';
+  else if(i === 2) medal = '🥉';
+  html+=`<tr>
+   <td>${medal || i+1}</td>
+   <td><span class="ranking-name" onclick="openPalpites('${p.name}')">${p.name}</span></td>
+   <td><b>${p.pts}</b></td>
+  </tr>`;
  });
-
  document.getElementById('rankingBody').innerHTML=html;
- 
- lastRankingState = currentState; // ✅ FALTAVA ISSO
 }
 
- async function loadMenu(){
+async function loadMenu(){
  const res=await fetch('groups.json');
  const data=await res.json();
-
  let html='';
-
  Object.keys(data).forEach(g=>{
   html+=`<button onclick="changeGroup('${g}')">${g}</button>`;
  });
-
  html+=`<button onclick="showBracket()" style="background:gold;color:#111;font-weight:bold;">⚔️ Mata-Mata</button>`;
-
  document.getElementById('menu').innerHTML=html;
 }
- 
+
 function changeGroup(g){
  grupoAtual=g;
  document.getElementById('groupsContainer').style.display='grid';
@@ -1622,44 +1453,9 @@ function renderPalpites(){
 
  // Calcula total GERAL (todas as fases)
  let totalGeral = 0;
-
-todasFases.forEach(f=>{
-  f.jogos.forEach(p=>{
-
-   if(
-  p.palpite1 === null ||
-  p.palpite2 === null ||
-  isNaN(p.palpite1) ||
-  isNaN(p.palpite2)
-){
-  return;
-}
-    const jogoReal = gamesCache.find(g =>
-      g.team1 === p.team1 &&
-      g.team2 === p.team2 &&
-      g.date === p.date
-    );
-
-    const s1 = jogoReal ? (jogoReal.live_score1 ?? jogoReal.score1) : null;
-    const s2 = jogoReal ? (jogoReal.live_score2 ?? jogoReal.score2) : null;
-    
-    if(s1 !== null && s2 !== null){
-      
-  if(s1 === p.palpite1 && s2 === p.palpite2){
-    totalGeral += 5;
-  }
-  else if(
-    (s1 > s2 && p.palpite1 > p.palpite2) ||
-    (s2 > s1 && p.palpite2 > p.palpite1) ||
-    (s1 === s2 && p.palpite1 === p.palpite2)
-  ){
-    totalGeral += 3;
-  }
-
-}
-
-  });
-});
+ todasFases.forEach(f=>{
+  f.jogos.forEach(p=>{ totalGeral += (p.pontos||0); });
+ });
 
  let html = `<div class="modal-title">📋 Palpites — ${nome}</div>`;
 
@@ -1673,87 +1469,60 @@ todasFases.forEach(f=>{
 
  // JOGOS DA FASE ATUAL
  faseAtual.jogos.forEach(p=>{
-
   let ptsClass='pts-pending', ptsLabel='⏳';
-  let resultIcon='⏳';
 
-  if(
-  p.palpite1 === null ||
-  p.palpite2 === null ||
-  isNaN(p.palpite1) ||
-  isNaN(p.palpite2)
-){
-  ptsClass='pts-pending';
-  ptsLabel='⏳';
-  resultIcon='⏳';
-  
-  const p1='?';
-  const p2='?';
-
-  html+=`
-  <div class="palpite-row">
-   <div class="palpite-date" style="font-size:10px;">${faseAtual.tipo === 'grupos' ? (p.date || '') : (p.fase || '')}</div>
-   <div class="palpite-teams">
-    <img class="flag" src="${flag(p.team1)}">${p.team1}
-   </div>
-   <div class="palpite-score">${p1} x ${p2}</div>
-   <div class="palpite-teams" style="justify-content:flex-end;">
-    ${p.team2}<img class="flag" src="${flag(p.team2)}">
-   </div>
-   <div class="palpite-result">⏳</div>
-   <div class="palpite-pts pts-pending">⏳</div>
-  </div>`;
-  
-  return;
-}
-  
  const jogoReal = gamesCache.find(g =>
   g.team1 === p.team1 &&
   g.team2 === p.team2 &&
   g.date === p.date
 );
 
- const hasValidPalpite = (
-  p.palpite1 !== null &&
-  p.palpite2 !== null
+ const finished = (
+  jogoReal &&
+  jogoReal.score1 !== null &&
+  jogoReal.score2 !== null
 );
+ 
+ if(finished){
+ 
+   if(jogoReal.score1 === p.palpite1 && jogoReal.score2 === p.palpite2){
+     ptsClass='pts-5'; ptsLabel='+5';
+   }
+   else if(
+     (jogoReal.score1 > jogoReal.score2 && p.palpite1 > p.palpite2) ||
+     (jogoReal.score2 > jogoReal.score1 && p.palpite2 > p.palpite1) ||
+     (jogoReal.score1 === jogoReal.score2 && p.palpite1 === p.palpite2)
+   ){
+     ptsClass='pts-3'; ptsLabel='+3';
+   }
+   else{
+     ptsClass='pts-0'; ptsLabel='0';
+   }
+ 
+ }
+  const p1=p.palpite1!==null?p.palpite1:'?';
+  const p2=p.palpite2!==null?p.palpite2:'?';
 
-const s1 = jogoReal ? (jogoReal.live_score1 ?? jogoReal.score1) : null;
-const s2 = jogoReal ? (jogoReal.live_score2 ?? jogoReal.score2) : null;
+  let resultIcon='⏳';
 
-const finished = (
-  s1 !== null &&
-  s2 !== null &&
-  hasValidPalpite
-);
-  
 if(finished){
 
-  if(s1 === p.palpite1 && s2 === p.palpite2){
-    ptsClass='pts-5';
-    ptsLabel='+5';
+  if(jogoReal.score1 === p.palpite1 && jogoReal.score2 === p.palpite2){
     resultIcon='✅';
   }
   else if(
-    (s1 > s2 && p.palpite1 > p.palpite2) ||
-    (s2 > s1 && p.palpite2 > p.palpite1) ||
-    (s1 === s2 && p.palpite1 === p.palpite2)
+    (jogoReal.score1 > jogoReal.score2 && p.palpite1 > p.palpite2) ||
+    (jogoReal.score2 > jogoReal.score1 && p.palpite2 > p.palpite1) ||
+    (jogoReal.score1 === jogoReal.score2 && p.palpite1 === p.palpite2)
   ){
-    ptsClass='pts-3';
-    ptsLabel='+3';
     resultIcon='🟡';
   }
   else{
-    ptsClass='pts-0';
-    ptsLabel='0';
     resultIcon='❌';
   }
 
 }
-  const p1=p.palpite1!==null?p.palpite1:'?';
-  const p2=p.palpite2!==null?p.palpite2:'?';
-
-   const dateLabel = faseAtual.tipo==='grupos' ? (p.date||'') : (p.fase||'');
+  const dateLabel = faseAtual.tipo==='grupos' ? (p.date||'') : (p.fase||'');
 
   html+=`
   <div class="palpite-row">
@@ -1790,53 +1559,23 @@ function closeModal(e){
 }
 
 async function loadNextMatch(){
- const games = gamesCache;
- 
-const liveGames = games.filter(g => {
+ const res=await fetch('games.json');
+ const games=await res.json();
 
-  if(g.status === 'FINISHED') return false;
+// 1. Procura jogos AO VIVO
+const liveGames = games.filter(g =>
+ g.status === 'LIVE' ||
+ g.status === 'IN_PLAY' ||
+ g.status === 'PAUSED'
+);
 
-  if(g.date && g.time){
-
-    const agora = new Date();
-
-    const [dia, mes] = g.date.split('/');
-    const [hora, min] = g.time.split(':');
-
-    const dataJogo = new Date(
-      2026,
-      parseInt(mes) - 1,
-      parseInt(dia),
-      parseInt(hora),
-      parseInt(min)
-    );
-
-    const diffMin = (agora - dataJogo) / 60000;
-
-    if(diffMin >= 0 && diffMin <= 105){
-      return true;
-    }
-  }
-
-  return false;
-});
- 
 if(liveGames.length > 0){
 
  let html = "";
 
  liveGames.forEach(liveGame => {
-  const s1 = (liveGame.live_score1 !== null && liveGame.live_score1 !== undefined)
-  ? liveGame.live_score1
-  : liveGame.score1;
-
-const s2 = (liveGame.live_score2 !== null && liveGame.live_score2 !== undefined)
-  ? liveGame.live_score2
-  : liveGame.score2;
-
-  if(s1 == null || s2 == null) return;
-  
-  const minuto = getMatchMinute(liveGame);
+  const s1 = liveGame.live_score1 ?? liveGame.score1 ?? 0;
+  const s2 = liveGame.live_score2 ?? liveGame.score2 ?? 0;
 
   const gameKey = liveGame.team1 + "_" + liveGame.team2;
 
@@ -1896,28 +1635,22 @@ lastScores[gameKey] = currentScore;
     <img src="${f1}" style="width:24px;">
     <span>${liveGame.team1}</span>
 
-<span style="
- background:#ff0000;
- color:white;
- padding:4px 10px;
- border-radius:8px;
- font-weight:800;
-">
- ${s1} x ${s2}
-</span>
+    <span style="
+     background:#ff0000;
+     color:white;
+     padding:4px 10px;
+     border-radius:8px;
+     font-weight:800;
+    ">${s1} x ${s2}</span>
 
-<span>${liveGame.team2}</span>
-
+    <span>${liveGame.team2}</span>
     <img src="${f2}" style="width:24px;">
    </div>
   </div>
   `;
  });
 
- const primeiroMinuto = getMatchMinute(liveGames[0]);
-
-document.querySelector('#nextMatch div:first-child').innerHTML =
-  '🔴 AO VIVO' + (primeiroMinuto ? ' • ' + primeiroMinuto : '');
+ document.querySelector('#nextMatch div:first-child').innerHTML = '🔴 AO VIVO';
  document.querySelector('#nextMatch div:first-child').style.color = '#ff0000';
  
  document.getElementById('nextMatch').style.borderTop = '3px solid #ff0000';
@@ -1988,17 +1721,10 @@ const next = games.find(g => {
 }
 
 // ✅ Atualização leve (placar ao vivo)
-setInterval(async ()=>{
-
- try{
-   await updateLiveHybrid(); // ✅ SEM CONDIÇÃO
-  
- }catch(e){
-   console.log("Erro checando live");
- }
-
+setInterval(()=>{
+ loadNextMatch();
 }, 30000);
- 
+
 // ✅ Atualização completa (dados grandes)
 setInterval(()=>{
  loadGroup();
@@ -2010,8 +1736,6 @@ async function init(){
   const res = await fetch('games.json');
   gamesCache = await res.json();
 
-  await updateLiveHybrid(); // ✅ CORRETO
-
   loadNextMatch();
   loadRanking();
   loadMenu();
@@ -2020,219 +1744,48 @@ async function init(){
 }
 
 init();
-
- async function refreshGamesCache(){
-  const res = await fetch('games.json');
-  gamesCache = await res.json();
-}
-
- async function updateLiveHybrid(){
-
- try{
-
-  // 🔵 BASE (GitHub)
-  const res = await fetch('games.json');
-  let baseGames = await res.json();
-
-  // 🔴 LIVE (API)
-  let liveGames = [];
-
-  try{
-    const resAPI = await fetch("https://api.football-data.org/v4/competitions/WC/matches", {
-      headers:{
-        "X-Auth-Token":"SUA_API_KEY"
-      }
-    });
-
-    const data = await resAPI.json();
-
-    liveGames = data.matches.map(m => ({
-      team1: m.homeTeam.name,
-      team2: m.awayTeam.name,
-      live_score1: m.score.fullTime.home ?? m.score.halfTime.home ?? 0,
-      live_score2: m.score.fullTime.away ?? m.score.halfTime.away ?? 0,
-      status: m.status
-    }));
-
-  } catch(e){
-    console.log("API bloqueada (segue GitHub)");
-  }
-
-  // 🟡 MERGE
-  const merged = baseGames.map(g => {
-
-  const normalize = s =>
-    s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
-
-  const live = liveGames.find(l =>
-    normalize(l.team1).includes(normalize(g.team1)) &&
-    normalize(l.team2).includes(normalize(g.team2))
-  );
-
-  // ✅ API tem prioridade
-  if(live){
-
-  // ✅ SE JOGO TERMINOU → grava no score oficial
-  if(live.status === 'FINISHED'){
-    return {
-      ...g,
-      score1: live.live_score1,
-      score2: live.live_score2,
-      live_score1: null,
-      live_score2: null,
-      status: 'FINISHED'
-    };
-  }
-
-  // ✅ SE ESTÁ AO VIVO → usa live_score
-  return {
-    ...g,
-    live_score1: live.live_score1,
-    live_score2: live.live_score2,
-    status: live.status
-  };
-}
-  const agora = new Date();
-
-  // ✅ fallback FINAL (ÚNICO lugar correto)
-  if(g.date && g.time){
-
-    const [dia, mes] = g.date.split('/');
-    const [hora, min] = g.time.split(':');
-
-    const dataJogo = new Date(
-      2026,
-      parseInt(mes) - 1,
-      parseInt(dia),
-      parseInt(hora),
-      parseInt(min)
-    );
-
-    const diffMin = (agora - dataJogo) / 60000;
-
-    if(diffMin > 105){
-  return {
-    ...g,
-    score1: g.score1 ?? 0,
-    score2: g.score2 ?? 0,
-    live_score1: null,
-    live_score2: null,
-    status: 'FINISHED'
-  };
-}
-  }
-
-  return g;
-});
-  
-  gamesCache = merged;
-
-  // 🔄 ATUALIZA TELA
-  loadNextMatch();
-  loadMatches();
-  loadGroup();
-  loadRanking();
-
- }catch(err){
-  console.log("Erro hybrid:", err);
- }
-}
+ 
  async function openMatchPalpites(team1, team2, date){
 
  const res = await fetch('palpites.json');
  const data = await res.json();
 
- const jogoReal = gamesCache.find(g =>
-  g.team1 === team1 &&
-  g.team2 === team2 &&
-  g.date === date
- );
+ let html = `<div class="modal-title">📊 Palpites do Jogo</div>`;
+ html += `<div class="modal-subtitle">${team1} x ${team2} — ${date}</div>`;
 
- let ranking = [];
+ let encontrou = false;
 
  Object.keys(data).forEach(nome=>{
+
   const jogos = data[nome];
 
   jogos.forEach(p=>{
     if(p.team1 === team1 && p.team2 === team2){
 
-      let pts = 0;
-      let icon = '⏳';
+      encontrou = true;
 
-      const s1 = jogoReal ? (jogoReal.live_score1 ?? jogoReal.score1) : null;
-      const s2 = jogoReal ? (jogoReal.live_score2 ?? jogoReal.score2) : null;
-      
-      if(s1 !== null && s2 !== null){
-
-        if(s1 === p.palpite1 && s2 === p.palpite2)
-          pts = 5;
-          icon = '✅';
-        }
-        else if(
-          (s1 > s2 && p.palpite1 > p.palpite2) ||
-          (s2 > s1 && p.palpite2 > p.palpite1) ||
-          (s1 === s2 && p.palpite1 === p.palpite2)
-        ){
-          pts = 3;
-          icon = '🟡';
-        }
-        else{
-          pts = 0;
-          icon = '❌';
-        }
-      }
-
-      ranking.push({
-        nome,
-        p1: p.palpite1 ?? '?',
-        p2: p.palpite2 ?? '?',
-        pts,
-        icon
-      });
+      html += `
+      <div class="palpite-row">
+        <div style="width:120px;font-weight:bold;">${nome}</div>
+        <div class="palpite-score">${p.palpite1 ?? '?'} x ${p.palpite2 ?? '?'}</div>
+      </div>
+      `;
     }
   });
+
  });
 
- // ordenar
- ranking.sort((a,b)=>b.pts-a.pts);
-
- let html = `<div class="modal-title">🏆 Ranking do Jogo</div>`;
- html += `<div class="modal-subtitle">${team1} x ${team2} — ${date}</div>`;
-
- ranking.forEach((p,i)=>{
-
-  let medal = '';
-  if(i === 0) medal = '🥇';
-  else if(i === 1) medal = '🥈';
-  else if(i === 2) medal = '🥉';
-  else medal = `${i+1}º`;
-
-  html += `
-  <div class="palpite-row">
-    <div style="width:40px;">${medal}</div>
-    <div style="width:120px;font-weight:bold;">${p.nome}</div>
-    <div class="palpite-score">${p.p1} x ${p.p2}</div>
-    <div style="width:40px;text-align:center;">${p.icon}</div>
-    <div class="palpite-pts ${p.pts === 5 ? 'pts-5' : p.pts === 3 ? 'pts-3' : 'pts-0'}">
-      +${p.pts}
-    </div>
-  </div>
-  `;
- });
-
- if(ranking.length === 0){
+ if(!encontrou){
   html += `<p>Nenhum palpite encontrado.</p>`;
  }
 
+ 
  document.getElementById('modalContent').innerHTML = html;
  document.getElementById('modalOverlay').classList.add('active');
 }
 
 function forceRefresh(){
 
- updateLiveHybrid(); // 🔥 atualiza LIVE + base
-
- // 🔄 GARANTE refresh completo (igual seu atual)
  loadNextMatch();
  loadGroup();
  loadMatches();
