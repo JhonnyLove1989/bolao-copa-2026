@@ -1263,15 +1263,15 @@ async function loadRanking(){
 
     // ✅ regra pontuação
     if(s1 === p.palpite1 && s2 === p.palpite2){
-      total += 5;
-    }
-    else if(
-      (s1 > s2 && p.palpite1 > p.palpite2) ||
-      (s2 > s1 && p.palpite2 > p.palpite1) ||
-      (s1 === s2 && p.palpite1 === p.palpite2)
-    ){
-      total += 3;
-    }
+  total += 5;
+}
+else if(
+  (s1 > s2 && p.palpite1 > p.palpite2) ||
+  (s2 > s1 && p.palpite2 > p.palpite1) ||
+  (s1 === s2 && p.palpite1 === p.palpite2)
+){
+  total += 3;
+}
 
   });
 
@@ -1640,20 +1640,23 @@ todasFases.forEach(f=>{
       g.date === p.date
     );
 
-    if(jogoReal && jogoReal.score1 !== null && jogoReal.score2 !== null){
+    const s1 = jogoReal ? (jogoReal.live_score1 ?? jogoReal.score1) : null;
+    const s2 = jogoReal ? (jogoReal.live_score2 ?? jogoReal.score2) : null;
+    
+    if(s1 !== null && s2 !== null){
+      
+  if(s1 === p.palpite1 && s2 === p.palpite2){
+    totalGeral += 5;
+  }
+  else if(
+    (s1 > s2 && p.palpite1 > p.palpite2) ||
+    (s2 > s1 && p.palpite2 > p.palpite1) ||
+    (s1 === s2 && p.palpite1 === p.palpite2)
+  ){
+    totalGeral += 3;
+  }
 
-      if(jogoReal.score1 === p.palpite1 && jogoReal.score2 === p.palpite2){
-        totalGeral += 5;
-      }
-      else if(
-        (jogoReal.score1 > jogoReal.score2 && p.palpite1 > p.palpite2) ||
-        (jogoReal.score2 > jogoReal.score1 && p.palpite2 > p.palpite1) ||
-        (jogoReal.score1 === jogoReal.score2 && p.palpite1 === p.palpite2)
-      ){
-        totalGeral += 3;
-      }
-
-    }
+}
 
   });
 });
@@ -1714,30 +1717,35 @@ todasFases.forEach(f=>{
   p.palpite2 !== null
 );
 
+const s1 = jogoReal ? (jogoReal.live_score1 ?? jogoReal.score1) : null;
+const s2 = jogoReal ? (jogoReal.live_score2 ?? jogoReal.score2) : null;
+
 const finished = (
-  jogoReal &&
-  jogoReal.score1 !== null &&
-  jogoReal.score2 !== null &&
+  s1 !== null &&
+  s2 !== null &&
   hasValidPalpite
 );
- 
+  
  if(finished){
- 
-   if(jogoReal.score1 === p.palpite1 && jogoReal.score2 === p.palpite2){
-     ptsClass='pts-5'; ptsLabel='+5';
-   }
-   else if(
-     (jogoReal.score1 > jogoReal.score2 && p.palpite1 > p.palpite2) ||
-     (jogoReal.score2 > jogoReal.score1 && p.palpite2 > p.palpite1) ||
-     (jogoReal.score1 === jogoReal.score2 && p.palpite1 === p.palpite2)
-   ){
-     ptsClass='pts-3'; ptsLabel='+3';
-   }
-   else{
-     ptsClass='pts-0'; ptsLabel='0';
-   }
- 
- }
+
+  if(s1 === p.palpite1 && s2 === p.palpite2){
+    ptsClass='pts-5';
+    ptsLabel='+5';
+  }
+  else if(
+    (s1 > s2 && p.palpite1 > p.palpite2) ||
+    (s2 > s1 && p.palpite2 > p.palpite1) ||
+    (s1 === s2 && p.palpite1 === p.palpite2)
+  ){
+    ptsClass='pts-3';
+    ptsLabel='+3';
+  }
+  else{
+    ptsClass='pts-0';
+    ptsLabel='0';
+  }
+
+}
   const p1=p.palpite1!==null?p.palpite1:'?';
   const p2=p.palpite2!==null?p.palpite2:'?';
 
@@ -1745,13 +1753,13 @@ const finished = (
 
 if(finished){
 
-  if(jogoReal.score1 === p.palpite1 && jogoReal.score2 === p.palpite2){
+  if(s1 === p.palpite1 && s2 === p.palpite2)
     resultIcon='✅';
   }
   else if(
-    (jogoReal.score1 > jogoReal.score2 && p.palpite1 > p.palpite2) ||
-    (jogoReal.score2 > jogoReal.score1 && p.palpite2 > p.palpite1) ||
-    (jogoReal.score1 === jogoReal.score2 && p.palpite1 === p.palpite2)
+    (s1 > s2 && p.palpite1 > p.palpite2) ||
+    (s2 > s1 && p.palpite2 > p.palpite1) ||
+    (s1 === s2 && p.palpite1 === p.palpite2)
   ){
     resultIcon='🟡';
   }
@@ -2118,11 +2126,15 @@ init();
     const diffMin = (agora - dataJogo) / 60000;
 
     if(diffMin > 105){
-      return {
-        ...g,
-        status: 'FINISHED'
-      };
-    }
+  return {
+    ...g,
+    score1: g.score1 ?? 0,
+    score2: g.score2 ?? 0,
+    live_score1: null,
+    live_score2: null,
+    status: 'FINISHED'
+  };
+}
   }
 
   return g;
@@ -2162,16 +2174,19 @@ init();
       let pts = 0;
       let icon = '⏳';
 
-      if(jogoReal && jogoReal.score1 !== null && jogoReal.score2 !== null){
+      const s1 = jogoReal ? (jogoReal.live_score1 ?? jogoReal.score1) : null;
+      const s2 = jogoReal ? (jogoReal.live_score2 ?? jogoReal.score2) : null;
+      
+      if(s1 !== null && s2 !== null){
 
-        if(jogoReal.score1 === p.palpite1 && jogoReal.score2 === p.palpite2){
+        if(s1 === p.palpite1 && s2 === p.palpite2)
           pts = 5;
           icon = '✅';
         }
         else if(
-          (jogoReal.score1 > jogoReal.score2 && p.palpite1 > p.palpite2) ||
-          (jogoReal.score2 > jogoReal.score1 && p.palpite2 > p.palpite1) ||
-          (jogoReal.score1 === jogoReal.score2 && p.palpite1 === p.palpite2)
+          (s1 > s2 && p.palpite1 > p.palpite2) ||
+          (s2 > s1 && p.palpite2 > p.palpite1) ||
+          (s1 === s2 && p.palpite1 === p.palpite2)
         ){
           pts = 3;
           icon = '🟡';
