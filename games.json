@@ -297,7 +297,10 @@
     "team2": "Marrocos",
     "score1": null,
     "score2": null,
-    "city": "Boston"
+    "city": "Boston",
+    "live_score1": 0,
+    "live_score2": 1,
+    "status": "LIVE"
   },
   {
     "date": "19/06",
