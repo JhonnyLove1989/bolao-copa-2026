@@ -1,9 +1,5 @@
 [
   {
-    "name": "Vania",
-    "pts": 40
-  },
-  {
     "name": "PC",
     "pts": 37
   },
@@ -13,6 +9,10 @@
   },
   {
     "name": "Eliana",
+    "pts": 31
+  },
+  {
+    "name": "Vania",
     "pts": 31
   },
   {
