@@ -287,7 +287,10 @@
     "team2": "Austrália",
     "score1": null,
     "score2": null,
-    "city": "Seattle"
+    "city": "Seattle",
+    "live_score1": 0,
+    "live_score2": 0,
+    "status": "LIVE"
   },
   {
     "date": "19/06",
