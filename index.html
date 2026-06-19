@@ -1552,35 +1552,47 @@ todasFases.forEach(f=>{
 
  // JOGOS DA FASE ATUAL
  faseAtual.jogos.forEach(p=>{
+
   let ptsClass='pts-pending', ptsLabel='⏳';
 
-if(finished){
+  const jogoReal = gamesCache.find(g =>
+    g.team1 === p.team1 &&
+    g.team2 === p.team2 &&
+    g.date === p.date
+  );
 
-  // ✅ garante que existe placar mesmo
-  if(
+  const finished = (
+    jogoReal &&
     jogoReal.score1 !== null &&
-    jogoReal.score2 !== null &&
-    p.palpite1 !== null &&
-    p.palpite2 !== null
-  ){
+    jogoReal.score2 !== null
+  );
 
-    if(jogoReal.score1 === p.palpite1 && jogoReal.score2 === p.palpite2){
-      ptsClass='pts-5'; ptsLabel='+5';
-    }
-    else if(
-      (jogoReal.score1 > jogoReal.score2 && p.palpite1 > p.palpite2) ||
-      (jogoReal.score2 > jogoReal.score1 && p.palpite2 > p.palpite1) ||
-      (jogoReal.score1 === jogoReal.score2 && p.palpite1 === p.palpite2)
+  if(finished){
+
+    if(
+      jogoReal.score1 !== null &&
+      jogoReal.score2 !== null &&
+      p.palpite1 !== null &&
+      p.palpite2 !== null
     ){
-      ptsClass='pts-3'; ptsLabel='+3';
-    }
-    else{
-      ptsClass='pts-0'; ptsLabel='0';
+
+      if(jogoReal.score1 === p.palpite1 && jogoReal.score2 === p.palpite2){
+        ptsClass='pts-5'; ptsLabel='+5';
+      }
+      else if(
+        (jogoReal.score1 > jogoReal.score2 && p.palpite1 > p.palpite2) ||
+        (jogoReal.score2 > jogoReal.score1 && p.palpite2 > p.palpite1) ||
+        (jogoReal.score1 === jogoReal.score2 && p.palpite1 === p.palpite2)
+      ){
+        ptsClass='pts-3'; ptsLabel='+3';
+      }
+      else{
+        ptsClass='pts-0'; ptsLabel='0';
+      }
+
     }
 
   }
-
-}
   const p1=p.palpite1!==null?p.palpite1:'?';
   const p2=p.palpite2!==null?p.palpite2:'?';
 
