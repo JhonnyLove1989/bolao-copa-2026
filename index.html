@@ -1792,14 +1792,14 @@ const next = games.find(g => {
 // ✅ Atualização leve (placar ao vivo)
 setInterval(()=>{
  loadNextMatch();
-}, 30000);
+}, 5000);
 
 // ✅ Atualização completa (dados grandes)
 setInterval(()=>{
  loadGroup();
  loadMatches();
  loadRanking();
-}, 300000);
+}, 15000);
 
 async function init(){
   const res = await fetch('games.json');
