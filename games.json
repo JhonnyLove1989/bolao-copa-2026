@@ -237,7 +237,7 @@
     "team2": "Colômbia",
     "score1": 1,
     "score2": 3,
-    "city": "Cidade do México"
+    "city": "Cidade do "
   },
   {
     "date": "18/06",
@@ -275,8 +275,8 @@
     "group": "A",
     "team1": "México",
     "team2": "Coreia do Sul",
-    "score1": null,
-    "score2": null,
+    "score1": 1,
+    "score2": 0,
     "city": "Guadalajara"
   },
   {
