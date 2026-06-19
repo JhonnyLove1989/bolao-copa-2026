@@ -1739,8 +1739,16 @@ if(liveGames.length > 0){
  let html = "";
 
  liveGames.forEach(liveGame => {
-  const s1 = liveGame.live_score1 ?? liveGame.score1 ?? 0;
-  const s2 = liveGame.live_score2 ?? liveGame.score2 ?? 0;
+  const s1 = (liveGame.live_score1 !== null && liveGame.live_score1 !== undefined)
+  ? liveGame.live_score1
+  : liveGame.score1;
+
+const s2 = (liveGame.live_score2 !== null && liveGame.live_score2 !== undefined)
+  ? liveGame.live_score2
+  : liveGame.score2;
+
+  if(s1 == null || s2 == null) return;
+  
   const minuto = getMatchMinute(liveGame);
 
   const gameKey = liveGame.team1 + "_" + liveGame.team2;
