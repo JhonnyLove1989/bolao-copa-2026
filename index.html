@@ -1662,7 +1662,9 @@ async function loadNextMatch(){
  
 // 1. Procura jogos AO VIVO
 const liveGames = games.filter(g =>
- g.status === 'LIVE'
+ g.status === 'LIVE' ||
+ g.status === 'IN_PLAY' ||
+ g.status === 'PAUSED'
 );
  
 if(liveGames.length > 0){
@@ -1883,8 +1885,8 @@ init();
     liveGames = data.matches.map(m => ({
       team1: m.homeTeam.name,
       team2: m.awayTeam.name,
-      live_score1: m.score.fullTime.home,
-      live_score2: m.score.fullTime.away,
+      live_score1: m.score.fullTime.home ?? m.score.halfTime.home ?? 0,
+      live_score2: m.score.fullTime.away ?? m.score.halfTime.away ?? 0,
       status: m.status
     }));
 
