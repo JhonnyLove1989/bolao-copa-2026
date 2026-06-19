@@ -1658,9 +1658,8 @@ function closeModal(e){
 }
 
 async function loadNextMatch(){
- const res=await fetch('games.json');
- const games=await res.json();
-
+ const games = gamesCache;
+ 
 // 1. Procura jogos AO VIVO
 const liveGames = games.filter(g =>
  g.status === 'LIVE'
