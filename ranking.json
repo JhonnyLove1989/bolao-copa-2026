@@ -1,9 +1,5 @@
 [
   {
-    "name": "Vania",
-    "pts": 40
-  },
-  {
     "name": "PC",
     "pts": 37
   },
@@ -18,6 +14,10 @@
   {
     "name": "Isac",
     "pts": 29
+  },
+  {
+    "name": "Vania",
+    "pts": 28
   },
   {
     "name": "Lona",
