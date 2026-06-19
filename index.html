@@ -1893,10 +1893,13 @@ init();
   // 🟡 MERGE
   const merged = baseGames.map(g => {
 
-    const live = liveGames.find(l =>
-      l.team1 === g.team1 &&
-      l.team2 === g.team2
-    );
+    const normalize = s =>
+  s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+
+const live = liveGames.find(l =>
+  normalize(l.team1).includes(normalize(g.team1)) &&
+  normalize(l.team2).includes(normalize(g.team2))
+);
 
     if(live){
       return {
