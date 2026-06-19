@@ -1053,7 +1053,7 @@ let grupoAtual='A';
  }
 
  // 🏁 Final
- return 'Encerrado';
+ return null;
 }
 
 function flag(name){
@@ -1704,6 +1704,36 @@ async function loadNextMatch(){
 const agora = new Date();
 
 const liveGames = games.filter(g => {
+
+  if(g.status === 'FINISHED') return false;
+
+  // fallback por tempo
+  if(g.date && g.time){
+
+    const agora = new Date();
+
+    const [dia, mes] = g.date.split('/');
+    const [hora, min] = g.time.split(':');
+
+    const dataJogo = new Date(
+      2026,
+      parseInt(mes) - 1,
+      parseInt(dia),
+      parseInt(hora),
+      parseInt(min)
+    );
+
+    const diffMin = (agora - dataJogo) / 60000;
+
+    // ✅ só considera live até 105 min
+    if(diffMin >= 0 && diffMin <= 105){
+      return true;
+    }
+
+  }
+
+  return false;
+});
 
   // ✅ se já está marcado como LIVE
   if(g.status === 'LIVE') return true;
