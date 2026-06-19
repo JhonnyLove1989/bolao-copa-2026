@@ -1107,8 +1107,8 @@ async function loadMatches(){
 let scoreHTML = '<span class="score-vs">VS</span>';
 let matchClass = '';
 
-const s1 = parseInt(g.score1 ?? g.live_score1 ?? 0);
-const s2 = parseInt(g.score2 ?? g.live_score2 ?? 0);
+const s1 = parseInt(g.score1 ?? g.live_score1);
+const s2 = parseInt(g.score2 ?? g.live_score2);
    
 const finishedByStatus = g.status === 'FINISHED';
 
