@@ -1082,8 +1082,7 @@ async function loadGroup(){
  const res=await fetch('groups.json');
  const data=await res.json();
 
- const resGames=await fetch('games.json');
- const allGames=await resGames.json();
+ const allGames = gamesCache;
 
  const keys=Object.keys(data);
  const index=keys.indexOf(grupoAtual);
@@ -1700,14 +1699,10 @@ function closeModal(e){
 async function loadNextMatch(){
  const games = gamesCache;
  
-// 1. Procura jogos AO VIVO
-const agora = new Date();
-
 const liveGames = games.filter(g => {
 
   if(g.status === 'FINISHED') return false;
 
-  // fallback por tempo
   if(g.date && g.time){
 
     const agora = new Date();
@@ -1725,16 +1720,14 @@ const liveGames = games.filter(g => {
 
     const diffMin = (agora - dataJogo) / 60000;
 
-    // ✅ só considera live até 105 min
     if(diffMin >= 0 && diffMin <= 105){
       return true;
     }
-
   }
 
   return false;
 });
-  
+ 
 if(liveGames.length > 0){
 
  let html = "";
@@ -1975,26 +1968,6 @@ init();
   // 🟡 MERGE
   const merged = baseGames.map(g => {
 
-    const normalize = s =>
-  s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
-
-const live = liveGames.find(l =>
-  normalize(l.team1).includes(normalize(g.team1)) &&
-  normalize(l.team2).includes(normalize(g.team2))
-);
-
-    if(live){
-      return {
-        ...g,
-        live_score1: live.live_score1,
-        live_score2: live.live_score2,
-        status: live.status
-      };
-    }
-const agora = new Date();
-
-const merged = baseGames.map(g => {
-
   const normalize = s =>
     s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 
@@ -2003,7 +1976,7 @@ const merged = baseGames.map(g => {
     normalize(l.team2).includes(normalize(g.team2))
   );
 
-  // ✅ SE ACHAR NA API
+  // ✅ API tem prioridade
   if(live){
     return {
       ...g,
@@ -2013,7 +1986,9 @@ const merged = baseGames.map(g => {
     };
   }
 
-  // ✅ 👉 COLE AQUI (fallback de FINAL)
+  const agora = new Date();
+
+  // ✅ fallback FINAL (ÚNICO lugar correto)
   if(g.date && g.time){
 
     const [dia, mes] = g.date.split('/');
@@ -2036,9 +2011,10 @@ const merged = baseGames.map(g => {
       };
     }
   }
-    return g;
-  });
 
+  return g;
+});
+  
   gamesCache = merged;
 
   // 🔄 ATUALIZA TELA
