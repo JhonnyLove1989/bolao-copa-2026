@@ -1734,37 +1734,7 @@ const liveGames = games.filter(g => {
 
   return false;
 });
-
-  // ✅ se já está marcado como LIVE
-  const liveGames = games.filter(g => {
-
-  if(g.status === 'FINISHED') return false;
-
-  if(g.date && g.time){
-
-    const agora = new Date();
-
-    const [dia, mes] = g.date.split('/');
-    const [hora, min] = g.time.split(':');
-
-    const dataJogo = new Date(
-      2026,
-      parseInt(mes) - 1,
-      parseInt(dia),
-      parseInt(hora),
-      parseInt(min)
-    );
-
-    const diffMin = (agora - dataJogo) / 60000;
-
-    if(diffMin >= 0 && diffMin <= 105){
-      return true;
-    }
-  }
-
-  return false;
-});
- 
+  
 if(liveGames.length > 0){
 
  let html = "";
