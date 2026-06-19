@@ -1810,24 +1810,38 @@ Object.keys(data).forEach(nome=>{
 resultados.sort((a,b)=> (b.pontos ?? -1) - (a.pontos ?? -1));
 
 // ✅ render
-resultados.forEach(r=>{
+resultados.forEach((r, i)=>{
 
   let ptsClass = 'pts-pending';
   if(r.pontos === 5) ptsClass = 'pts-5';
   else if(r.pontos === 3) ptsClass = 'pts-3';
   else if(r.pontos === 0) ptsClass = 'pts-0';
 
+  // ✅ medalhas top 3
+  let medal = "";
+  if(i === 0) medal = "🥇";
+  else if(i === 1) medal = "🥈";
+  else if(i === 2) medal = "🥉";
+
   html += `
   <div class="palpite-row">
-    <div style="width:120px;font-weight:bold;">${r.nome}</div>
 
-    <div class="palpite-score">${r.p1} x ${r.p2}</div>
+    <div style="width:140px;font-weight:bold;">
+      ${medal} ${r.nome}
+    </div>
 
-    <div class="palpite-result">${r.resultIcon}</div>
+    <div class="palpite-score">
+      ${r.p1} x ${r.p2}
+    </div>
+
+    <div class="palpite-result">
+      ${r.resultIcon}
+    </div>
 
     <div class="palpite-pts ${ptsClass}">
       ${r.pontos ?? '⏳'}
     </div>
+
   </div>
   `;
 });
