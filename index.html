@@ -996,6 +996,8 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15) !important;
 
  let gamesCache = [];
 
+ let lastRankingState = {}; //
+
 const goalSound = new Audio("https://actions.google.com/sounds/v1/sports/crowd_cheer.ogg");
 goalSound.volume = 1;
 
@@ -1179,6 +1181,7 @@ const s2 = (g.live_score2 !== null && g.live_score2 !== undefined) ? g.live_scor
 }
 
 async function loadRanking(){
+ let currentState = {}; // ✅ FALTAVA ISSO
  const res=await fetch('ranking.json');
  const data=await res.json();
 
@@ -1188,24 +1191,43 @@ async function loadRanking(){
 
  data.forEach((p,i)=>{
 
+  currentState[p.name] = p.pts; // ✅ AQUI
+
   let medal='';
   if(i===0) medal='🥇';
   else if(i===1) medal='🥈';
   else if(i===2) medal='🥉';
 
-  let extraClass='';
-  let nameExtra='';
+  
+let extraClass='';
+let nameExtra='';
 
-  // ✅ TOP 2
-  if(i===0 || i===1){
-    extraClass='top-ranking';
-  }
+// 🔥 DETECTA MUDANÇA AO VIVO
+if(lastRankingState[p.name] !== undefined){
 
-  // ✅ ÚLTIMO
-  if(i===data.length-1){
-    extraClass='last-ranking';
-    nameExtra=' 🔦';
-  }
+ if(p.pts > lastRankingState[p.name]){
+   extraClass = 'top-ranking'; // subiu
+ }
+
+ if(p.pts < lastRankingState[p.name]){
+   extraClass = 'last-ranking'; // caiu
+ }
+
+}
+
+// ✅ fallback visual (posição atual)
+if(!extraClass){
+
+ if(i === 0 || i === 1){
+   extraClass='top-ranking';
+ }
+
+ if(i === data.length-1){
+   extraClass='last-ranking';
+   nameExtra=' 🔦';
+ }
+
+}
 
   html += `
     <tr class="${extraClass || ''}">
@@ -1221,6 +1243,8 @@ async function loadRanking(){
  });
 
  document.getElementById('rankingBody').innerHTML=html;
+ 
+ lastRankingState = currentState; // ✅ FALTAVA ISSO
 }
 
  async function loadMenu(){
@@ -1794,9 +1818,22 @@ const next = games.find(g => {
 }
 
 // ✅ Atualização leve (placar ao vivo)
-setInterval(()=>{
- refreshGamesCache();   // ✅ ADICIONAR
- loadNextMatch();
+setInterval(async ()=>{
+
+ try{
+   const res = await fetch('games.json');
+   const baseGames = await res.json();
+
+   const hasLive = baseGames.some(g => g.status === 'LIVE');
+
+   if(hasLive){
+     updateLiveHybrid();
+   }
+
+ }catch(e){
+   console.log("Erro checando live");
+ }
+
 }, 30000);
  
 // ✅ Atualização completa (dados grandes)
@@ -1823,7 +1860,71 @@ init();
   const res = await fetch('games.json');
   gamesCache = await res.json();
 }
- 
+
+ async function updateLiveHybrid(){
+
+ try{
+
+  // 🔵 BASE (GitHub)
+  const res = await fetch('games.json');
+  let baseGames = await res.json();
+
+  // 🔴 LIVE (API)
+  let liveGames = [];
+
+  try{
+    const resAPI = await fetch("https://api.football-data.org/v4/competitions/WC/matches", {
+      headers:{
+        "X-Auth-Token":"SUA_API_KEY"
+      }
+    });
+
+    const data = await resAPI.json();
+
+    liveGames = data.matches.map(m => ({
+      team1: m.homeTeam.name,
+      team2: m.awayTeam.name,
+      live_score1: m.score.fullTime.home,
+      live_score2: m.score.fullTime.away,
+      status: m.status
+    }));
+
+  } catch(e){
+    console.log("API bloqueada (segue GitHub)");
+  }
+
+  // 🟡 MERGE
+  const merged = baseGames.map(g => {
+
+    const live = liveGames.find(l =>
+      l.team1 === g.team1 &&
+      l.team2 === g.team2
+    );
+
+    if(live){
+      return {
+        ...g,
+        live_score1: live.live_score1,
+        live_score2: live.live_score2,
+        status: live.status
+      };
+    }
+
+    return g;
+  });
+
+  gamesCache = merged;
+
+  // 🔄 ATUALIZA TELA
+  loadNextMatch();
+  loadMatches();
+  loadGroup();
+  loadRanking();
+
+ }catch(err){
+  console.log("Erro hybrid:", err);
+ }
+}
  async function openMatchPalpites(team1, team2, date){
 
  const res = await fetch('palpites.json');
@@ -1914,6 +2015,9 @@ init();
 
 function forceRefresh(){
 
+ updateLiveHybrid(); // 🔥 atualiza LIVE + base
+
+ // 🔄 GARANTE refresh completo (igual seu atual)
  loadNextMatch();
  loadGroup();
  loadMatches();
