@@ -1093,7 +1093,7 @@ groupGames.forEach(m=>{
 async function loadMatches(){
  const res=await fetch('games.json');
  const games=await res.json();
- const groupGames = games;
+ const groupGames = games.filter(g => g.group === grupoAtual);
 
  let html='';
  for(let i=0;i<groupGames.length;i+=2){
