@@ -1661,11 +1661,38 @@ async function loadNextMatch(){
  const games = gamesCache;
  
 // 1. Procura jogos AO VIVO
-const liveGames = games.filter(g =>
- g.status === 'LIVE' ||
- g.status === 'IN_PLAY' ||
- g.status === 'PAUSED'
-);
+const agora = new Date();
+
+const liveGames = games.filter(g => {
+
+  // ✅ se já está marcado como LIVE
+  if(g.status === 'LIVE') return true;
+
+  // ✅ fallback por horário (se API falhar)
+  if(g.date && g.time){
+
+    const [dia, mes] = g.date.split('/');
+    const [hora, min] = g.time.split(':');
+
+    const dataJogo = new Date(
+      2026,
+      parseInt(mes) - 1,
+      parseInt(dia),
+      parseInt(hora),
+      parseInt(min)
+    );
+
+    const diffMin = (agora - dataJogo) / 60000;
+
+    // 🔥 considera jogo ao vivo até 2h30 depois do início
+    if(diffMin >= 0 && diffMin <= 150){
+      return true;
+    }
+
+  }
+
+  return false;
+});
  
 if(liveGames.length > 0){
 
