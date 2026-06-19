@@ -1841,8 +1841,9 @@ async function init(){
   const res = await fetch('games.json');
   gamesCache = await res.json();
 
-  wait updateLiveHybrid(); // 🔥 ADICIONAR AQUI
+  await updateLiveHybrid(); // ✅ CORRETO
 
+  loadNextMatch();
   loadNextMatch();
   loadRanking();
   loadMenu();
