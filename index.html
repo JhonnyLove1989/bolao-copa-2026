@@ -1241,6 +1241,13 @@ async function loadRanking(){
 
   palpites.forEach(p => {
 
+   if(
+  p.palpite1 === null ||
+  p.palpite2 === null ||
+  isNaN(p.palpite1) ||
+  isNaN(p.palpite2)
+) return;
+
     const jogoReal = gamesCache.find(g =>
       g.team1 === p.team1 &&
       g.team2 === p.team2 &&
@@ -1619,6 +1626,14 @@ function renderPalpites(){
 todasFases.forEach(f=>{
   f.jogos.forEach(p=>{
 
+   if(
+  p.palpite1 === null ||
+  p.palpite2 === null ||
+  isNaN(p.palpite1) ||
+  isNaN(p.palpite2)
+){
+  return;
+}
     const jogoReal = gamesCache.find(g =>
       g.team1 === p.team1 &&
       g.team2 === p.team2 &&
@@ -1655,6 +1670,37 @@ todasFases.forEach(f=>{
 
  // JOGOS DA FASE ATUAL
  faseAtual.jogos.forEach(p=>{
+
+  if(
+  p.palpite1 === null ||
+  p.palpite2 === null ||
+  isNaN(p.palpite1) ||
+  isNaN(p.palpite2)
+){
+  ptsClass='pts-pending';
+  ptsLabel='⏳';
+  resultIcon='⏳';
+  
+  const p1='?';
+  const p2='?';
+
+  html+=`
+  <div class="palpite-row">
+   <div class="palpite-date" style="font-size:10px;">${faseAtual.tipo==='grupos' ? (p.date||'') : (p.fase||'')}</div>
+   <div class="palpite-teams">
+    <img class="flag" src="${flag(p.team1)}">${p.team1}
+   </div>
+   <div class="palpite-score">${p1} x ${p2}</div>
+   <div class="palpite-teams" style="justify-content:flex-end;">
+    ${p.team2}<img class="flag" src="${flag(p.team2)}">
+   </div>
+   <div class="palpite-result">⏳</div>
+   <div class="palpite-pts pts-pending">⏳</div>
+  </div>`;
+  
+  return;
+}
+  
   let ptsClass='pts-pending', ptsLabel='⏳';
 
  const jogoReal = gamesCache.find(g =>
@@ -1663,10 +1709,16 @@ todasFases.forEach(f=>{
   g.date === p.date
 );
 
- const finished = (
+ const hasValidPalpite = (
+  p.palpite1 !== null &&
+  p.palpite2 !== null
+);
+
+const finished = (
   jogoReal &&
   jogoReal.score1 !== null &&
-  jogoReal.score2 !== null
+  jogoReal.score2 !== null &&
+  hasValidPalpite
 );
  
  if(finished){
