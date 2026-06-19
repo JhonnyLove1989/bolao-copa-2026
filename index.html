@@ -1016,6 +1016,46 @@ function showGoalBanner(text){
 
 let grupoAtual='A';
 
+ function getMatchMinute(game){
+
+ if(!game.date || !game.time) return '';
+
+ const agora = new Date();
+
+ const [dia, mes] = game.date.split('/');
+ const [hora, min] = game.time.split(':');
+
+ const inicio = new Date(
+   2026,
+   parseInt(mes) - 1,
+   parseInt(dia),
+   parseInt(hora),
+   parseInt(min)
+ );
+
+ const diffMin = Math.floor((agora - inicio) / 60000);
+
+ if(diffMin < 0) return '';
+
+ // ⏱ 1º tempo
+ if(diffMin <= 45){
+   return `${diffMin}'`;
+ }
+
+ // ⏸ Intervalo
+ if(diffMin > 45 && diffMin <= 60){
+   return 'Intervalo';
+ }
+
+ // ⏱ 2º tempo
+ if(diffMin > 60 && diffMin <= 105){
+   return `${diffMin - 15}'`;
+ }
+
+ // 🏁 Final
+ return 'Encerrado';
+}
+
 function flag(name){
  const map={
   "Brasil":"br","México":"mx","África do Sul":"za","Coreia do Sul":"kr",
@@ -1701,6 +1741,7 @@ if(liveGames.length > 0){
  liveGames.forEach(liveGame => {
   const s1 = liveGame.live_score1 ?? liveGame.score1 ?? 0;
   const s2 = liveGame.live_score2 ?? liveGame.score2 ?? 0;
+  const minuto = getMatchMinute(liveGame);
 
   const gameKey = liveGame.team1 + "_" + liveGame.team2;
 
@@ -1761,12 +1802,23 @@ lastScores[gameKey] = currentScore;
     <span>${liveGame.team1}</span>
 
     <span style="
-     background:#ff0000;
-     color:white;
-     padding:4px 10px;
-     border-radius:8px;
-     font-weight:800;
-    ">${s1} x ${s2}</span>
+ background:#ff0000;
+ color:white;
+ padding:4px 10px;
+ border-radius:8px;
+ font-weight:800;
+">
+ ${s1} x ${s2}
+</span>
+
+<span style="
+ font-size:12px;
+ font-weight:bold;
+ color:#ff0000;
+ margin-left:6px;
+">
+ ${minuto}
+</span>
 
     <span>${liveGame.team2}</span>
     <img src="${f2}" style="width:24px;">
@@ -1775,7 +1827,7 @@ lastScores[gameKey] = currentScore;
   `;
  });
 
- document.querySelector('#nextMatch div:first-child').innerHTML = '🔴 AO VIVO';
+ document.querySelector('#nextMatch div:first-child').innerHTML = '🔴 AO VIVO • ' + minuto;
  document.querySelector('#nextMatch div:first-child').style.color = '#ff0000';
  
  document.getElementById('nextMatch').style.borderTop = '3px solid #ff0000';
