@@ -1229,6 +1229,9 @@ async function loadRanking(){
   </tr>`;
 });
  document.getElementById('rankingBody').innerHTML=html;
+ // ✅ reaplica seleção após reload
+if(jogadorAtivo){
+  selectJogador(jogadorAtivo);
 }
 
 async function loadMenu(){
