@@ -1751,7 +1751,9 @@ init();
 
  let encontrou = false;
 
- Object.keys(data).forEach(nome=>{
+ let resultados = [];
+
+Object.keys(data).forEach(nome=>{
 
   const jogos = data[nome];
 
@@ -1760,17 +1762,76 @@ init();
 
       encontrou = true;
 
-      html += `
-      <div class="palpite-row">
-        <div style="width:120px;font-weight:bold;">${nome}</div>
-        <div class="palpite-score">${p.palpite1 ?? '?'} x ${p.palpite2 ?? '?'}</div>
-      </div>
-      `;
+      const jogoReal = gamesCache.find(g =>
+        g.team1 === team1 &&
+        g.team2 === team2 &&
+        g.date === date
+      );
+
+      let pontos = null;
+      let resultIcon = '⏳';
+
+      if(jogoReal && jogoReal.score1 != null && jogoReal.score2 != null){
+
+        const s1 = jogoReal.score1;
+        const s2 = jogoReal.score2;
+
+        if(s1 === p.palpite1 && s2 === p.palpite2){
+          pontos = 5;
+          resultIcon = '✅';
+        }
+        else if(
+          (s1 > s2 && p.palpite1 > p.palpite2) ||
+          (s2 > s1 && p.palpite2 > p.palpite1) ||
+          (s1 === s2 && p.palpite1 === p.palpite2)
+        ){
+          pontos = 3;
+          resultIcon = '🟡';
+        }
+        else{
+          pontos = 0;
+          resultIcon = '❌';
+        }
+      }
+
+      resultados.push({
+        nome,
+        p1: p.palpite1 ?? '?',
+        p2: p.palpite2 ?? '?',
+        pontos,
+        resultIcon
+      });
     }
   });
 
- });
+});
 
+// ✅ ordenar por maior pontuação
+resultados.sort((a,b)=> (b.pontos ?? -1) - (a.pontos ?? -1));
+
+// ✅ render
+resultados.forEach(r=>{
+
+  let ptsClass = 'pts-pending';
+  if(r.pontos === 5) ptsClass = 'pts-5';
+  else if(r.pontos === 3) ptsClass = 'pts-3';
+  else if(r.pontos === 0) ptsClass = 'pts-0';
+
+  html += `
+  <div class="palpite-row">
+    <div style="width:120px;font-weight:bold;">${r.nome}</div>
+
+    <div class="palpite-score">${r.p1} x ${r.p2}</div>
+
+    <div class="palpite-result">${r.resultIcon}</div>
+
+    <div class="palpite-pts ${ptsClass}">
+      ${r.pontos ?? '⏳'}
+    </div>
+  </div>
+  `;
+});
+  
  if(!encontrou){
   html += `<p>Nenhum palpite encontrado.</p>`;
  }
