@@ -1159,28 +1159,31 @@ groupGames.forEach(m=>{
 }
 
 async function loadMatches(){
- const res=await fetch('games.json');
- const games=await res.json();
- const groupGames=games.filter(g=>g.group===grupoAtual);
+
+ const games = gamesCache;
+
+ const groupGames = games.filter(g => g.group === grupoAtual);
 
  let html='';
+
  for(let i=0;i<groupGames.length;i+=2){
   html+=`<div class="round">`;
 
   for(let j=0;j<2;j++){
    const g=groupGames[i+j];
    if(!g) continue;
+
    const isLive = g.status === 'LIVE';
 
-let scoreHTML = '<span class="score-vs">VS</span>';
-let matchClass = '';
+   let scoreHTML = '<span class="score-vs">VS</span>';
+   let matchClass = '';
 
-const s1 = (g.live_score1 !== null && g.live_score1 !== undefined) ? g.live_score1 : g.score1;
-const s2 = (g.live_score2 !== null && g.live_score2 !== undefined) ? g.live_score2 : g.score2;
+   const s1 = (g.live_score1 !== null && g.live_score1 !== undefined) ? g.live_score1 : g.score1;
+   const s2 = (g.live_score2 !== null && g.live_score2 !== undefined) ? g.live_score2 : g.score2;
+
    const hasScore = (s1 !== null && s2 !== null);
-   
+
    if(hasScore){
-    
      if(s1 !== s2){
        scoreHTML = `<span class="score-win">${s1} x ${s2}</span>`;
        matchClass = 'win';
@@ -1188,7 +1191,6 @@ const s2 = (g.live_score2 !== null && g.live_score2 !== undefined) ? g.live_scor
        scoreHTML = `<span class="score-draw">${s1} x ${s2}</span>`;
        matchClass = 'draw';
      }
-   
    }
 
    html+=`
@@ -1196,33 +1198,79 @@ const s2 = (g.live_score2 !== null && g.live_score2 !== undefined) ? g.live_scor
     onclick="openMatchPalpites('${g.team1.replace(/'/g,"\\'")}','${g.team2.replace(/'/g,"\\'")}','${g.date}')"
     style="cursor:pointer;"
     class="match ${matchClass} ${isLive ? 'live' : ''}">
+    
     <div>
       ${g.date} ${g.time}
       <span style="margin-left:6px; font-weight:bold;">
         ${isLive ? '🔴 AO VIVO' : (hasScore ? '✅ FINAL' : '⏳')}
       </span>
     </div>
+
     <div class="vs">
-     <div class="team-line">
-      <img class="flag" src="${flag(g.team1)}">${g.team1}
-     </div>
-     <div class="score">${scoreHTML}</div>
-     <div class="team-line">
-      ${g.team2}<img class="flag" src="${flag(g.team2)}">
-     </div>
+      <div class="team-line">
+        <img class="flag" src="${flag(g.team1)}">${g.team1}
+      </div>
+
+      <div class="score">${scoreHTML}</div>
+
+      <div class="team-line">
+        ${g.team2}<img class="flag" src="${flag(g.team2)}">
+      </div>
     </div>
+
    </div>`;
   }
+
   html+=`</div>`;
  }
 
  document.getElementById('matches').innerHTML=html;
 }
-
 async function loadRanking(){
  let currentState = {}; // ✅ FALTAVA ISSO
- const res=await fetch('ranking.json');
- const data=await res.json();
+ const res = await fetch('palpites.json');
+ const palpitesData = await res.json();
+ 
+ let data = [];
+
+ Object.keys(palpitesData).forEach(nome => {
+
+  let total = 0;
+
+  const palpites = palpitesData[nome];
+
+  palpites.forEach(p => {
+
+    const jogoReal = gamesCache.find(g =>
+      g.team1 === p.team1 &&
+      g.team2 === p.team2 &&
+      g.date === p.date
+    );
+
+    if(!jogoReal) return;
+
+    const s1 = (jogoReal.live_score1 ?? jogoReal.score1);
+    const s2 = (jogoReal.live_score2 ?? jogoReal.score2);
+
+    if(s1 == null || s2 == null) return;
+
+    // ✅ regra pontuação
+    if(s1 === p.palpite1 && s2 === p.palpite2){
+      total += 5;
+    }
+    else if(
+      (s1 > s2 && p.palpite1 > p.palpite2) ||
+      (s2 > s1 && p.palpite2 > p.palpite1) ||
+      (s1 === s2 && p.palpite1 === p.palpite2)
+    ){
+      total += 3;
+    }
+
+  });
+
+  data.push({ name:nome, pts:total });
+
+});
 
  data.sort((a,b)=>b.pts-a.pts);
 
