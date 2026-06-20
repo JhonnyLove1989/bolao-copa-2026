@@ -1192,49 +1192,86 @@ const hasScore = (!isNaN(s1) && !isNaN(s2));
 }
 
 async function loadRanking(){
- const res=await fetch('ranking.json');
- const data=await res.json();
- data.sort((a,b)=>b.pts-a.pts);
+
+ const resRanking = await fetch('ranking.json');
+ const jogadores = await resRanking.json();
+
+ const resPalpites = await fetch('palpites.json');
+ const palpites = await resPalpites.json();
+
+ const games = gamesCache;
+
+ jogadores.forEach(j=>{
+  let total = 0;
+
+  const userPalpites = palpites[j.name] || [];
+
+  userPalpites.forEach(p=>{
+
+    const jogoReal = games.find(g =>
+      g.team1 === p.team1 &&
+      g.team2 === p.team2 &&
+      g.date === p.date
+    );
+
+    if(!jogoReal) return;
+    if(jogoReal.score1 == null || jogoReal.score2 == null) return;
+    if(p.palpite1 == null || p.palpite2 == null) return;
+
+    const s1 = jogoReal.score1;
+    const s2 = jogoReal.score2;
+
+    if(s1 === p.palpite1 && s2 === p.palpite2){
+      total += 5;
+    }
+    else if(
+      (s1 > s2 && p.palpite1 > p.palpite2) ||
+      (s2 > s1 && p.palpite2 > p.palpite1) ||
+      (s1 === s2 && p.palpite1 === p.palpite2)
+    ){
+      total += 3;
+    }
+
+  });
+
+  j.pts = total;
+ });
+
+ // ordenar
+ jogadores.sort((a,b)=>b.pts-a.pts);
+
+ // render (mantém seu código de HTML aqui)
  let html='';
- data.forEach((p,i)=>{
 
-  let medal = '';
-  if(i === 0) medal = '🥇';
-  else if(i === 1) medal = '🥈';
-  else if(i === 2) medal = '🥉';
+ jogadores.forEach((p,i)=>{
 
-  let rowClass = '';
+  let medal='';
+  if(i===0) medal='🥇';
+  else if(i===1) medal='🥈';
+  else if(i===2) medal='🥉';
 
-  // 🏆 TOP 1
-  if(i === 0){
-    rowClass = 'rank-top1';
-  }
-  // 🥈 TOP 2
-  else if(i === 1){
-    rowClass = 'rank-top2';
-  }
-  // 🔥 ÚLTIMO
-  else if(i === data.length - 1){
-    rowClass = 'rank-last';
-  }
+  let rowClass='';
+  if(i===0) rowClass='rank-top1';
+  else if(i===1) rowClass='rank-top2';
+  else if(i===jogadores.length-1) rowClass='rank-last';
 
-  html+=`<tr class="${rowClass}" data-nome="${p.name}">
-   <td>${medal || i+1}</td>
-   <td>
-     <span class="ranking-name" onclick="selectJogador('${p.name}'); openPalpites('${p.name}')">
-       ${p.name}
-       ${i === data.length-1 ? '<span class="lanterna">🔦</span>' : ''}
-     </span>
-   </td>
-   <td><b>${p.pts}</b></td>
+  html+=`
+  <tr class="${rowClass}" data-nome="${p.name}">
+    <td>${medal || i+1}</td>
+    <td>
+      <span class="ranking-name" onclick="selectJogador('${p.name}'); openPalpites('${p.name}')">
+        ${p.name}
+      </span>
+    </td>
+    <td><b>${p.pts}</b></td>
   </tr>`;
-});
+ });
+
  document.getElementById('rankingBody').innerHTML=html;
 
-// ✅ reaplica seleção corretamente
-if(jogadorAtivo){
+ if(jogadorAtivo){
   atualizarSelecaoRanking();
-}
+ }
 }
  
 async function loadMenu(){
