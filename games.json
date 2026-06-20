@@ -315,12 +315,9 @@
     "group": "D",
     "team1": "Turquia",
     "team2": "Paraguai",
-    "score1": null,
-    "score2": null,
-    "city": "San Francisco",
-    "live_score1": 0,
-    "live_score2": 1,
-    "status": "LIVE"
+    "score1": 0,
+    "score2": 1,
+    "city": "San Francisco"
   },
   {
     "date": "20/06",

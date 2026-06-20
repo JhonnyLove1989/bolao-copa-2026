@@ -4,6 +4,10 @@
     "pts": 48
   },
   {
+    "name": "Vania",
+    "pts": 42
+  },
+  {
     "name": "Cosman",
     "pts": 40
   },
@@ -12,7 +16,7 @@
     "pts": 40
   },
   {
-    "name": "Vania",
+    "name": "Candido",
     "pts": 39
   },
   {
@@ -28,15 +32,11 @@
     "pts": 35
   },
   {
-    "name": "Candido",
-    "pts": 34
-  },
-  {
     "name": "Sandra",
     "pts": 29
   },
   {
     "name": "Andrey",
-    "pts": 18
+    "pts": 21
   }
 ]
