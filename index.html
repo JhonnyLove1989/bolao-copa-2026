@@ -1047,12 +1047,12 @@ function safeId(text){
     .replace(/[^\w-]/g, '');
 }
 async function loadGroup(){
- const res=await fetch('groups.json');
- const data=await res.json();
+ const res = await fetch(`groups.json?t=${Date.now()}`);
+ const data = await res.json();
 
- const resGames=await fetch('games.json');
- const allGames=await resGames.json();
-
+ const resGames = await fetch(`games.json?t=${Date.now()}`);
+ const allGames = await resGames.json();
+ 
  const keys=Object.keys(data);
  const index=keys.indexOf(grupoAtual);
  const selected=keys.slice(index,index+4);
@@ -1272,8 +1272,8 @@ async function loadRanking(){
 }
  
 async function loadMenu(){
- const res=await fetch('groups.json');
- const data=await res.json();
+ const res = await fetch(`groups.json?t=${Date.now()}`);
+ const data = await res.json();
  let html='';
  Object.keys(data).forEach(g=>{
   html+=`<button onclick="changeGroup('${g}')">${g}</button>`;
@@ -1368,8 +1368,8 @@ const bracketIcons = ['⚔️','🏅','🔥','⭐','🏆'];
 let currentPhase = 0;
 
 async function loadBracket(){
- const resG=await fetch('groups.json');
- const groupsData=await resG.json();
+ const resG = await fetch(`groups.json?t=${Date.now()}`);
+ const resM = await fetch(`games.json?t=${Date.now()}`);
  const resM=await fetch('games.json');
  const allGames=await resM.json();
 
@@ -1497,7 +1497,7 @@ function showBracket(){
 let palpiteFaseAtual = 0;
 
 async function openPalpites(nome){
- const res=await fetch('palpites.json');
+ const res = await fetch(`palpites.json?t=${Date.now()}`);
  const data=await res.json();
  const palpites=data[nome] || [];
 
