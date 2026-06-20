@@ -25,8 +25,8 @@
     "group": "B",
     "team1": "Canadá",
     "team2": "Bósnia e Herzegovina",
-    "score1": 1,
-    "score2": 1,
+    "score1": null,
+    "score2": null,
     "city": "Toronto"
   },
   {
@@ -348,8 +348,8 @@
     "score1": null,
     "score2": null,
     "city": "Houston",
-    "live_score1": 3,
-    "live_score2": 0,
+    "live_score1": 4,
+    "live_score2": 1,
     "status": "LIVE"
   },
   {
