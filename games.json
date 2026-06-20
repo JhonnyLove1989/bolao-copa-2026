@@ -25,8 +25,8 @@
     "group": "B",
     "team1": "Canadá",
     "team2": "Bósnia e Herzegovina",
-    "score1": null,
-    "score2": null,
+    "score1": 1,
+    "score2": 1,
     "city": "Toronto"
   },
   {
@@ -345,12 +345,9 @@
     "group": "F",
     "team1": "Holanda",
     "team2": "Suécia",
-    "score1": null,
-    "score2": null,
-    "city": "Houston",
-    "live_score1": 4,
-    "live_score2": 1,
-    "status": "LIVE"
+    "score1": 5,
+    "score2": 1,
+    "city": "Houston"
   },
   {
     "date": "21/06",

@@ -5,14 +5,14 @@
   },
   {
     "name": "Vania",
-    "pts": 42
-  },
-  {
-    "name": "Cosman",
-    "pts": 40
+    "pts": 45
   },
   {
     "name": "Eliana",
+    "pts": 43
+  },
+  {
+    "name": "Cosman",
     "pts": 40
   },
   {
@@ -20,12 +20,12 @@
     "pts": 39
   },
   {
-    "name": "Lona",
-    "pts": 36
+    "name": "Isac",
+    "pts": 38
   },
   {
-    "name": "Isac",
-    "pts": 35
+    "name": "Lona",
+    "pts": 36
   },
   {
     "name": "Nataniele",
@@ -33,10 +33,10 @@
   },
   {
     "name": "Sandra",
-    "pts": 29
+    "pts": 32
   },
   {
     "name": "Andrey",
-    "pts": 21
+    "pts": 24
   }
 ]
