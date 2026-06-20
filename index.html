@@ -1859,14 +1859,19 @@ setInterval(()=>{
 }, 5000);
 
 // ✅ Atualização completa (dados grandes)
-setInterval(()=>{
+setInterval(async ()=>{
+
+ const res = await fetch(`games.json?t=${Date.now()}`);
+ gamesCache = await res.json();
+
  loadGroup();
  loadMatches();
  loadRanking();
-}, 15000);
 
+}, 15000);
+ 
 async function init(){
-  const res = await fetch('games.json');
+  const res = await fetch(`games.json?t=${Date.now()}`);
   gamesCache = await res.json();
 
   loadNextMatch();
