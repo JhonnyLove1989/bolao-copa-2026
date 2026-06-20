@@ -317,7 +317,10 @@
     "team2": "Paraguai",
     "score1": null,
     "score2": null,
-    "city": "San Francisco"
+    "city": "San Francisco",
+    "live_score1": 0,
+    "live_score2": 1,
+    "status": "LIVE"
   },
   {
     "date": "20/06",
