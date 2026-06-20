@@ -25,8 +25,8 @@
     "group": "B",
     "team1": "Canadá",
     "team2": "Bósnia e Herzegovina",
-    "score1": 1,
-    "score2": 1,
+    "score1": null,
+    "score2": null,
     "city": "Toronto"
   },
   {
@@ -295,12 +295,9 @@
     "group": "C",
     "team1": "Escócia",
     "team2": "Marrocos",
-    "score1": null,
-    "score2": null,
-    "city": "Boston",
-    "live_score1": 0,
-    "live_score2": 1,
-    "status": "LIVE"
+    "score1": 0,
+    "score2": 1,
+    "city": "Boston"
   },
   {
     "date": "19/06",
