@@ -327,7 +327,10 @@
     "team2": "Costa do Marfim",
     "score1": null,
     "score2": null,
-    "city": "Toronto"
+    "city": "Toronto",
+    "live_score1": 0,
+    "live_score2": 0,
+    "status": "LIVE"
   },
   {
     "date": "20/06",
