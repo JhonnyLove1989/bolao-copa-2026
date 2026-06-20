@@ -325,12 +325,9 @@
     "group": "E",
     "team1": "Alemanha",
     "team2": "Costa do Marfim",
-    "score1": null,
-    "score2": null,
-    "city": "Toronto",
-    "live_score1": 0,
-    "live_score2": 1,
-    "status": "LIVE"
+    "score1": 2,
+    "score2": 1,
+    "city": "Toronto"
   },
   {
     "date": "20/06",
