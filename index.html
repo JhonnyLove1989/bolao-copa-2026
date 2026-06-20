@@ -1193,10 +1193,10 @@ const hasScore = (!isNaN(s1) && !isNaN(s2));
 
 async function loadRanking(){
 
- const resRanking = await fetch('ranking.json');
- const jogadores = await resRanking.json();
+ const res = await fetch(`ranking.json?t=${Date.now()}`);
+ const jogadores = await res.json();
 
- const resPalpites = await fetch('palpites.json');
+ const resPalpites = await fetch(`palpites.json?t=${Date.now()}`);
  const palpites = await resPalpites.json();
 
  const games = gamesCache;
@@ -1237,14 +1237,11 @@ async function loadRanking(){
   j.pts = total;
  });
 
- // ordenar
  jogadores.sort((a,b)=>b.pts-a.pts);
 
- // render (mantém seu código de HTML aqui)
  let html='';
 
  jogadores.forEach((p,i)=>{
-
   let medal='';
   if(i===0) medal='🥇';
   else if(i===1) medal='🥈';
