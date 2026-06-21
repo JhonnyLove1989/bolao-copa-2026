@@ -375,12 +375,9 @@
     "group": "G",
     "team1": "Bélgica",
     "team2": "Irã",
-    "score1": null,
-    "score2": null,
-    "city": "Los Angeles",
-    "live_score1": 0,
-    "live_score2": 0,
-    "status": "LIVE"
+    "score1": 0,
+    "score2": 0,
+    "city": "Los Angeles"
   },
   {
     "date": "21/06",
