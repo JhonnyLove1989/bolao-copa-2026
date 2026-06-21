@@ -335,12 +335,9 @@
     "group": "E",
     "team1": "Equador",
     "team2": "Curaçao",
-    "score1": null,
-    "score2": null,
-    "city": "Kansas City",
-    "live_score1": 0,
-    "live_score2": 0,
-    "status": "LIVE"
+    "score1": 0,
+    "score2": 0,
+    "city": "Kansas City"
   },
   {
     "date": "20/06",
@@ -358,8 +355,8 @@
     "group": "F",
     "team1": "Tunísia",
     "team2": "Japão",
-    "score1": null,
-    "score2": null,
+    "score1": 0,
+    "score2": 4,
     "city": "Monterrey"
   },
   {
