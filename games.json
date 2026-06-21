@@ -25,8 +25,8 @@
     "group": "B",
     "team1": "Canadá",
     "team2": "Bósnia e Herzegovina",
-    "score1": null,
-    "score2": null,
+    "score1": 1,
+    "score2": 1,
     "city": "Toronto"
   },
   {
@@ -337,7 +337,10 @@
     "team2": "Curaçao",
     "score1": null,
     "score2": null,
-    "city": "Kansas City"
+    "city": "Kansas City",
+    "live_score1": 0,
+    "live_score2": 0,
+    "status": "LIVE"
   },
   {
     "date": "20/06",
