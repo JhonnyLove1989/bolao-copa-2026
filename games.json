@@ -365,12 +365,9 @@
     "group": "H",
     "team1": "Espanha",
     "team2": "Arábia Saudita",
-    "score1": null,
-    "score2": null,
-    "city": "Atlanta",
-    "live_score1": 4,
-    "live_score2": 0,
-    "status": "LIVE"
+    "score1": 5,
+    "score2": 0,
+    "city": "Atlanta"
   },
   {
     "date": "21/06",
