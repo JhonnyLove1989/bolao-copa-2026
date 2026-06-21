@@ -367,7 +367,10 @@
     "team2": "Arábia Saudita",
     "score1": null,
     "score2": null,
-    "city": "Atlanta"
+    "city": "Atlanta",
+    "live_score1": 1,
+    "live_score2": 0,
+    "status": "LIVE"
   },
   {
     "date": "21/06",
