@@ -397,7 +397,10 @@
     "team2": "Egito",
     "score1": null,
     "score2": null,
-    "city": "Vancouver"
+    "city": "Vancouver",
+    "live_score1": 1,
+    "live_score2": 0,
+    "status": "LIVE"
   },
   {
     "date": "22/06",
