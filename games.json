@@ -407,7 +407,10 @@
     "team2": "Iraque",
     "score1": null,
     "score2": null,
-    "city": "Filadélfia"
+    "city": "Filadélfia",
+    "live_score1": 1,
+    "live_score2": 0,
+    "status": "LIVE"
   },
   {
     "date": "22/06",
