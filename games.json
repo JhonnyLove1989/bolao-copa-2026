@@ -395,12 +395,9 @@
     "group": "G",
     "team1": "Nova Zelândia",
     "team2": "Egito",
-    "score1": null,
-    "score2": null,
-    "city": "Vancouver",
-    "live_score1": 1,
-    "live_score2": 3,
-    "status": "LIVE"
+    "score1": 1,
+    "score2": 3,
+    "city": "Vancouver"
   },
   {
     "date": "22/06",
