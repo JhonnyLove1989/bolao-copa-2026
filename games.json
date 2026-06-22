@@ -425,12 +425,9 @@
     "group": "J",
     "team1": "Argentina",
     "team2": "Áustria",
-    "score1": null,
-    "score2": null,
-    "city": "Dallas",
-    "live_score1": 1,
-    "live_score2": 0,
-    "status": "LIVE"
+    "score1": 2,
+    "score2": 0,
+    "city": "Dallas"
   },
   {
     "date": "23/06",
