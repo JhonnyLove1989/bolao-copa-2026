@@ -405,12 +405,9 @@
     "group": "I",
     "team1": "França",
     "team2": "Iraque",
-    "score1": null,
-    "score2": null,
-    "city": "Filadélfia",
-    "live_score1": 1,
-    "live_score2": 0,
-    "status": "LIVE"
+    "score1": 3,
+    "score2": 0,
+    "city": "Filadélfia"
   },
   {
     "date": "22/06",
@@ -420,7 +417,10 @@
     "team2": "Senegal",
     "score1": null,
     "score2": null,
-    "city": "Nova York/NJ"
+    "city": "Nova York/NJ",
+    "live_score1": 3,
+    "live_score2": 1,
+    "status": "LIVE"
   },
   {
     "date": "22/06",
