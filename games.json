@@ -465,12 +465,9 @@
     "group": "K",
     "team1": "Portugal",
     "team2": "Uzbequistão",
-    "score1": null,
-    "score2": null,
-    "city": "Houston",
-    "live_score1": 5,
-    "live_score2": 0,
-    "status": "LIVE"
+    "score1": 5,
+    "score2": 0,
+    "city": "Houston"
   },
   {
     "date": "23/06",
