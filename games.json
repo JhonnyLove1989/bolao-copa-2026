@@ -415,12 +415,9 @@
     "group": "I",
     "team1": "Noruega",
     "team2": "Senegal",
-    "score1": null,
-    "score2": null,
-    "city": "Nova York/NJ",
-    "live_score1": 3,
-    "live_score2": 1,
-    "status": "LIVE"
+    "score1": 3,
+    "score2": 2,
+    "city": "Nova York/NJ"
   },
   {
     "date": "22/06",
