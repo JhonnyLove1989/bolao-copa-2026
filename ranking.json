@@ -1,7 +1,7 @@
 [
   {
     "name": "PC",
-    "pts": 73
+    "pts": 78
   },
   {
     "name": "Vania",
@@ -9,6 +9,10 @@
   },
   {
     "name": "Cosman",
+    "pts": 66
+  },
+  {
+    "name": "Eliana",
     "pts": 63
   },
   {
@@ -16,20 +20,16 @@
     "pts": 60
   },
   {
-    "name": "Eliana",
-    "pts": 60
+    "name": "Nataniele",
+    "pts": 59
   },
   {
     "name": "Isac",
     "pts": 57
   },
   {
-    "name": "Nataniele",
-    "pts": 54
-  },
-  {
     "name": "Lona",
-    "pts": 52
+    "pts": 55
   },
   {
     "name": "Sandra",
@@ -37,6 +37,6 @@
   },
   {
     "name": "Andrey",
-    "pts": 38
+    "pts": 41
   }
 ]
