@@ -445,8 +445,8 @@
     "group": "L",
     "team1": "Inglaterra",
     "team2": "Gana",
-    "score1": null,
-    "score2": null,
+    "score1": 0,
+    "score2": 0,
     "city": "Boston"
   },
   {
