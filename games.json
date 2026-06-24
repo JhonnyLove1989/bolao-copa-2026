@@ -505,8 +505,8 @@
     "group": "B",
     "team1": "Suíça",
     "team2": "Canadá",
-    "score1": null,
-    "score2": null,
+    "score1": 2,
+    "score2": 1,
     "city": "Vancouver"
   },
   {
@@ -515,8 +515,8 @@
     "group": "B",
     "team1": "Bósnia e Herzegovina",
     "team2": "Catar",
-    "score1": null,
-    "score2": null,
+    "score1": 3,
+    "score2": 1,
     "city": "Seattle"
   },
   {
