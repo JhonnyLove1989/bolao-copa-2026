@@ -25,8 +25,8 @@
     "group": "B",
     "team1": "Canadá",
     "team2": "Bósnia e Herzegovina",
-    "score1": null,
-    "score2": null,
+    "score1": 1,
+    "score2": 1,
     "city": "Toronto"
   },
   {
@@ -545,8 +545,8 @@
     "group": "E",
     "team1": "Curaçao",
     "team2": "Costa do Marfim",
-    "score1": null,
-    "score2": null,
+    "score1": 0,
+    "score2": 2,
     "city": "Filadélfia"
   },
   {
@@ -555,8 +555,8 @@
     "group": "E",
     "team1": "Equador",
     "team2": "Alemanha",
-    "score1": null,
-    "score2": null,
+    "score1": 2,
+    "score2": 1,
     "city": "Nova York/NJ"
   },
   {
