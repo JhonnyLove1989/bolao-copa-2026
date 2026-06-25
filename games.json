@@ -485,12 +485,9 @@
     "group": "C",
     "team1": "Escócia",
     "team2": "Brasil",
-    "score1": null,
-    "score2": null,
-    "city": "Miami",
-    "live_score1": 0,
-    "live_score2": 2,
-    "status": "LIVE"
+    "score1": 0,
+    "score2": 3,
+    "city": "Miami"
   },
   {
     "date": "24/06",
@@ -498,12 +495,9 @@
     "group": "C",
     "team1": "Marrocos",
     "team2": "Haiti",
-    "score1": null,
-    "score2": null,
-    "city": "Atlanta",
-    "live_score1": 2,
-    "live_score2": 2,
-    "status": "LIVE"
+    "score1": 4,
+    "score2": 2,
+    "city": "Atlanta"
   },
   {
     "date": "24/06",
