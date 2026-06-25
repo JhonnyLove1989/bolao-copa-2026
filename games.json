@@ -525,8 +525,8 @@
     "group": "A",
     "team1": "República Tcheca",
     "team2": "México",
-    "score1": null,
-    "score2": null,
+    "score1": 0,
+    "score2": 3,
     "city": "Cidade do México"
   },
   {
