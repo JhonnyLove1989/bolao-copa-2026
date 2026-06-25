@@ -535,8 +535,8 @@
     "group": "A",
     "team1": "África do Sul",
     "team2": "Coreia do Sul",
-    "score1": null,
-    "score2": null,
+    "score1": 1,
+    "score2": 0,
     "city": "Monterrey"
   },
   {
