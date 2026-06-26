@@ -1,42 +1,42 @@
 [
   {
     "name": "PC",
-    "pts": 115
-  },
-  {
-    "name": "Cosman",
-    "pts": 97
+    "pts": 121
   },
   {
     "name": "Isac",
-    "pts": 95
+    "pts": 101
+  },
+  {
+    "name": "Cosman",
+    "pts": 100
   },
   {
     "name": "Vania",
-    "pts": 92
+    "pts": 95
   },
   {
     "name": "Eliana",
-    "pts": 91
+    "pts": 94
   },
   {
     "name": "Nataniele",
-    "pts": 86
-  },
-  {
-    "name": "Candido",
-    "pts": 84
+    "pts": 92
   },
   {
     "name": "Lona",
-    "pts": 82
+    "pts": 88
+  },
+  {
+    "name": "Candido",
+    "pts": 87
   },
   {
     "name": "Sandra",
-    "pts": 80
+    "pts": 86
   },
   {
     "name": "Andrey",
-    "pts": 68
+    "pts": 71
   }
 ]

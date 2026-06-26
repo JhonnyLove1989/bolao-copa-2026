@@ -605,8 +605,8 @@
     "group": "I",
     "team1": "Noruega",
     "team2": "França",
-    "score1": null,
-    "score2": null,
+    "score1": 1,
+    "score2": 4,
     "city": "Boston"
   },
   {
@@ -615,8 +615,8 @@
     "group": "I",
     "team1": "Senegal",
     "team2": "Iraque",
-    "score1": null,
-    "score2": null,
+    "score1": 5,
+    "score2": 0,
     "city": "Toronto"
   },
   {
