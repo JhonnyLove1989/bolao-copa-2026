@@ -565,8 +565,8 @@
     "group": "F",
     "team1": "Japão",
     "team2": "Suécia",
-    "score1": null,
-    "score2": null,
+    "score1": 1,
+    "score2": 1,
     "city": "Dallas"
   },
   {
@@ -575,8 +575,8 @@
     "group": "F",
     "team1": "Tunísia",
     "team2": "Holanda",
-    "score1": null,
-    "score2": null,
+    "score1": 1,
+    "score2": 3,
     "city": "Kansas City"
   },
   {
