@@ -585,8 +585,8 @@
     "group": "D",
     "team1": "Turquia",
     "team2": "EUA",
-    "score1": null,
-    "score2": null,
+    "score1": 3,
+    "score2": 2,
     "city": "Los Angeles"
   },
   {
@@ -595,8 +595,8 @@
     "group": "D",
     "team1": "Paraguai",
     "team2": "Austrália",
-    "score1": null,
-    "score2": null,
+    "score1": 0,
+    "score2": 0,
     "city": "San Francisco"
   },
   {
