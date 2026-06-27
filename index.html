@@ -1284,7 +1284,15 @@ function calcStandings(groupTeams, allGames, groupLetter){
  let played=0;
 
  gGames.forEach(m=>{
-  if(m.score1===null||m.score2===null) return;
+  let s1 = m.score1;
+let s2 = m.score2;
+
+if(s1 === null && ['LIVE','IN_PLAY','PAUSED'].includes(m.status)){
+  s1 = m.live_score1;
+  s2 = m.live_score2;
+}
+
+if(s1 === null || s2 === null) return;
   played++;
   const t1=teams.find(t=>normalize(t.team)===normalize(m.team1));
   const t2=teams.find(t=>normalize(t.team)===normalize(m.team2));
@@ -1306,7 +1314,7 @@ function calcStandings(groupTeams, allGames, groupLetter){
   return b.gp-a.gp;
  });
 
- return { teams, isComplete: played>=6 };
+ return { teams, isComplete: teams.some(t => t.pts > 0) };
 }
 
 function resolveTeam(pos, standings){
@@ -1329,9 +1337,8 @@ let currentPhase = 0;
 async function loadBracket(){
  const resG=await fetch('groups.json');
  const groupsData=await resG.json();
- const resM=await fetch('games.json');
- const allGames=await resM.json();
-
+ const allGames = gamesCache;
+ 
  const standings={};
  Object.keys(groupsData).forEach(g=>{
   standings[g]=calcStandings(groupsData[g], allGames, g);
