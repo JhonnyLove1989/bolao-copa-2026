@@ -1257,55 +1257,29 @@ function changeGroup(g){
 const bracketR32 = [
 
   // 🔵 LADO ESQUERDO
-  { home:'2A', away:'2B', date:'28/06' }, // Jogo 1
-  { home:'1F', away:'2C', date:'29/06' }, // Jogo 2
-  { home:'1K', away:'3º', date:'29/06' }, // Jogo 3
-  { home:'1H', away:'2J', date:'29/06' }, // Jogo 4
-  { home:'1D', away:'3º', date:'30/06' }, // Jogo 5
-  { home:'1G', away:'3º', date:'30/06' }, // Jogo 6
-  { home:'1C', away:'2F', date:'30/06' }, // Jogo 7 ✅ corrigido Brasil
-  { home:'2E', away:'2I', date:'01/07' }, // Jogo 8
+  { home:'2A', away:'2B', date:'28/06' },
+  { home:'1F', away:'2C', date:'29/06' },
+  { home:'1K', away:'3DEIJL', date:'29/06' },
+  { home:'1H', away:'2J', date:'29/06' },
+  { home:'1D', away:'3BEFIJ', date:'30/06' },
+  { home:'1G', away:'3AEHIJ', date:'30/06' },
+  { home:'1C', away:'2F', date:'30/06' },
+  { home:'2E', away:'2I', date:'01/07' },
 
   // 🔴 LADO DIREITO
-  { home:'1A', away:'3º', date:'01/07' }, // Jogo 9
-  { home:'1L', away:'3º', date:'01/07' }, // Jogo 10
-  { home:'1J', away:'2H', date:'02/07' }, // Jogo 11
-  { home:'2D', away:'2G', date:'02/07' }, // Jogo 12
-  { home:'1B', away:'3º', date:'02/07' }, // Jogo 13
-  { home:'1E', away:'3º', date:'03/07' }, // Jogo 14
-  { home:'1I', away:'3º', date:'03/07' }, // Jogo 15
-  { home:'2K', away:'2L', date:'03/07' }  // Jogo 16
+  
+  {home:'1A', away:'3CEFHI', date:'01/07' },
+  { home:'1L', away:'3EHIJK', date:'01/07' },
+  { home:'1J', away:'2H', date:'02/07' },
+  { home:'2D', away:'2G', date:'02/07' },
+  { home:'1B', away:'3EFGIJ', date:'02/07' },
+  { home:'1E', away:'3ABCDF', date:'03/07' },
+  { home:'1I', away:'3CDFGH', date:'03/07' },
+  { home:'2K', away:'2L', date:'03/07' }
 
 ];
+
 function calcStandings(groupTeams, allGames, groupLetter){
- function getMelhoresTerceiros(standings){
-
-  let terceiros = [];
-
-  Object.keys(standings).forEach(g => {
-    const st = standings[g];
-
-    if(!st || !st.teams[2]) return;
-
-    const t = st.teams[2];
-
-    terceiros.push({
-      team: t.team,
-      group: g,
-      pts: t.pts,
-      sg: t.sg,
-      gp: t.gp
-    });
-  });
-
-  terceiros.sort((a,b)=>{
-    if(b.pts !== a.pts) return b.pts - a.pts;
-    if(b.sg !== a.sg) return b.sg - a.sg;
-    return b.gp - a.gp;
-  });
-
-  return terceiros;
-}
  const normalize=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 
  let teams=groupTeams.map(t=>({
@@ -1347,6 +1321,35 @@ if(s1 === null || s2 === null) return;
  });
 
  return { teams, isComplete: teams.some(t => t.pts > 0) };
+}
+
+ function getMelhoresTerceiros(standings){
+
+  let terceiros = [];
+
+  Object.keys(standings).forEach(g => {
+    const st = standings[g];
+
+    if(!st || !st.teams[2]) return;
+
+    const t = st.teams[2];
+
+    terceiros.push({
+      team: t.team,
+      group: g,
+      pts: t.pts,
+      sg: t.sg,
+      gp: t.gp
+    });
+  });
+
+  terceiros.sort((a,b)=>{
+    if(b.pts !== a.pts) return b.pts - a.pts;
+    if(b.sg !== a.sg) return b.sg - a.sg;
+    return b.gp - a.gp;
+  });
+
+  return terceiros;
 }
 
 function resolveTeam(pos, standings){
