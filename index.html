@@ -1304,13 +1304,13 @@ if(s1 === null || s2 === null) return;
   const t2=teams.find(t=>normalize(t.team)===normalize(m.team2));
   if(!t1||!t2) return;
 
-  t1.gp+=m.score1; t1.gc+=m.score2;
-  t2.gp+=m.score2; t2.gc+=m.score1;
+  t1.gp+=s1; t1.gc+=s2;
+  t2.gp+=s2; t2.gc+=s1;
   t1.sg=t1.gp-t1.gc;
   t2.sg=t2.gp-t2.gc;
-
-  if(m.score1>m.score2){ t1.pts+=3; t1.v+=1; }
-  else if(m.score2>m.score1){ t2.pts+=3; t2.v+=1; }
+  
+  if(s1>s2){ t1.pts+=3; t1.v+=1; }
+  else if(s2>s1){ t2.pts+=3; t2.v+=1; }
   else{ t1.pts+=1; t2.pts+=1; }
  });
 
