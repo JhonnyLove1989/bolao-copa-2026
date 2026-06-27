@@ -1278,6 +1278,34 @@ const bracketR32 = [
 
 ];
 function calcStandings(groupTeams, allGames, groupLetter){
+ function getMelhoresTerceiros(standings){
+
+  let terceiros = [];
+
+  Object.keys(standings).forEach(g => {
+    const st = standings[g];
+
+    if(!st || !st.teams[2]) return;
+
+    const t = st.teams[2];
+
+    terceiros.push({
+      team: t.team,
+      group: g,
+      pts: t.pts,
+      sg: t.sg,
+      gp: t.gp
+    });
+  });
+
+  terceiros.sort((a,b)=>{
+    if(b.pts !== a.pts) return b.pts - a.pts;
+    if(b.sg !== a.sg) return b.sg - a.sg;
+    return b.gp - a.gp;
+  });
+
+  return terceiros;
+}
  const normalize=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 
  let teams=groupTeams.map(t=>({
@@ -1322,18 +1350,43 @@ if(s1 === null || s2 === null) return;
 }
 
 function resolveTeam(pos, standings){
- if(pos==='3º') return { name:'Melhor 3º', resolved:false };
 
- const rank=parseInt(pos[0])-1;
- const group=pos[1];
- const st=standings[group];
+  if(pos.startsWith('3')){
 
- if(!st||!st.isComplete) return { name:'A definir', resolved:false };
+    const gruposPermitidos = pos.replace('3','').split('');
 
- const team=st.teams[rank];
- return team ? { name:team.team, resolved:true } : { name:'A definir', resolved:false };
+    const terceiros = getMelhoresTerceiros(standings);
+
+    const filtrados = terceiros.filter(t => 
+      gruposPermitidos.includes(t.group)
+    );
+
+    if(filtrados.length === 0){
+      return { name:'A definir', resolved:false };
+    }
+
+    return { 
+      name: filtrados[0].team,
+      resolved: true 
+    };
+  }
+
+  const rank = parseInt(pos[0]) - 1;
+  const group = pos[1];
+
+  const st = standings[group];
+
+  if(!st){
+    return { name:'A definir', resolved:false };
+  }
+
+  const team = st.teams[rank];
+
+  return team 
+    ? { name: team.team, resolved: true } 
+    : { name:'A definir', resolved:false };
 }
-
+ 
 const bracketPhases = ['16 Avos de Final','Oitavas de Final','Quartas de Final','Semifinais','Decisão'];
 const bracketIcons = ['⚔️','🏅','🔥','⭐','🏆'];
 let currentPhase = 0;
