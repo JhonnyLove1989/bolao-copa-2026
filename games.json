@@ -625,8 +625,8 @@
     "group": "G",
     "team1": "Egito",
     "team2": "Irã",
-    "score1": null,
-    "score2": null,
+    "score1": 1,
+    "score2": 1,
     "city": "Seattle"
   },
   {
@@ -635,8 +635,8 @@
     "group": "G",
     "team1": "Nova Zelândia",
     "team2": "Bélgica",
-    "score1": null,
-    "score2": null,
+    "score1": 1,
+    "score2": 5,
     "city": "Vancouver"
   },
   {
