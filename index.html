@@ -1352,6 +1352,8 @@ if(s1 === null || s2 === null) return;
   return terceiros;
 }
 
+let terceirosUsados = [];
+
 function resolveTeam(pos, standings){
 
   if(pos.startsWith('3')){
@@ -1360,20 +1362,42 @@ function resolveTeam(pos, standings){
 
     const terceiros = getMelhoresTerceiros(standings);
 
+    // filtra pelos grupos permitidos e remove os já usados
     const filtrados = terceiros.filter(t => 
-      gruposPermitidos.includes(t.group)
+      gruposPermitidos.includes(t.group) &&
+      !terceirosUsados.includes(t.team)
     );
 
     if(filtrados.length === 0){
       return { name:'A definir', resolved:false };
     }
 
+    const escolhido = filtrados[0];
+
+    // marca como usado
+    terceirosUsados.push(escolhido.team);
+
     return { 
-      name: filtrados[0].team,
+      name: escolhido.team,
       resolved: true 
     };
   }
 
+  const rank = parseInt(pos[0]) - 1;
+  const group = pos[1];
+
+  const st = standings[group];
+
+  if(!st){
+    return { name:'A definir', resolved:false };
+  }
+
+  const team = st.teams[rank];
+
+  return team 
+    ? { name: team.team, resolved: true } 
+    : { name:'A definir', resolved:false };
+}
   const rank = parseInt(pos[0]) - 1;
   const group = pos[1];
 
@@ -1395,6 +1419,9 @@ const bracketIcons = ['⚔️','🏅','🔥','⭐','🏆'];
 let currentPhase = 0;
 
 async function loadBracket(){
+ 
+ terceirosUsados = [];
+ 
  const resG=await fetch('groups.json');
  const groupsData=await resG.json();
  const allGames = gamesCache;
