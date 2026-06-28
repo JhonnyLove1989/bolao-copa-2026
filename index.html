@@ -1536,45 +1536,66 @@ let palpiteFaseAtual = 0;
 
 async function openPalpites(nome){
 
+ let palpitesGrupos = [];
  let palpitesMM = [];
 
- try {
+ // ✅ GRUPOS
+ try{
+  const res = await fetch('palpites.json');
+  const data = await res.json();
+  palpitesGrupos = data[nome] || [];
+ }catch(e){}
+
+ // ✅ MATA-MATA
+ try{
   const resMM = await fetch('palpites_mm.json');
   const dataMM = await resMM.json();
   palpitesMM = dataMM[nome] || [];
- } catch(e){
-  console.error("Erro ao carregar palpites MM", e);
+ }catch(e){}
+
+ const todasFases = [];
+
+ // ✅ ADICIONA GRUPOS
+ if(palpitesGrupos.length > 0){
+  todasFases.push({
+    nome: "Fase de Grupos",
+    icon: "⚽",
+    jogos: palpitesGrupos,
+    tipo: "grupos"
+  });
  }
 
- if(palpitesMM.length === 0){
-  document.getElementById('modalContent').innerHTML=`
-   <div class="modal-title">📋 ${nome}</div>
-   <p>Nenhum palpite encontrado.</p>`;
-  document.getElementById('modalOverlay').classList.add('active');
-  return;
- }
-
- // 🔥 AGRUPA POR FASE
+ // ✅ AGRUPA MATA-MATA
  const fasesMap = {};
-
  palpitesMM.forEach(p=>{
-  if(!fasesMap[p.fase]) fasesMap[p.fase] = [];
-  fasesMap[p.fase].push(p);
+   if(!fasesMap[p.fase]) fasesMap[p.fase] = [];
+   fasesMap[p.fase].push(p);
  });
 
- const todasFases = Object.keys(fasesMap).map(f=>({
-  nome: f,
-  icon: {'16 avos':'⚔️','Oitavas':'🏅','Quartas':'🔥','Semifinal':'⭐','FINAL':'🏆'}[f] || '⚔️',
-  jogos: fasesMap[f]
- }));
+ Object.keys(fasesMap).forEach(f=>{
+  const icons = {
+    '16 avos':'⚔️',
+    'Oitavas':'🏅',
+    'Quartas':'🔥',
+    'Semifinal':'⭐',
+    'FINAL':'🏆'
+  };
 
- window._palpitesNome = nome;
+  todasFases.push({
+    nome: f,
+    icon: icons[f] || '⚔️',
+    jogos: fasesMap[f],
+    tipo: "mm"
+  });
+ });
+
  window._todasFases = todasFases;
+ window._palpitesNome = nome;
  palpiteFaseAtual = 0;
 
  renderPalpites();
 }
-function renderPalpites(){
+ function renderPalpites(){
  const nome = window._palpitesNome;
  const todasFases = window._todasFases;
  const faseAtual = todasFases[palpiteFaseAtual];
