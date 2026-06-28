@@ -15,10 +15,11 @@ ranking = []
 for pessoa, jogos in palpites.items():
     pontos = 0
 
+    # ✅ FASE DE GRUPOS
     for p in jogos:
-        # acha jogo real
         jogo_real = next(
-            (g for g in games if g["team1"] == p["team1"] and g["team2"] == p["team2"]),
+            (g for g in games 
+             if g["team1"] == p["team1"] and g["team2"] == p["team2"]),
             None
         )
 
@@ -34,51 +35,52 @@ for pessoa, jogos in palpites.items():
         palpite1 = p["palpite1"]
         palpite2 = p["palpite2"]
 
-        # ✅ placar exato = 5 pts
         if s1 == palpite1 and s2 == palpite2:
             pontos += 5
-
-        # ✅ resultado correto = 3 pts
         elif (
             (s1 > s2 and palpite1 > palpite2) or
             (s2 > s1 and palpite2 > palpite1) or
-            (s1 == s2 and palpite1 == palpite2)
+            (s1 == s2 and palpite1 == p["palpite1"])
         ):
             pontos += 3
+
+    # ✅ MATA-MATA (CORREÇÃO PRINCIPAL)
+    if pessoa in palpites_mm:
+        for p in palpites_mmjogo_real = next(
+                (g for g in games
+                 if g["team1"] == p["team1"]
+                 and g["team2"] == p["team2"]
+                 and g["date"] == p["date"]),
+                None
+            )
+
+            if not jogo_real:
+                continue
+
+            if jogo_real["score1"] is None or jogo_real["score2"] is None:
+                continue
+
+            s1 = jogo_real["score1"]
+            s2 = jogo_real["score2"]
+
+            if s1 == p["palpite1"] and s2 == p["palpite2"]:
+                pontos += 5
+            elif (
+                (s1 > s2 and p["palpite1"] > p["palpite2"]) or
+                (s2 > s1 and p["palpite2"] > p["palpite1"]) or
+                (s1 == s2 and p["palpite1"] == p["palpite2"])
+            ):
+                pontos += 3
 
     ranking.append({
         "name": pessoa,
         "pts": pontos
     })
-# ✅ soma mata-mata também
-if pessoa in palpites_mm:
-    for p in palpites_mmjogo_real = next(
-            (g for g in games if g["team1"] == p["team1"] and g["team2"] == p["team2"] and g["date"] == p["date"]),
-            None
-        )
 
-        if not jogo_real:
-            continue
-
-        if jogo_real["score1"] is None or jogo_real["score2"] is None:
-            continue
-
-        s1 = jogo_real["score1"]
-        s2 = jogo_real["score2"]
-
-        if s1 == p["palpite1"] and s2 == p["palpite2"]:
-            pontos += 5
-        elif (
-            (s1 > s2 and p["palpite1"] > p["palpite2"]) or
-            (s2 > s1 and p["palpite2"] > p["palpite1"]) or
-            (s1 == s2 and p["palpite1"] == p["palpite2"])
-        ):
-            pontos += 3
-            
-# ordena ranking
+# ✅ ordena ranking
 ranking.sort(key=lambda x: x["pts"], reverse=True)
 
-# salva novo ranking
+# ✅ salva novo ranking
 with open("ranking.json", "w", encoding="utf-8") as f:
     json.dump(ranking, f, ensure_ascii=False, indent=2)
 
