@@ -1,3222 +1,1642 @@
 {
   "Cosman": [
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo A",
-      "team2": "2º Grupo C",
-      "palpite1": 1,
-      "palpite2": 2.0,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "2º Grupo C"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo C",
-      "team2": "2º Grupo A",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo B",
-      "team2": "2º Grupo D",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo D",
-      "team2": "2º Grupo B",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo E",
-      "team2": "2º Grupo G",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo G",
-      "team2": "2º Grupo E",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo F",
-      "team2": "2º Grupo H",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo H",
-      "team2": "2º Grupo F",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo I",
-      "team2": "2º Grupo K",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo K",
-      "team2": "2º Grupo I",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo J",
-      "team2": "2º Grupo L",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo L",
-      "team2": "2º Grupo J",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
+  
+  { "fase": "16 avos", "team1": "África do Sul", "team2": "Canadá" },
+  { "fase": "16 avos", "team1": "Brasil", "team2": "Japão" },
+  { "fase": "16 avos", "team1": "Alemanha", "team2": "Paraguai" },
+  { "fase": "16 avos", "team1": "Holanda", "team2": "Marrocos" },
+  { "fase": "16 avos", "team1": "Costa do Marfim", "team2": "Noruega" },
+  { "fase": "16 avos", "team1": "França", "team2": "Suécia" },
+  { "fase": "16 avos", "team1": "México", "team2": "Equador" },
+  { "fase": "16 avos", "team1": "Inglaterra", "team2": "Congo" },
+  { "fase": "16 avos", "team1": "Bélgica", "team2": "Senegal" },
+  { "fase": "16 avos", "team1": "EUA", "team2": "Bósnia Herzegovina" },
+  { "fase": "16 avos", "team1": "Espanha", "team2": "Áustria" },
+  { "fase": "16 avos", "team1": "Portugal", "team2": "Croácia" },
+  { "fase": "16 avos", "team1": "Suíça", "team2": "Argélia" },
+  { "fase": "16 avos", "team1": "Austrália", "team2": "Egito" },
+  { "fase": "16 avos", "team1": "Argentina", "team2": "Cabo Verde" },
+  { "fase": "16 avos", "team1": "Colômbia", "team2": "Gana" },
+
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 73",
       "team2": "Venc. Jogo 74",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 75",
       "team2": "Venc. Jogo 76",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 77",
       "team2": "Venc. Jogo 78",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 79",
       "team2": "Venc. Jogo 80",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 81",
       "team2": "Venc. Jogo 82",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 83",
       "team2": "Venc. Jogo 84",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 85",
       "team2": "Venc. Jogo 86",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 87",
       "team2": "Venc. Jogo 88",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 89",
       "team2": "Venc. Jogo 90",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 91",
       "team2": "Venc. Jogo 92",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 93",
       "team2": "Venc. Jogo 94",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 95",
       "team2": "Venc. Jogo 96",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 97",
       "team2": "Venc. Jogo 98",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 99",
       "team2": "Venc. Jogo 100",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "3º Lugar",
       "team1": "Perd. Semi 1",
       "team2": "Perd. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "FINAL",
       "team1": "Venc. Semi 1",
       "team2": "Venc. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     }
   ],
   "Andrey": [
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo A",
-      "team2": "2º Grupo C",
-      "palpite1": 2,
-      "palpite2": 2.0,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo C",
-      "team2": "2º Grupo A",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo B",
-      "team2": "2º Grupo D",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo D",
-      "team2": "2º Grupo B",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo E",
-      "team2": "2º Grupo G",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo G",
-      "team2": "2º Grupo E",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo F",
-      "team2": "2º Grupo H",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo H",
-      "team2": "2º Grupo F",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo I",
-      "team2": "2º Grupo K",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo K",
-      "team2": "2º Grupo I",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo J",
-      "team2": "2º Grupo L",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo L",
-      "team2": "2º Grupo J",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
+  
+  { "fase": "16 avos", "team1": "África do Sul", "team2": "Canadá" },
+  { "fase": "16 avos", "team1": "Brasil", "team2": "Japão" },
+  { "fase": "16 avos", "team1": "Alemanha", "team2": "Paraguai" },
+  { "fase": "16 avos", "team1": "Holanda", "team2": "Marrocos" },
+  { "fase": "16 avos", "team1": "Costa do Marfim", "team2": "Noruega" },
+  { "fase": "16 avos", "team1": "França", "team2": "Suécia" },
+  { "fase": "16 avos", "team1": "México", "team2": "Equador" },
+  { "fase": "16 avos", "team1": "Inglaterra", "team2": "Congo" },
+  { "fase": "16 avos", "team1": "Bélgica", "team2": "Senegal" },
+  { "fase": "16 avos", "team1": "EUA", "team2": "Bósnia Herzegovina" },
+  { "fase": "16 avos", "team1": "Espanha", "team2": "Áustria" },
+  { "fase": "16 avos", "team1": "Portugal", "team2": "Croácia" },
+  { "fase": "16 avos", "team1": "Suíça", "team2": "Argélia" },
+  { "fase": "16 avos", "team1": "Austrália", "team2": "Egito" },
+  { "fase": "16 avos", "team1": "Argentina", "team2": "Cabo Verde" },
+  { "fase": "16 avos", "team1": "Colômbia", "team2": "Gana" },
+
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 73",
       "team2": "Venc. Jogo 74",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 75",
       "team2": "Venc. Jogo 76",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 77",
       "team2": "Venc. Jogo 78",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 79",
       "team2": "Venc. Jogo 80",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 81",
       "team2": "Venc. Jogo 82",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 83",
       "team2": "Venc. Jogo 84",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 85",
       "team2": "Venc. Jogo 86",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 87",
       "team2": "Venc. Jogo 88",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 89",
       "team2": "Venc. Jogo 90",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 91",
       "team2": "Venc. Jogo 92",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 93",
       "team2": "Venc. Jogo 94",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 95",
       "team2": "Venc. Jogo 96",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 97",
       "team2": "Venc. Jogo 98",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 99",
       "team2": "Venc. Jogo 100",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "3º Lugar",
       "team1": "Perd. Semi 1",
       "team2": "Perd. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "FINAL",
       "team1": "Venc. Semi 1",
       "team2": "Venc. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     }
   ],
   "Candido": [
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo A",
-      "team2": "2º Grupo C",
-      "palpite1": 0,
-      "palpite2": 2.0,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "2º Grupo C"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo C",
-      "team2": "2º Grupo A",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo B",
-      "team2": "2º Grupo D",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo D",
-      "team2": "2º Grupo B",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo E",
-      "team2": "2º Grupo G",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo G",
-      "team2": "2º Grupo E",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo F",
-      "team2": "2º Grupo H",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo H",
-      "team2": "2º Grupo F",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo I",
-      "team2": "2º Grupo K",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo K",
-      "team2": "2º Grupo I",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo J",
-      "team2": "2º Grupo L",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo L",
-      "team2": "2º Grupo J",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
+  
+  { "fase": "16 avos", "team1": "África do Sul", "team2": "Canadá" },
+  { "fase": "16 avos", "team1": "Brasil", "team2": "Japão" },
+  { "fase": "16 avos", "team1": "Alemanha", "team2": "Paraguai" },
+  { "fase": "16 avos", "team1": "Holanda", "team2": "Marrocos" },
+  { "fase": "16 avos", "team1": "Costa do Marfim", "team2": "Noruega" },
+  { "fase": "16 avos", "team1": "França", "team2": "Suécia" },
+  { "fase": "16 avos", "team1": "México", "team2": "Equador" },
+  { "fase": "16 avos", "team1": "Inglaterra", "team2": "Congo" },
+  { "fase": "16 avos", "team1": "Bélgica", "team2": "Senegal" },
+  { "fase": "16 avos", "team1": "EUA", "team2": "Bósnia Herzegovina" },
+  { "fase": "16 avos", "team1": "Espanha", "team2": "Áustria" },
+  { "fase": "16 avos", "team1": "Portugal", "team2": "Croácia" },
+  { "fase": "16 avos", "team1": "Suíça", "team2": "Argélia" },
+  { "fase": "16 avos", "team1": "Austrália", "team2": "Egito" },
+  { "fase": "16 avos", "team1": "Argentina", "team2": "Cabo Verde" },
+  { "fase": "16 avos", "team1": "Colômbia", "team2": "Gana" },
+
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 73",
       "team2": "Venc. Jogo 74",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 75",
       "team2": "Venc. Jogo 76",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 77",
       "team2": "Venc. Jogo 78",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 79",
       "team2": "Venc. Jogo 80",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 81",
       "team2": "Venc. Jogo 82",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 83",
       "team2": "Venc. Jogo 84",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 85",
       "team2": "Venc. Jogo 86",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 87",
       "team2": "Venc. Jogo 88",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 89",
       "team2": "Venc. Jogo 90",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 91",
       "team2": "Venc. Jogo 92",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 93",
       "team2": "Venc. Jogo 94",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 95",
       "team2": "Venc. Jogo 96",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 97",
       "team2": "Venc. Jogo 98",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 99",
       "team2": "Venc. Jogo 100",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "3º Lugar",
       "team1": "Perd. Semi 1",
       "team2": "Perd. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "FINAL",
       "team1": "Venc. Semi 1",
       "team2": "Venc. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     }
   ],
   "Lona": [
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo A",
-      "team2": "2º Grupo C",
-      "palpite1": 0,
-      "palpite2": 2.0,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "2º Grupo C"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo C",
-      "team2": "2º Grupo A",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo B",
-      "team2": "2º Grupo D",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo D",
-      "team2": "2º Grupo B",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo E",
-      "team2": "2º Grupo G",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo G",
-      "team2": "2º Grupo E",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo F",
-      "team2": "2º Grupo H",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo H",
-      "team2": "2º Grupo F",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo I",
-      "team2": "2º Grupo K",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo K",
-      "team2": "2º Grupo I",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo J",
-      "team2": "2º Grupo L",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo L",
-      "team2": "2º Grupo J",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
+  
+  { "fase": "16 avos", "team1": "África do Sul", "team2": "Canadá" },
+  { "fase": "16 avos", "team1": "Brasil", "team2": "Japão" },
+  { "fase": "16 avos", "team1": "Alemanha", "team2": "Paraguai" },
+  { "fase": "16 avos", "team1": "Holanda", "team2": "Marrocos" },
+  { "fase": "16 avos", "team1": "Costa do Marfim", "team2": "Noruega" },
+  { "fase": "16 avos", "team1": "França", "team2": "Suécia" },
+  { "fase": "16 avos", "team1": "México", "team2": "Equador" },
+  { "fase": "16 avos", "team1": "Inglaterra", "team2": "Congo" },
+  { "fase": "16 avos", "team1": "Bélgica", "team2": "Senegal" },
+  { "fase": "16 avos", "team1": "EUA", "team2": "Bósnia Herzegovina" },
+  { "fase": "16 avos", "team1": "Espanha", "team2": "Áustria" },
+  { "fase": "16 avos", "team1": "Portugal", "team2": "Croácia" },
+  { "fase": "16 avos", "team1": "Suíça", "team2": "Argélia" },
+  { "fase": "16 avos", "team1": "Austrália", "team2": "Egito" },
+  { "fase": "16 avos", "team1": "Argentina", "team2": "Cabo Verde" },
+  { "fase": "16 avos", "team1": "Colômbia", "team2": "Gana" },
+
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 73",
       "team2": "Venc. Jogo 74",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 75",
       "team2": "Venc. Jogo 76",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 77",
       "team2": "Venc. Jogo 78",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 79",
       "team2": "Venc. Jogo 80",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 81",
       "team2": "Venc. Jogo 82",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 83",
       "team2": "Venc. Jogo 84",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 85",
       "team2": "Venc. Jogo 86",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 87",
       "team2": "Venc. Jogo 88",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 89",
       "team2": "Venc. Jogo 90",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 91",
       "team2": "Venc. Jogo 92",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 93",
       "team2": "Venc. Jogo 94",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 95",
       "team2": "Venc. Jogo 96",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 97",
       "team2": "Venc. Jogo 98",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 99",
       "team2": "Venc. Jogo 100",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "3º Lugar",
       "team1": "Perd. Semi 1",
       "team2": "Perd. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "FINAL",
       "team1": "Venc. Semi 1",
       "team2": "Venc. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     }
   ],
   "Isac": [
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo A",
-      "team2": "2º Grupo C",
-      "palpite1": 0,
-      "palpite2": 2.0,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "2º Grupo C"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo C",
-      "team2": "2º Grupo A",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo B",
-      "team2": "2º Grupo D",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo D",
-      "team2": "2º Grupo B",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo E",
-      "team2": "2º Grupo G",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo G",
-      "team2": "2º Grupo E",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo F",
-      "team2": "2º Grupo H",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo H",
-      "team2": "2º Grupo F",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo I",
-      "team2": "2º Grupo K",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo K",
-      "team2": "2º Grupo I",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo J",
-      "team2": "2º Grupo L",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo L",
-      "team2": "2º Grupo J",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
+  
+  { "fase": "16 avos", "team1": "África do Sul", "team2": "Canadá" },
+  { "fase": "16 avos", "team1": "Brasil", "team2": "Japão" },
+  { "fase": "16 avos", "team1": "Alemanha", "team2": "Paraguai" },
+  { "fase": "16 avos", "team1": "Holanda", "team2": "Marrocos" },
+  { "fase": "16 avos", "team1": "Costa do Marfim", "team2": "Noruega" },
+  { "fase": "16 avos", "team1": "França", "team2": "Suécia" },
+  { "fase": "16 avos", "team1": "México", "team2": "Equador" },
+  { "fase": "16 avos", "team1": "Inglaterra", "team2": "Congo" },
+  { "fase": "16 avos", "team1": "Bélgica", "team2": "Senegal" },
+  { "fase": "16 avos", "team1": "EUA", "team2": "Bósnia Herzegovina" },
+  { "fase": "16 avos", "team1": "Espanha", "team2": "Áustria" },
+  { "fase": "16 avos", "team1": "Portugal", "team2": "Croácia" },
+  { "fase": "16 avos", "team1": "Suíça", "team2": "Argélia" },
+  { "fase": "16 avos", "team1": "Austrália", "team2": "Egito" },
+  { "fase": "16 avos", "team1": "Argentina", "team2": "Cabo Verde" },
+  { "fase": "16 avos", "team1": "Colômbia", "team2": "Gana" },
+
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 73",
       "team2": "Venc. Jogo 74",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 75",
       "team2": "Venc. Jogo 76",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 77",
       "team2": "Venc. Jogo 78",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 79",
       "team2": "Venc. Jogo 80",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 81",
       "team2": "Venc. Jogo 82",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 83",
       "team2": "Venc. Jogo 84",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 85",
       "team2": "Venc. Jogo 86",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 87",
       "team2": "Venc. Jogo 88",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 89",
       "team2": "Venc. Jogo 90",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 91",
       "team2": "Venc. Jogo 92",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 93",
       "team2": "Venc. Jogo 94",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 95",
       "team2": "Venc. Jogo 96",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 97",
       "team2": "Venc. Jogo 98",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 99",
       "team2": "Venc. Jogo 100",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "3º Lugar",
       "team1": "Perd. Semi 1",
       "team2": "Perd. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "FINAL",
       "team1": "Venc. Semi 1",
       "team2": "Venc. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     }
   ],
   "PC": [
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo A",
-      "team2": "2º Grupo C",
-      "palpite1": 0,
-      "palpite2": 2.0,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "2º Grupo C"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo C",
-      "team2": "2º Grupo A",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo B",
-      "team2": "2º Grupo D",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo D",
-      "team2": "2º Grupo B",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo E",
-      "team2": "2º Grupo G",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo G",
-      "team2": "2º Grupo E",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo F",
-      "team2": "2º Grupo H",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo H",
-      "team2": "2º Grupo F",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo I",
-      "team2": "2º Grupo K",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo K",
-      "team2": "2º Grupo I",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo J",
-      "team2": "2º Grupo L",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo L",
-      "team2": "2º Grupo J",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
+  
+  { "fase": "16 avos", "team1": "África do Sul", "team2": "Canadá" },
+  { "fase": "16 avos", "team1": "Brasil", "team2": "Japão" },
+  { "fase": "16 avos", "team1": "Alemanha", "team2": "Paraguai" },
+  { "fase": "16 avos", "team1": "Holanda", "team2": "Marrocos" },
+  { "fase": "16 avos", "team1": "Costa do Marfim", "team2": "Noruega" },
+  { "fase": "16 avos", "team1": "França", "team2": "Suécia" },
+  { "fase": "16 avos", "team1": "México", "team2": "Equador" },
+  { "fase": "16 avos", "team1": "Inglaterra", "team2": "Congo" },
+  { "fase": "16 avos", "team1": "Bélgica", "team2": "Senegal" },
+  { "fase": "16 avos", "team1": "EUA", "team2": "Bósnia Herzegovina" },
+  { "fase": "16 avos", "team1": "Espanha", "team2": "Áustria" },
+  { "fase": "16 avos", "team1": "Portugal", "team2": "Croácia" },
+  { "fase": "16 avos", "team1": "Suíça", "team2": "Argélia" },
+  { "fase": "16 avos", "team1": "Austrália", "team2": "Egito" },
+  { "fase": "16 avos", "team1": "Argentina", "team2": "Cabo Verde" },
+  { "fase": "16 avos", "team1": "Colômbia", "team2": "Gana" },
+
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 73",
       "team2": "Venc. Jogo 74",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 75",
       "team2": "Venc. Jogo 76",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 77",
       "team2": "Venc. Jogo 78",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 79",
       "team2": "Venc. Jogo 80",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 81",
       "team2": "Venc. Jogo 82",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 83",
       "team2": "Venc. Jogo 84",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 85",
       "team2": "Venc. Jogo 86",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 87",
       "team2": "Venc. Jogo 88",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 89",
       "team2": "Venc. Jogo 90",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 91",
       "team2": "Venc. Jogo 92",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 93",
       "team2": "Venc. Jogo 94",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 95",
       "team2": "Venc. Jogo 96",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 97",
       "team2": "Venc. Jogo 98",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 99",
       "team2": "Venc. Jogo 100",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "3º Lugar",
       "team1": "Perd. Semi 1",
       "team2": "Perd. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "FINAL",
       "team1": "Venc. Semi 1",
       "team2": "Venc. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     }
   ],
   "Eliana": [
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo A",
-      "team2": "2º Grupo C",
-      "palpite1": 2,
-      "palpite2": 1.0,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "1º Grupo A"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo C",
-      "team2": "2º Grupo A",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo B",
-      "team2": "2º Grupo D",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo D",
-      "team2": "2º Grupo B",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo E",
-      "team2": "2º Grupo G",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo G",
-      "team2": "2º Grupo E",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo F",
-      "team2": "2º Grupo H",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo H",
-      "team2": "2º Grupo F",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo I",
-      "team2": "2º Grupo K",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo K",
-      "team2": "2º Grupo I",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo J",
-      "team2": "2º Grupo L",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo L",
-      "team2": "2º Grupo J",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
+  
+  { "fase": "16 avos", "team1": "África do Sul", "team2": "Canadá" },
+  { "fase": "16 avos", "team1": "Brasil", "team2": "Japão" },
+  { "fase": "16 avos", "team1": "Alemanha", "team2": "Paraguai" },
+  { "fase": "16 avos", "team1": "Holanda", "team2": "Marrocos" },
+  { "fase": "16 avos", "team1": "Costa do Marfim", "team2": "Noruega" },
+  { "fase": "16 avos", "team1": "França", "team2": "Suécia" },
+  { "fase": "16 avos", "team1": "México", "team2": "Equador" },
+  { "fase": "16 avos", "team1": "Inglaterra", "team2": "Congo" },
+  { "fase": "16 avos", "team1": "Bélgica", "team2": "Senegal" },
+  { "fase": "16 avos", "team1": "EUA", "team2": "Bósnia Herzegovina" },
+  { "fase": "16 avos", "team1": "Espanha", "team2": "Áustria" },
+  { "fase": "16 avos", "team1": "Portugal", "team2": "Croácia" },
+  { "fase": "16 avos", "team1": "Suíça", "team2": "Argélia" },
+  { "fase": "16 avos", "team1": "Austrália", "team2": "Egito" },
+  { "fase": "16 avos", "team1": "Argentina", "team2": "Cabo Verde" },
+  { "fase": "16 avos", "team1": "Colômbia", "team2": "Gana" },
+
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 73",
       "team2": "Venc. Jogo 74",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 75",
       "team2": "Venc. Jogo 76",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 77",
       "team2": "Venc. Jogo 78",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 79",
       "team2": "Venc. Jogo 80",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 81",
       "team2": "Venc. Jogo 82",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 83",
       "team2": "Venc. Jogo 84",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 85",
       "team2": "Venc. Jogo 86",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 87",
       "team2": "Venc. Jogo 88",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 89",
       "team2": "Venc. Jogo 90",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 91",
       "team2": "Venc. Jogo 92",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 93",
       "team2": "Venc. Jogo 94",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 95",
       "team2": "Venc. Jogo 96",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 97",
       "team2": "Venc. Jogo 98",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 99",
       "team2": "Venc. Jogo 100",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "3º Lugar",
       "team1": "Perd. Semi 1",
       "team2": "Perd. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "FINAL",
       "team1": "Venc. Semi 1",
       "team2": "Venc. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     }
   ],
   "Sandra": [
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo A",
-      "team2": "2º Grupo C",
-      "palpite1": 1,
-      "palpite2": 3.0,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "2º Grupo C"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo C",
-      "team2": "2º Grupo A",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo B",
-      "team2": "2º Grupo D",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo D",
-      "team2": "2º Grupo B",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo E",
-      "team2": "2º Grupo G",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo G",
-      "team2": "2º Grupo E",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo F",
-      "team2": "2º Grupo H",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo H",
-      "team2": "2º Grupo F",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo I",
-      "team2": "2º Grupo K",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo K",
-      "team2": "2º Grupo I",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo J",
-      "team2": "2º Grupo L",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo L",
-      "team2": "2º Grupo J",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
+  
+  { "fase": "16 avos", "team1": "África do Sul", "team2": "Canadá" },
+  { "fase": "16 avos", "team1": "Brasil", "team2": "Japão" },
+  { "fase": "16 avos", "team1": "Alemanha", "team2": "Paraguai" },
+  { "fase": "16 avos", "team1": "Holanda", "team2": "Marrocos" },
+  { "fase": "16 avos", "team1": "Costa do Marfim", "team2": "Noruega" },
+  { "fase": "16 avos", "team1": "França", "team2": "Suécia" },
+  { "fase": "16 avos", "team1": "México", "team2": "Equador" },
+  { "fase": "16 avos", "team1": "Inglaterra", "team2": "Congo" },
+  { "fase": "16 avos", "team1": "Bélgica", "team2": "Senegal" },
+  { "fase": "16 avos", "team1": "EUA", "team2": "Bósnia Herzegovina" },
+  { "fase": "16 avos", "team1": "Espanha", "team2": "Áustria" },
+  { "fase": "16 avos", "team1": "Portugal", "team2": "Croácia" },
+  { "fase": "16 avos", "team1": "Suíça", "team2": "Argélia" },
+  { "fase": "16 avos", "team1": "Austrália", "team2": "Egito" },
+  { "fase": "16 avos", "team1": "Argentina", "team2": "Cabo Verde" },
+  { "fase": "16 avos", "team1": "Colômbia", "team2": "Gana" },
+
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 73",
       "team2": "Venc. Jogo 74",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 75",
       "team2": "Venc. Jogo 76",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 77",
       "team2": "Venc. Jogo 78",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 79",
       "team2": "Venc. Jogo 80",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 81",
       "team2": "Venc. Jogo 82",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 83",
       "team2": "Venc. Jogo 84",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 85",
       "team2": "Venc. Jogo 86",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 87",
       "team2": "Venc. Jogo 88",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 89",
       "team2": "Venc. Jogo 90",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 91",
       "team2": "Venc. Jogo 92",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 93",
       "team2": "Venc. Jogo 94",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 95",
       "team2": "Venc. Jogo 96",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 97",
       "team2": "Venc. Jogo 98",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 99",
       "team2": "Venc. Jogo 100",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "3º Lugar",
       "team1": "Perd. Semi 1",
       "team2": "Perd. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "FINAL",
       "team1": "Venc. Semi 1",
       "team2": "Venc. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     }
   ],
   "Vania": [
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo A",
-      "team2": "2º Grupo C",
-      "palpite1": 1,
-      "palpite2": 2.0,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "2º Grupo C"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo C",
-      "team2": "2º Grupo A",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo B",
-      "team2": "2º Grupo D",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo D",
-      "team2": "2º Grupo B",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo E",
-      "team2": "2º Grupo G",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo G",
-      "team2": "2º Grupo E",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo F",
-      "team2": "2º Grupo H",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo H",
-      "team2": "2º Grupo F",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo I",
-      "team2": "2º Grupo K",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo K",
-      "team2": "2º Grupo I",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo J",
-      "team2": "2º Grupo L",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo L",
-      "team2": "2º Grupo J",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
+  
+  { "fase": "16 avos", "team1": "África do Sul", "team2": "Canadá" },
+  { "fase": "16 avos", "team1": "Brasil", "team2": "Japão" },
+  { "fase": "16 avos", "team1": "Alemanha", "team2": "Paraguai" },
+  { "fase": "16 avos", "team1": "Holanda", "team2": "Marrocos" },
+  { "fase": "16 avos", "team1": "Costa do Marfim", "team2": "Noruega" },
+  { "fase": "16 avos", "team1": "França", "team2": "Suécia" },
+  { "fase": "16 avos", "team1": "México", "team2": "Equador" },
+  { "fase": "16 avos", "team1": "Inglaterra", "team2": "Congo" },
+  { "fase": "16 avos", "team1": "Bélgica", "team2": "Senegal" },
+  { "fase": "16 avos", "team1": "EUA", "team2": "Bósnia Herzegovina" },
+  { "fase": "16 avos", "team1": "Espanha", "team2": "Áustria" },
+  { "fase": "16 avos", "team1": "Portugal", "team2": "Croácia" },
+  { "fase": "16 avos", "team1": "Suíça", "team2": "Argélia" },
+  { "fase": "16 avos", "team1": "Austrália", "team2": "Egito" },
+  { "fase": "16 avos", "team1": "Argentina", "team2": "Cabo Verde" },
+  { "fase": "16 avos", "team1": "Colômbia", "team2": "Gana" },
+
+        {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 73",
       "team2": "Venc. Jogo 74",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 75",
       "team2": "Venc. Jogo 76",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 77",
       "team2": "Venc. Jogo 78",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 79",
       "team2": "Venc. Jogo 80",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 81",
       "team2": "Venc. Jogo 82",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 83",
       "team2": "Venc. Jogo 84",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 85",
       "team2": "Venc. Jogo 86",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 87",
       "team2": "Venc. Jogo 88",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 89",
       "team2": "Venc. Jogo 90",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 91",
       "team2": "Venc. Jogo 92",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 93",
       "team2": "Venc. Jogo 94",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 95",
       "team2": "Venc. Jogo 96",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 97",
       "team2": "Venc. Jogo 98",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 99",
       "team2": "Venc. Jogo 100",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "3º Lugar",
       "team1": "Perd. Semi 1",
       "team2": "Perd. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "FINAL",
       "team1": "Venc. Semi 1",
       "team2": "Venc. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     }
   ],
   "Nataniele": [
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo A",
-      "team2": "2º Grupo C",
-      "palpite1": 1,
-      "palpite2": 2.0,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "2º Grupo C"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo C",
-      "team2": "2º Grupo A",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo B",
-      "team2": "2º Grupo D",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo D",
-      "team2": "2º Grupo B",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo E",
-      "team2": "2º Grupo G",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo G",
-      "team2": "2º Grupo E",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo F",
-      "team2": "2º Grupo H",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo H",
-      "team2": "2º Grupo F",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo I",
-      "team2": "2º Grupo K",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo K",
-      "team2": "2º Grupo I",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo J",
-      "team2": "2º Grupo L",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "1º Grupo L",
-      "team2": "2º Grupo J",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
-    {
-      "fase": "16 avos",
-      "team1": "Melhor 3º",
-      "team2": "Melhor 3º",
-      "palpite1": NaN,
-      "palpite2": NaN,
-      "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
-    },
+  
+  { "fase": "16 avos", "team1": "África do Sul", "team2": "Canadá" },
+  { "fase": "16 avos", "team1": "Brasil", "team2": "Japão" },
+  { "fase": "16 avos", "team1": "Alemanha", "team2": "Paraguai" },
+  { "fase": "16 avos", "team1": "Holanda", "team2": "Marrocos" },
+  { "fase": "16 avos", "team1": "Costa do Marfim", "team2": "Noruega" },
+  { "fase": "16 avos", "team1": "França", "team2": "Suécia" },
+  { "fase": "16 avos", "team1": "México", "team2": "Equador" },
+  { "fase": "16 avos", "team1": "Inglaterra", "team2": "Congo" },
+  { "fase": "16 avos", "team1": "Bélgica", "team2": "Senegal" },
+  { "fase": "16 avos", "team1": "EUA", "team2": "Bósnia Herzegovina" },
+  { "fase": "16 avos", "team1": "Espanha", "team2": "Áustria" },
+  { "fase": "16 avos", "team1": "Portugal", "team2": "Croácia" },
+  { "fase": "16 avos", "team1": "Suíça", "team2": "Argélia" },
+  { "fase": "16 avos", "team1": "Austrália", "team2": "Egito" },
+  { "fase": "16 avos", "team1": "Argentina", "team2": "Cabo Verde" },
+  { "fase": "16 avos", "team1": "Colômbia", "team2": "Gana" },
+
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 73",
       "team2": "Venc. Jogo 74",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 75",
       "team2": "Venc. Jogo 76",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 77",
       "team2": "Venc. Jogo 78",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 79",
       "team2": "Venc. Jogo 80",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 81",
       "team2": "Venc. Jogo 82",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 83",
       "team2": "Venc. Jogo 84",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 85",
       "team2": "Venc. Jogo 86",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Oitavas",
       "team1": "Venc. Jogo 87",
       "team2": "Venc. Jogo 88",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 89",
       "team2": "Venc. Jogo 90",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 91",
       "team2": "Venc. Jogo 92",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 93",
       "team2": "Venc. Jogo 94",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Quartas",
       "team1": "Venc. Jogo 95",
       "team2": "Venc. Jogo 96",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 97",
       "team2": "Venc. Jogo 98",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "Semifinal",
       "team1": "Venc. Jogo 99",
       "team2": "Venc. Jogo 100",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "3º Lugar",
       "team1": "Perd. Semi 1",
       "team2": "Perd. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     },
     {
       "fase": "FINAL",
       "team1": "Venc. Semi 1",
       "team2": "Venc. Semi 2",
-      "palpite1": NaN,
-      "palpite2": NaN,
+      "palpite1": null,
+      "palpite2": null,
       "resultado": "⏳",
-      "pontos": 0,
-      "vencedor": "Empate"
+      "pontos": 0
     }
   ]
 }
