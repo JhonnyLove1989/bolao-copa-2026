@@ -44,13 +44,12 @@ for pessoa, jogos in palpites.items():
     # ✅ MATA-MATA (CORRIGIDO)
     if pessoa in palpites_mm:
         for p in palpites_mmjogo_real = next(
-                (g for g in games
-                 if g["team1"] == p["team1"]
-                 and g["team2"] == p["team2"]
+                (g for g in games 
+                 if g["team1"] == p["team1"] 
+                 and g["team2"] == p["team2"] 
                  and g["date"] == p["date"]),
                 None
             )
-
             if not jogo_real:
                 continue
 
