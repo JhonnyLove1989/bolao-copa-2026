@@ -18,7 +18,7 @@ for pessoa, jogos in palpites.items():
     # ✅ FASE DE GRUPOS
     for p in jogos:
         jogo_real = next(
-            (g for g in games 
+            (g for g in games
              if g["team1"] == p["team1"] and g["team2"] == p["team2"]),
             None
         )
@@ -32,19 +32,16 @@ for pessoa, jogos in palpites.items():
         s1 = jogo_real["score1"]
         s2 = jogo_real["score2"]
 
-        palpite1 = p["palpite1"]
-        palpite2 = p["palpite2"]
-
-        if s1 == palpite1 and s2 == palpite2:
+        if s1 == p["palpite1"] and s2 == p["palpite2"]:
             pontos += 5
         elif (
-            (s1 > s2 and palpite1 > palpite2) or
-            (s2 > s1 and palpite2 > palpite1) or
-            (s1 == s2 and palpite1 == p["palpite1"])
+            (s1 > s2 and p["palpite1"] > p["palpite2"]) or
+            (s2 > s1 and p["palpite2"] > p["palpite1"]) or
+            (s1 == s2 and p["palpite1"] == p["palpite2"])
         ):
             pontos += 3
 
-    # ✅ MATA-MATA (CORREÇÃO PRINCIPAL)
+    # ✅ MATA-MATA (CORRIGIDO)
     if pessoa in palpites_mm:
         for p in palpites_mmjogo_real = next(
                 (g for g in games
