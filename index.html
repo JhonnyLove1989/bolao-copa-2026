@@ -1434,45 +1434,47 @@ async function loadBracket(){
 
   jogos16.forEach(j => {
 
-    html += `
-    <div class="match">
-      <div>${j.date}</div>
-      <div class="vs">
-        <div class="team-line">
-          <img class="flag" src="${flag(j.team1)}">
-          ${j.team1}
-        </div>
+  // ✅ CALCULO DO PLACAR (FORA DO HTML)
+  let scoreHTML = '<span class="score-vs">VS</span>';
 
-        <div class="score">
-          let scoreHTML = '<span class="score-vs">VS</span>';
+  const jogoReal = gamesCache.find(g =>
+    g.team1 === j.team1 &&
+    g.team2 === j.team2 &&
+    g.date === j.date
+  );
 
-// ✅ procurar jogo real
-const jogoReal = gamesCache.find(g =>
-  g.team1 === j.team1 &&
-  g.team2 === j.team2 &&
-  g.date === j.date
-);
+  if(jogoReal){
+    const s1 = jogoReal.live_score1 ?? jogoReal.score1;
+    const s2 = jogoReal.live_score2 ?? jogoReal.score2;
 
-if(jogoReal){
-
-  const s1 = jogoReal.live_score1 ?? jogoReal.score1;
-  const s2 = jogoReal.live_score2 ?? jogoReal.score2;
-
-  if(s1 != null && s2 != null){
-    scoreHTML = `<span class="score-win">${s1} x ${s2}</span>`;
+    if(s1 != null && s2 != null){
+      scoreHTML = `<span class="score-win">${s1} x ${s2}</span>`;
+    }
   }
-}
-        </div>
 
-        <div class="team-line">
-          ${j.team2}
-          <img class="flag" src="${flag(j.team2)}">
-        </div>
+  // ✅ HTML LIMPO
+  html += `
+  <div class="match">
+    <div>${j.date}</div>
+    <div class="vs">
+      <div class="team-line">
+        <img class="flag" src="${flag(j.team1)}">
+        ${j.team1}
+      </div>
+
+      <div class="score">
+        ${scoreHTML}
+      </div>
+
+      <div class="team-line">
+        ${j.team2}
+        <img class="flag" src="${flag(j.team2)}">
       </div>
     </div>
-    `;
-  });
-
+  </div>
+  `;
+});
+  
  } else if(currentPhase===1){
   // OITAVAS
   for(let i=0;i<8;i++){
