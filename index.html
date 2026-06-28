@@ -1535,10 +1535,15 @@ function showBracket(){
 let palpiteFaseAtual = 0;
 
 async function openPalpites(nome){
- const res=await fetch('palpites.json');
- const data=await res.json();
- const palpites=data[nome] || [];
+ let palpites = [];
 
+try {
+  const res = await fetch('palpites_mm.json');
+  const data = await res.json();
+  palpites = data[nome] || [];
+} catch (e) {
+  console.error("Erro ao carregar palpites_mm.json", e);
+}
  let palpitesMM = [];
  try {
   const resMM=await fetch('palpites_mm.json');
@@ -1556,10 +1561,8 @@ async function openPalpites(nome){
 
  // Monta lista de fases (Grupos + MM)
  const todasFases = [];
- if(palpites.length > 0){
-  todasFases.push({ nome:'Fase de Grupos', icon:'⚽', jogos:palpites, tipo:'grupos' });
- }
- Object.keys(fasesMap).forEach(f=>{
+
+Object.keys(fasesMap).forEach(f=>{
   const icons = {'16 avos':'⚔️','Oitavas':'🏅','Quartas':'🔥','Semifinal':'⭐','3º Lugar':'🥉','FINAL':'🏆'};
   todasFases.push({ nome:f, icon:icons[f]||'⚔️', jogos:fasesMap[f], tipo:'mm' });
  });
