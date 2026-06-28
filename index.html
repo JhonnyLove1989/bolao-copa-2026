@@ -1471,10 +1471,7 @@ async function loadBracket(){
   // ✅ HTML LIMPO
   html += `
   <div class="match">
-    <div>
-  ${j.date}
-  ${ ...status do jogo... }
-</div>
+    <div>${j.date} ${jogoReal && jogoReal.status === 'FINISHED' ? '✅ FINAL' : jogoReal && ['LIVE','IN_PLAY','PAUSED'].includes(jogoReal.status) ? '🔴 AO VIVO' : '⏳'}</div>
     <div class="vs">
       <div class="team-line">
         <img class="flag" src="${flag(j.team1)}">
