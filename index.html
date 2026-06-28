@@ -1444,9 +1444,24 @@ async function loadBracket(){
         </div>
 
         <div class="score">
-          <span class="score-vs">
-            ${j.palpite1 ?? '?'} x ${j.palpite2 ?? '?'}
-          </span>
+          let scoreHTML = '<span class="score-vs">VS</span>';
+
+// ✅ procurar jogo real
+const jogoReal = gamesCache.find(g =>
+  g.team1 === j.team1 &&
+  g.team2 === j.team2 &&
+  g.date === j.date
+);
+
+if(jogoReal){
+
+  const s1 = jogoReal.live_score1 ?? jogoReal.score1;
+  const s2 = jogoReal.live_score2 ?? jogoReal.score2;
+
+  if(s1 != null && s2 != null){
+    scoreHTML = `<span class="score-win">${s1} x ${s2}</span>`;
+  }
+}
         </div>
 
         <div class="team-line">
