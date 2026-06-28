@@ -41,7 +41,7 @@ for pessoa, jogos in palpites.items():
         ):
             pontos += 3
 
-    # ✅ MATA-MATA (AGORA CORRETO)
+    # ✅ MATA-MATA (FINALMENTE CORRETO)
     if pessoa in palpites_mm:
         for p in palpites_mmjogo_real = next(
                 (g for g in games
@@ -74,10 +74,10 @@ for pessoa, jogos in palpites.items():
         "pts": pontos
     })
 
-# ✅ ordena ranking
+# ordena ranking
 ranking.sort(key=lambda x: x["pts"], reverse=True)
 
-# ✅ salva novo ranking
+# salva novo ranking
 with open("ranking.json", "w", encoding="utf-8") as f:
     json.dump(ranking, f, ensure_ascii=False, indent=2)
 
