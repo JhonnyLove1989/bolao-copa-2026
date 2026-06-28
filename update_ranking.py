@@ -18,7 +18,7 @@ for pessoa, jogos in palpites.items():
     # ✅ FASE DE GRUPOS
     for p in jogos:
         jogo_real = next(
-            (g for g in games
+            (g for g in games 
              if g["team1"] == p["team1"] and g["team2"] == p["team2"]),
             None
         )
@@ -41,12 +41,12 @@ for pessoa, jogos in palpites.items():
         ):
             pontos += 3
 
-    # ✅ MATA-MATA (FINALMENTE CORRETO)
+    # ✅ MATA-MATA (CORRETO MESMO AGORA)
     if pessoa in palpites_mm:
         for p in palpites_mmjogo_real = next(
-                (g for g in games
-                 if g["team1"] == p["team1"]
-                 and g["team2"] == p["team2"]
+                (g for g in games 
+                 if g["team1"] == p["team1"] 
+                 and g["team2"] == p["team2"] 
                  and g["date"] == p["date"]),
                 None
             )
@@ -74,10 +74,10 @@ for pessoa, jogos in palpites.items():
         "pts": pontos
     })
 
-# ordena ranking
+# ✅ ordena ranking
 ranking.sort(key=lambda x: x["pts"], reverse=True)
 
-# salva novo ranking
+# ✅ salva novo ranking
 with open("ranking.json", "w", encoding="utf-8") as f:
     json.dump(ranking, f, ensure_ascii=False, indent=2)
 
