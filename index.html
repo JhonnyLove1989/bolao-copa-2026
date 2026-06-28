@@ -1444,18 +1444,37 @@ async function loadBracket(){
   );
 
   if(jogoReal){
-    const s1 = jogoReal.live_score1 ?? jogoReal.score1;
-    const s2 = jogoReal.live_score2 ?? jogoReal.score2;
 
-    if(s1 != null && s2 != null){
-      scoreHTML = `<span class="score-win">${s1} x ${s2}</span>`;
+  const isLive = ['LIVE','IN_PLAY','PAUSED'].includes(jogoReal.status);
+
+  let s1 = jogoReal.score1;
+  let s2 = jogoReal.score2;
+
+  // 🔴 SE ESTIVER AO VIVO → usa live score
+  if(isLive){
+    s1 = jogoReal.live_score1 ?? s1;
+    s2 = jogoReal.live_score2 ?? s2;
+  }
+
+  // ✅ SE TEM PLACAR → mostra
+  if(s1 != null && s2 != null){
+
+    if(isLive){
+      scoreHTML = `<span class="score-win">🔴 ${s1} x ${s2}</span>`;
+    }
+    else if(jogoReal.status === 'FINISHED'){
+      scoreHTML = `<span class="score-win">✅ ${s1} x ${s2}</span>`;
     }
   }
+}
 
   // ✅ HTML LIMPO
   html += `
   <div class="match">
-    <div>${j.date}</div>
+    <div>
+  ${j.date}
+  ${ ...status do jogo... }
+</div>
     <div class="vs">
       <div class="team-line">
         <img class="flag" src="${flag(j.team1)}">
