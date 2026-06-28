@@ -36,9 +36,17 @@ games = []
         status = status_api
 
     # ✅ PEGA SCORE
-    score1 = m["score"]["fullTime"]["home"]
-    score2 = m["score"]["fullTime"]["away"]
-
+    score_full1 = m["score"]["fullTime"]["home"]
+    score_full2 = m["score"]["fullTime"]["away"]
+    
+    score_half1 = m["score"]["halfTime"]["home"]
+    score_half2 = m["score"]["halfTime"]["away"]
+    
+    score1 = score_full1
+    score2 = score_full2
+    
+    live1 = score_half1 if score_half1 is not None else score_full1
+    live2 = score_half2 if score_half2 is not None else score_full2
     game = {
         "date": m["utcDate"][8:10] + "/" + m["utcDate"][5:7],
         "time": m["utcDate"][11:16],
