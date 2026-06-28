@@ -1535,39 +1535,18 @@ function showBracket(){
 let palpiteFaseAtual = 0;
 
 async function openPalpites(nome){
- let palpites = [];
 
-try {
-  const res = await fetch('palpites_mm.json');
-  const data = await res.json();
-  palpites = data[nome] || [];
-} catch (e) {
-  console.error("Erro ao carregar palpites_mm.json", e);
-}
  let palpitesMM = [];
+
  try {
-  const resMM=await fetch('palpites_mm.json');
-  const dataMM=await resMM.json();
-  palpitesMM=dataMM[nome] || [];
- } catch(e){}
+  const resMM = await fetch('palpites_mm.json');
+  const dataMM = await resMM.json();
+  palpitesMM = dataMM[nome] || [];
+ } catch(e){
+  console.error("Erro ao carregar palpites MM", e);
+ }
 
- // Agrupa MM por fase
- const fasesMap = {};
- palpitesMM.forEach(p=>{
-  const f = p.fase || 'Outros';
-  if(!fasesMap[f]) fasesMap[f] = [];
-  fasesMap[f].push(p);
- });
-
- // Monta lista de fases (Grupos + MM)
- const todasFases = [];
-
-Object.keys(fasesMap).forEach(f=>{
-  const icons = {'16 avos':'⚔️','Oitavas':'🏅','Quartas':'🔥','Semifinal':'⭐','3º Lugar':'🥉','FINAL':'🏆'};
-  todasFases.push({ nome:f, icon:icons[f]||'⚔️', jogos:fasesMap[f], tipo:'mm' });
- });
-
- if(todasFases.length === 0){
+ if(palpitesMM.length === 0){
   document.getElementById('modalContent').innerHTML=`
    <div class="modal-title">📋 ${nome}</div>
    <p>Nenhum palpite encontrado.</p>`;
@@ -1575,13 +1554,26 @@ Object.keys(fasesMap).forEach(f=>{
   return;
  }
 
- palpiteFaseAtual = 0;
+ // 🔥 AGRUPA POR FASE
+ const fasesMap = {};
+
+ palpitesMM.forEach(p=>{
+  if(!fasesMap[p.fase]) fasesMap[p.fase] = [];
+  fasesMap[p.fase].push(p);
+ });
+
+ const todasFases = Object.keys(fasesMap).map(f=>({
+  nome: f,
+  icon: {'16 avos':'⚔️','Oitavas':'🏅','Quartas':'🔥','Semifinal':'⭐','FINAL':'🏆'}[f] || '⚔️',
+  jogos: fasesMap[f]
+ }));
+
  window._palpitesNome = nome;
  window._todasFases = todasFases;
+ palpiteFaseAtual = 0;
 
  renderPalpites();
 }
-
 function renderPalpites(){
  const nome = window._palpitesNome;
  const todasFases = window._todasFases;
@@ -1939,7 +1931,7 @@ Object.keys(data).forEach(nome=>{
       let pontos = null;
       let resultIcon = '⏳';
 
-      if(jogoReal && jogoReal.score1 != null && jogoReal.score2 != null){
+      const finished = false; // mata-mata ainda sem resultado
 
         const s1 = jogoReal.score1;
         const s2 = jogoReal.score2;
