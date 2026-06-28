@@ -1001,6 +1001,7 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15) !important;
  let lastScores = {};
 
  let gamesCache = [];
+ let jogosMM = [];
 
 const goalSound = new Audio("https://actions.google.com/sounds/v1/sports/crowd_cheer.ogg");
 goalSound.volume = 1;
@@ -1427,25 +1428,36 @@ async function loadBracket(){
  // CONTEÚDO DA FASE
  html+=`<div class="bracket-games">`;
 
- if(currentPhase===0){
-  // 16 Avos
-  bracketR32.forEach((m,i)=>{
-   const h=resolveTeam(m.home, standings);
-   const a=resolveTeam(m.away, standings);
-   const hFlag=h.resolved?`<img class="flag" src="${flag(h.name)}">`:'';
-   const aFlag=a.resolved?`<img class="flag" src="${flag(a.name)}">`:'';
-   const label=m.home==='3º'?'Melhores 3ºs':`${m.home} vs ${m.away}`;
+ if(currentPhase === 0){
 
-   html+=`
-   <div class="match">
-    <div>${m.date} — ${label}</div>
-    <div class="vs">
-     <div class="team-line">${hFlag}${h.name}</div>
-     <div class="score"><span class="score-vs">VS</span></div>
-     <div class="team-line">${a.name}${aFlag}</div>
+  const jogos16 = jogosMM.filter(j => j.fase === "16 avos");
+
+  jogos16.forEach(j => {
+
+    html += `
+    <div class="match">
+      <div>${j.date}</div>
+      <div class="vs">
+        <div class="team-line">
+          <img class="flag" src="${flag(j.team1)}">
+          ${j.team1}
+        </div>
+
+        <div class="score">
+          <span class="score-vs">
+            ${j.palpite1 ?? '?'} x ${j.palpite2 ?? '?'}
+          </span>
+        </div>
+
+        <div class="team-line">
+          ${j.team2}
+          <img class="flag" src="${flag(j.team2)}">
+        </div>
+      </div>
     </div>
-   </div>`;
+    `;
   });
+}
 
  } else if(currentPhase===1){
   // OITAVAS
@@ -1923,6 +1935,13 @@ setInterval(()=>{
 async function init(){
   const res = await fetch('games.json');
   gamesCache = await res.json();
+
+ // ✅ CARREGAR MATA-MATA REAL
+  const resMM = await fetch('palpites_mm.json');
+  const dataMM = await resMM.json();
+  
+  const primeiroUsuario = Object.keys(dataMM)[0];
+  jogosMM = dataMM[primeiroUsuario] || [];
 
   loadNextMatch();
   loadRanking();
