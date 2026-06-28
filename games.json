@@ -685,8 +685,8 @@
     "group": "J",
     "team1": "Argélia",
     "team2": "Áustria",
-    "score1": null,
-    "score2": null,
+    "score1": 3,
+    "score2": 3,
     "city": "Kansas City"
   },
   {
@@ -695,8 +695,8 @@
     "group": "J",
     "team1": "Jordânia",
     "team2": "Argentina",
-    "score1": null,
-    "score2": null,
+    "score1": 1,
+    "score2": 3,
     "city": "Dallas"
   },
   {
