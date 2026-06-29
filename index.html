@@ -1023,22 +1023,34 @@ let grupoAtual='A';
  let jogadorAtivo = null;
  
 function flag(name){
+
+ const normalize = s =>
+   s?.normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().toLowerCase();
+
  const map={
-  "Brasil":"br","México":"mx","África do Sul":"za","Coreia do Sul":"kr",
-  "República Tcheca":"cz","Escócia":"gb-sct","Marrocos":"ma","Haiti":"ht",
-  "Canadá":"ca","Suíça":"ch","Catar":"qa","Alemanha":"de","Holanda":"nl",
-  "Japão":"jp","EUA":"us","Inglaterra":"gb-eng","Croácia":"hr","Gana":"gh",
-  "Panamá":"pa","Uruguai":"uy","Espanha":"es","França":"fr","Argentina":"ar",
-  "Bélgica":"be","Portugal":"pt","Colômbia":"co","Costa do Marfim":"ci",
-  "Equador":"ec","Tunísia":"tn","Senegal":"sn","Noruega":"no","Irã":"ir",
-  "Nova Zelândia":"nz","Paraguai":"py","Turquia":"tr","Curaçao":"cw",
-  "Suécia":"se","Egito":"eg","Iraque":"iq","Argélia":"dz",
-  "Áustria":"at","Jordânia":"jo","RD Congo":"cd","Uzbequistão":"uz",
-  "Bósnia e Herzegovina":"ba","Cabo Verde":"cv","Arábia Saudita":"sa","Austrália":"au"
+   "brasil":"br",
+   "mexico":"mx",
+   "africa do sul":"za",
+   "coreia do sul":"kr",
+   "estados unidos":"us",
+   "eua":"us",
+   "bosnia e herzegovina":"ba",
+   "bosnia herzegovina":"ba",
+   "alemanha":"de",
+   "japao":"jp",
+   "franca":"fr",
+   "argentina":"ar",
+   "espanha":"es",
+   "portugal":"pt",
+   "inglaterra":"gb-eng",
+   "holanda":"nl"
  };
- return `https://flagcdn.com/w40/${map[name] || 'un'}.png`;
+
+ const key = normalize(name);
+
+ return `https://flagcdn.com/w40/${map[key] || 'un'}.png`;
 }
-function safeId(text){
+ function safeId(text){
   return text
     .toLowerCase()
     .replace(/\s+/g, '-')
