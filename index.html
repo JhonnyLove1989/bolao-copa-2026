@@ -1432,46 +1432,25 @@ async function loadBracket(){
 
   const jogos16 = jogosMM.filter(j => j.fase === "16 avos");
 
-  jogos16.forEach(j => {
+  jogosFase.forEach(j => {
 
   // ✅ CALCULO DO PLACAR (FORA DO HTML)
   let scoreHTML = '<span class="score-vs">VS</span>';
 
-  const jogoReal = gamesCache.find(g =>
-    g.team1 === j.team1 &&
-    g.team2 === j.team2 &&
-    g.date === j.date
-  );
+  const isLive = ['LIVE','IN_PLAY','PAUSED'].includes(j.status);
 
-  if(jogoReal){
-
-  const isLive = ['LIVE','IN_PLAY','PAUSED'].includes(jogoReal.status);
-
-  let s1 = jogoReal.score1;
-  let s2 = jogoReal.score2;
-
-  // 🔴 SE ESTIVER AO VIVO → usa live score
+if(j.score1 != null && j.score2 != null){
   if(isLive){
-    s1 = jogoReal.live_score1 ?? s1;
-    s2 = jogoReal.live_score2 ?? s2;
-  }
-
-  // ✅ SE TEM PLACAR → mostra
-  if(s1 != null && s2 != null){
-
-    if(isLive){
-      scoreHTML = `<span class="score-win">🔴 ${s1} x ${s2}</span>`;
-    }
-    else if(jogoReal.status === 'FINISHED'){
-      scoreHTML = `<span class="score-win">✅ ${s1} x ${s2}</span>`;
-    }
+    scoreHTML = `<span class="score-win">🔴 ${j.score1} x ${j.score2}</span>`;
+  } else {
+    scoreHTML = `<span class="score-win">✅ ${j.score1} x ${j.score2}</span>`;
   }
 }
-
   // ✅ HTML LIMPO
   html += `
   <div class="match">
-    <div>${j.date} ${jogoReal && jogoReal.status === 'FINISHED' ? '✅ FINAL' : jogoReal && ['LIVE','IN_PLAY','PAUSED'].includes(jogoReal.status) ? '🔴 AO VIVO' : '⏳'}</div>
+    ${j.date} ${j.time || ''}
+${isLive ? '🔴 AO VIVO' : (j.score1 != null ? '✅ FINAL' : '⏳')}
     <div class="vs">
       <div class="team-line">
         <img class="flag" src="${flag(j.team1)}">
@@ -1590,7 +1569,11 @@ async function openPalpites(nome){
  }catch(e){}
 
  try{
-  const resMM = await fetch('palpites_mm.json');
+  const faseAtualNome = bracketPhases[currentPhase].toLowerCase();
+
+const jogosFase = gamesCache.filter(g =>
+  g.group && g.group.toLowerCase().includes(faseAtualNome)
+);
   const dataMM = await resMM.json();
   palpitesMM = dataMM[nome] || [];
  }catch(e){}
@@ -1970,12 +1953,7 @@ async function init(){
   gamesCache = await res.json();
 
  // ✅ CARREGAR MATA-MATA REAL
-  const resMM = await fetch('palpites_mm.json');
-  const dataMM = await resMM.json();
   
-  const primeiroUsuario = Object.keys(dataMM)[0];
-  jogosMM = dataMM[primeiroUsuario] || [];
-
   loadNextMatch();
   loadRanking();
   loadMenu();
