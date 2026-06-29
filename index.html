@@ -2032,22 +2032,38 @@ Object.keys(todosPalpites).forEach(nome => {
 const s1 = jogoReal.score1;
 const s2 = jogoReal.score2;
 
-        if(s1 === p.palpite1 && s2 === p.palpite2){
-          pontos = 5;
-          resultIcon = '✅';
-        }
-        else if(
-          (s1 > s2 && p.palpite1 > p.palpite2) ||
-          (s2 > s1 && p.palpite2 > p.palpite1) ||
-          (s1 === s2 && p.palpite1 === p.palpite2)
-        ){
-          pontos = 3;
-          resultIcon = '🟡';
-        }
-        else{
-          pontos = 0;
-          resultIcon = '❌';
-        }
+     // ✅ CORREÇÃO: ignora palpites vazios
+if(p.palpite1 == null || p.palpite2 == null){
+  resultados.push({
+    nome,
+    p1: '?',
+    p2: '?',
+    pontos: null,
+    resultIcon: '⏳'
+  });
+  return;
+}
+
+        if(finished){
+
+  if(s1 === p.palpite1 && s2 === p.palpite2){
+    pontos = 5;
+    resultIcon = '✅';
+  }
+  else if(
+    (s1 > s2 && p.palpite1 > p.palpite2) ||
+    (s2 > s1 && p.palpite2 > p.palpite1) ||
+    (s1 === s2 && p.palpite1 === p.palpite2)
+  ){
+    pontos = 3;
+    resultIcon = '🟡';
+  }
+  else{
+    pontos = 0;
+    resultIcon = '❌';
+  }
+
+}
   
       resultados.push({
         nome,
