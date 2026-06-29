@@ -1430,9 +1430,21 @@ async function loadBracket(){
 
  if(currentPhase === 0){
 
-  const jogos16 = jogosMM.filter(j => j.fase === "16 avos");
+  const faseMapa = [
+  "16",
+  "oitavas",
+  "quartas",
+  "semi",
+  "final"
+];
 
-  jogosFase.forEach(j => {
+const faseAtualNome = faseMapa[currentPhase];
+
+const jogosFase = gamesCache.filter(g =>
+  g.group && g.group.toLowerCase().includes(faseAtualNome)
+);
+
+jogosFase.forEach(j => {
 
   // ✅ CALCULO DO PLACAR (FORA DO HTML)
   let scoreHTML = '<span class="score-vs">VS</span>';
@@ -1569,19 +1581,7 @@ async function openPalpites(nome){
  }catch(e){}
 
  try{
-  const faseAtualNome = bracketPhases[currentPhase].toLowerCase();
-
-const faseMapa = [
-  "16",
-  "oitavas",
-  "quartas",
-  "semi",
-  "final"
-];
-
-const faseAtualNome = faseMapa[currentPhase];
-
-const jogosFase = gamesCache.filter(g =>
+  
   g.group && g.group.toLowerCase().includes(faseAtualNome)
 );
   const dataMM = await resMM.json();
