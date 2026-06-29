@@ -1988,6 +1988,13 @@ init();
  const res = await fetch('palpites.json');
  const data = await res.json();
 
+  // 🔥 NOVO — carregar mata-mata
+let dataMM = {};
+try {
+  const resMM = await fetch('palpites_mm.json');
+  dataMM = await resMM.json();
+} catch(e){}
+
  let html = `<div class="modal-title">📊 Palpites do Jogo</div>`;
  html += `<div class="modal-subtitle">${team1} x ${team2} — ${date}</div>`;
 
@@ -1995,9 +2002,11 @@ init();
 
  let resultados = [];
 
-Object.keys(data).forEach(nome=>{
+const todosPalpites = { ...data, ...dataMM };
 
-  const jogos = data[nome];
+Object.keys(todosPalpites).forEach(nome => {
+
+  const jogos = todosPalpites[nome];
 
   jogos.forEach(p=>{
     if(p.team1 === team1 && p.team2 === team2){
