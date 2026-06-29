@@ -1681,6 +1681,11 @@ const s2 = jogoReal.score2;
     const palpite1 = p.palpite1;
     const palpite2 = p.palpite2;
 
+   // ✅ ignorar palpites vazios no total geral
+if(palpite1 == null || palpite2 == null){
+  return;
+}
+
     if(s1 === palpite1 && s2 === palpite2){
       totalGeral += 5;
     }
