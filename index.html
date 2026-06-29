@@ -1459,7 +1459,9 @@ if(j.score1 != null && j.score2 != null){
 }
   // ✅ HTML LIMPO
   html += `
-  <div class="match">
+  <div class="match"
+    onclick="openMatchPalpites('${j.team1}','${j.team2}','${j.date}')"
+    style="cursor:pointer;">
     ${j.date} ${j.time || ''}
 ${isLive ? '🔴 AO VIVO' : (j.score1 != null ? '✅ FINAL' : '⏳')}
     <div class="vs">
@@ -1484,8 +1486,10 @@ ${isLive ? '🔴 AO VIVO' : (j.score1 != null ? '✅ FINAL' : '⏳')}
  } else if(currentPhase===1){
   // OITAVAS
   for(let i=0;i<8;i++){
-   html+=`
-   <div class="match">
+   html += `
+  <div class="match"
+    onclick="openMatchPalpites('${j.team1}','${j.team2}','${j.date}')"
+    style="cursor:pointer;">
     <div>Oitavas ${i+1}</div>
     <div class="vs">
      <div class="team-line">A definir</div>
@@ -1498,8 +1502,10 @@ ${isLive ? '🔴 AO VIVO' : (j.score1 != null ? '✅ FINAL' : '⏳')}
  } else if(currentPhase===2){
   // QUARTAS
   for(let i=0;i<4;i++){
-   html+=`
-   <div class="match">
+   html += `
+  <div class="match"
+    onclick="openMatchPalpites('${j.team1}','${j.team2}','${j.date}')"
+    style="cursor:pointer;">
     <div>Quartas ${i+1}</div>
     <div class="vs">
      <div class="team-line">A definir</div>
@@ -1512,8 +1518,10 @@ ${isLive ? '🔴 AO VIVO' : (j.score1 != null ? '✅ FINAL' : '⏳')}
  } else if(currentPhase===3){
   // SEMIFINAIS
   for(let i=0;i<2;i++){
-   html+=`
-   <div class="match">
+   html += `
+  <div class="match"
+    onclick="openMatchPalpites('${j.team1}','${j.team2}','${j.date}')"
+    style="cursor:pointer;">
     <div>Semifinal ${i+1}</div>
     <div class="vs">
      <div class="team-line">A definir</div>
@@ -1525,8 +1533,10 @@ ${isLive ? '🔴 AO VIVO' : (j.score1 != null ? '✅ FINAL' : '⏳')}
 
  } else if(currentPhase===4){
   // DECISÃO
-  html+=`
-  <div class="match match-3rd">
+  html += `
+  <div class="match"
+    onclick="openMatchPalpites('${j.team1}','${j.team2}','${j.date}')"
+    style="cursor:pointer;">
    <div>🥉 3º Lugar — 18/07</div>
    <div class="vs">
     <div class="team-line">A definir</div>
