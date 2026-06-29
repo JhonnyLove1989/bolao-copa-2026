@@ -955,9 +955,9 @@
     "team2": "Japão",
     "score1": null,
     "score2": null,
-    "live_score1": null,
-    "live_score2": null,
-    "status": "SCHEDULED",
+    "live_score1": 0,
+    "live_score2": 0,
+    "status": "LIVE",
     "group": "16 avos",
     "city": ""
   },
