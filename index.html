@@ -1571,6 +1571,16 @@ async function openPalpites(nome){
  try{
   const faseAtualNome = bracketPhases[currentPhase].toLowerCase();
 
+const faseMapa = [
+  "16",
+  "oitavas",
+  "quartas",
+  "semi",
+  "final"
+];
+
+const faseAtualNome = faseMapa[currentPhase];
+
 const jogosFase = gamesCache.filter(g =>
   g.group && g.group.toLowerCase().includes(faseAtualNome)
 );
