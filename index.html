@@ -1001,7 +1001,6 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15) !important;
  let lastScores = {};
 
  let gamesCache = [];
- let jogosMM = [];
 
 const goalSound = new Audio("https://actions.google.com/sounds/v1/sports/crowd_cheer.ogg");
 goalSound.volume = 1;
@@ -1581,12 +1580,10 @@ async function openPalpites(nome){
  }catch(e){}
 
  try{
-  
-  g.group && g.group.toLowerCase().includes(faseAtualNome)
-);
+  const resMM = await fetch('palpites_mm.json');
   const dataMM = await resMM.json();
   palpitesMM = dataMM[nome] || [];
- }catch(e){}
+}catch(e){}
 
  const todasFases = [];
 
