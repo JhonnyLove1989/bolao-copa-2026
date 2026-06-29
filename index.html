@@ -1661,9 +1661,11 @@ todasFases.forEach(f=>{
       return;
     }
 
-    const s1 = jogoReal.score1;
-    const s2 = jogoReal.score2;
+    if(!jogoReal) return;
 
+const s1 = jogoReal.score1;
+const s2 = jogoReal.score2;
+   
     const palpite1 = p.palpite1;
     const palpite2 = p.palpite2;
 
@@ -2001,10 +2003,15 @@ Object.keys(data).forEach(nome=>{
       let pontos = null;
       let resultIcon = '⏳';
 
-      const finished = false; // mata-mata ainda sem resultado
+      const finished = (
+        jogoReal &&
+        jogoReal.score1 !== null &&
+        jogoReal.score2 !== null
+      );
+        if(!jogoReal) return;
 
-        const s1 = jogoReal.score1;
-        const s2 = jogoReal.score2;
+const s1 = jogoReal.score1;
+const s2 = jogoReal.score2;
 
         if(s1 === p.palpite1 && s2 === p.palpite2){
           pontos = 5;
