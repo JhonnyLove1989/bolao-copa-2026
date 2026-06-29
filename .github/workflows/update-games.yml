@@ -1,0 +1,34 @@
+name: Atualizar Games JSON
+
+on:
+  push:
+    paths:
+      - "Bolao_Copa_do_Mundo_2026.xlsx"
+      - "Atualizar_games_Json.py"
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v3
+
+      - name: Instalar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependências
+        run: pip install pandas openpyxl
+
+      - name: Rodar script Python
+        run: python Atualizar_games_Json.py
+
+      - name: Commit do JSON atualizado
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add games.json
+          git commit -m "🔄 Atualização automática do games.json" || echo "Sem mudanças"
+          git push
