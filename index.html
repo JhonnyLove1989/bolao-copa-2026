@@ -1722,16 +1722,49 @@ if(palpite1 == null || palpite2 == null){
   return;
 }
 
-    if(s1 === palpite1 && s2 === palpite2){
-      totalGeral += 5;
-    }
-    else if(
-      (s1 > s2 && palpite1 > palpite2) ||
-      (s2 > s1 && palpite2 > palpite1) ||
-      (s1 === s2 && palpite1 === palpite2)
-    ){
-      totalGeral += 3;
-    }
+    let pontosCravado = 5;
+let pontosResultado = 3;
+
+// 16 avos
+if(f.nome === "16 avos"){
+  pontosCravado = 6;
+  pontosResultado = 4;
+}
+
+// oitavas
+if(f.nome === "Oitavas"){
+  pontosCravado = 7;
+  pontosResultado = 5;
+}
+
+// quartas
+if(f.nome === "Quartas"){
+  pontosCravado = 8;
+  pontosResultado = 6;
+}
+
+// semifinal
+if(f.nome === "Semifinal"){
+  pontosCravado = 9;
+  pontosResultado = 7;
+}
+
+// final
+if(f.nome === "FINAL"){
+  pontosCravado = 10;
+  pontosResultado = 8;
+}
+
+if(s1 === palpite1 && s2 === palpite2){
+  totalGeral += pontosCravado;
+}
+else if(
+  (s1 > s2 && palpite1 > palpite2) ||
+  (s2 > s1 && palpite2 > palpite1) ||
+  (s1 === s2 && palpite1 === palpite2)
+){
+  totalGeral += pontosResultado;
+}
   });
 });
 
@@ -1760,18 +1793,46 @@ if(palpite1 == null || palpite2 == null){
   jogoReal.score1 !== null &&
   jogoReal.score2 !== null
 );
- 
+
+let pontosCravado = 5;
+let pontosResultado = 3;
+
+if(faseAtual.nome === "16 avos"){
+  pontosCravado = 6;
+  pontosResultado = 4;
+}
+
+if(faseAtual.nome === "Oitavas"){
+  pontosCravado = 7;
+  pontosResultado = 5;
+}
+
+if(faseAtual.nome === "Quartas"){
+  pontosCravado = 8;
+  pontosResultado = 6;
+}
+
+if(faseAtual.nome === "Semifinal"){
+  pontosCravado = 9;
+  pontosResultado = 7;
+}
+
+if(faseAtual.nome === "FINAL"){
+  pontosCravado = 10;
+  pontosResultado = 8;
+}
+  
  if(finished){
  
    if(jogoReal.score1 === p.palpite1 && jogoReal.score2 === p.palpite2){
-     ptsClass='pts-5'; ptsLabel='+5';
+     ptsClass='pts-5'; ptsLabel='+' + pontosCravado;
    }
    else if(
      (jogoReal.score1 > jogoReal.score2 && p.palpite1 > p.palpite2) ||
      (jogoReal.score2 > jogoReal.score1 && p.palpite2 > p.palpite1) ||
      (jogoReal.score1 === jogoReal.score2 && p.palpite1 === p.palpite2)
    ){
-     ptsClass='pts-3'; ptsLabel='+3';
+     ptsClass='pts-3'; ptsLabel='+' + pontosResultado;
    }
    else{
      ptsClass='pts-0'; ptsLabel='0';
