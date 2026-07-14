@@ -1596,31 +1596,19 @@ ${isLive ? '🔴 AO VIVO' : (j.score1 != null ? '✅ FINAL' : '⏳')}
     g.group.toLowerCase().includes("semi")
   );
 
-  console.log("SEMI", jogosFase);
-
   jogosFase.forEach(j => {
 
     let scoreHTML = '<span class="score-vs">VS</span>';
 
     if(j.score1 != null && j.score2 != null){
-      scoreHTML = `
-        <span class="score-win">
-          ${j.score1} x ${j.score2}
-        </span>
-      `;
+      scoreHTML = `<span class="score-win">${j.score1} x ${j.score2}</span>`;
     }
 
     html += `
-    <div class="match"
-      onclick="openMatchPalpites('${j.team1}','${j.team2}','${j.date}')"
-      style="cursor:pointer;">
-
-      <div>
-        ${j.date} ${j.time || ''}
-      </div>
+    <div class="match">
+      <div>${j.date} ${j.time || ''}</div>
 
       <div class="vs">
-
         <div class="team-line">
           <img class="flag" src="${flag(j.team1)}">
           ${j.team1}
@@ -1634,15 +1622,12 @@ ${isLive ? '🔴 AO VIVO' : (j.score1 != null ? '✅ FINAL' : '⏳')}
           ${j.team2}
           <img class="flag" src="${flag(j.team2)}">
         </div>
-
       </div>
-
     </div>
     `;
   });
- }
- 
- else if(currentPhase===4){
+
+} else if(currentPhase===4){
 
   const jogosFase = gamesCache.filter(g =>
     g.group &&
@@ -1652,31 +1637,19 @@ ${isLive ? '🔴 AO VIVO' : (j.score1 != null ? '✅ FINAL' : '⏳')}
     )
   );
 
-  console.log("FINAL", jogosFase);
-
   jogosFase.forEach(j => {
 
     let scoreHTML = '<span class="score-vs">VS</span>';
 
     if(j.score1 != null && j.score2 != null){
-      scoreHTML = `
-        <span class="score-win">
-          ${j.score1} x ${j.score2}
-        </span>
-      `;
+      scoreHTML = `<span class="score-win">${j.score1} x ${j.score2}</span>`;
     }
 
     html += `
-    <div class="match"
-      onclick="openMatchPalpites('${j.team1}','${j.team2}','${j.date}')"
-      style="cursor:pointer;">
-
-      <div>
-        ${j.date} ${j.time || ''}
-      </div>
+    <div class="match">
+      <div>${j.date} ${j.time || ''}</div>
 
       <div class="vs">
-
         <div class="team-line">
           <img class="flag" src="${flag(j.team1)}">
           ${j.team1}
@@ -1690,9 +1663,7 @@ ${isLive ? '🔴 AO VIVO' : (j.score1 != null ? '✅ FINAL' : '⏳')}
           ${j.team2}
           <img class="flag" src="${flag(j.team2)}">
         </div>
-
       </div>
-
     </div>
     `;
   });
