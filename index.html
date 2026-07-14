@@ -1640,20 +1640,64 @@ ${isLive ? '🔴 AO VIVO' : (j.score1 != null ? '✅ FINAL' : '⏳')}
     </div>
     `;
   });
-  
-  // DECISÃO
-  html += `
-  <div class="match"
-    onclick="openMatchPalpites('${j.team1}','${j.team2}','${j.date}')"
-    style="cursor:pointer;">
-   <div>🥉 3º Lugar — 18/07</div>
-   <div class="vs">
-    <div class="team-line">A definir</div>
-    <div class="score"><span class="score-vs">VS</span></div>
-    <div class="team-line">A definir</div>
-   </div>
-  </div>`;
+ }
+ 
+ else if(currentPhase===4){
 
+  const jogosFase = gamesCache.filter(g =>
+    g.group &&
+    (
+      g.group.toLowerCase().includes("final") ||
+      g.group.toLowerCase().includes("3")
+    )
+  );
+
+  console.log("FINAL", jogosFase);
+
+  jogosFase.forEach(j => {
+
+    let scoreHTML = '<span class="score-vs">VS</span>';
+
+    if(j.score1 != null && j.score2 != null){
+      scoreHTML = `
+        <span class="score-win">
+          ${j.score1} x ${j.score2}
+        </span>
+      `;
+    }
+
+    html += `
+    <div class="match"
+      onclick="openMatchPalpites('${j.team1}','${j.team2}','${j.date}')"
+      style="cursor:pointer;">
+
+      <div>
+        ${j.date} ${j.time || ''}
+      </div>
+
+      <div class="vs">
+
+        <div class="team-line">
+          <img class="flag" src="${flag(j.team1)}">
+          ${j.team1}
+        </div>
+
+        <div class="score">
+          ${scoreHTML}
+        </div>
+
+        <div class="team-line">
+          ${j.team2}
+          <img class="flag" src="${flag(j.team2)}">
+        </div>
+
+      </div>
+
+    </div>
+    `;
+  });
+
+}
   html+=`
   <div class="match match-final">
    <div>🏆 FINAL — 19/07</div>
