@@ -1461,8 +1461,25 @@ async function loadBracket(){
  // Renderiza cada jogo
  jogosFase.forEach(j => {
 
-   let scoreHTML = '<span class="score-vs">VS</span>';
+   // ✅ TÍTULO NA FASE DECISÃO (separa 3º lugar da final)
+   if(currentPhase === 4){
+     const grp = (j.group || '').toLowerCase();
 
+     const ehTerceiro =
+       grp.includes("3") ||
+       grp.includes("terceiro") ||
+       grp.includes("3º") ||
+       grp.includes("3o");
+
+     if(ehTerceiro){
+       html += `<div class="bracket-round-title" style="grid-column:1 / -1;">🥉 Disputa de 3º Lugar</div>`;
+     } else {
+       html += `<div class="bracket-round-title" style="grid-column:1 / -1;color:gold;">🏆 Grande Final</div>`;
+     }
+   }
+
+   let scoreHTML = '<span class="score-vs">VS</span>';
+  
    const isLive = ['LIVE','IN_PLAY','PAUSED'].includes(j.status);
 
    if(j.score1 != null && j.score2 != null){
