@@ -1490,10 +1490,15 @@ async function loadBracket(){
      }
    }
 
+// ✅ Na DECISÃO o card ocupa a linha inteira e fica centralizado
+   const estiloCard = (currentPhase === 4)
+     ? "cursor:pointer; grid-column:1 / -1; max-width:600px; margin:0 auto; width:100%;"
+     : "cursor:pointer;";
+
    html += `
    <div class="match"
      onclick="openMatchPalpites('${j.team1}','${j.team2}','${j.date}')"
-     style="cursor:pointer;">
+     style="${estiloCard}">
 
      <div>
        ${j.date} ${j.time || ''}
