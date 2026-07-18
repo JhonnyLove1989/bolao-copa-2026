@@ -1433,16 +1433,29 @@ async function loadBracket(){
  const faseAtualNome = faseMapa[currentPhase];
 
  // Filtra os jogos da fase atual
+// Filtra os jogos da fase atual
  const jogosFase = gamesCache.filter(g => {
    if(!g.group) return false;
    const grp = g.group.toLowerCase();
 
+   // ✅ DECISÃO (final + 3º lugar), mas SEM pegar semifinal
    if(currentPhase === 4){
-     return grp.includes("final") || grp.includes("3");
+     return (
+       (grp.includes("final") && !grp.includes("semi"))
+       || grp.includes("3")
+       || grp.includes("terceiro")
+       || grp.includes("decis")
+     );
    }
+
+   // ✅ SEMIFINAL não pode pegar a final
+   if(currentPhase === 3){
+     return grp.includes("semi");
+   }
+
    return grp.includes(faseAtualNome);
  });
-
+`
  console.log("FASE", faseAtualNome, jogosFase);
 
  // Renderiza cada jogo
