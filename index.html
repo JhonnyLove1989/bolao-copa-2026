@@ -478,6 +478,71 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15) !important;
  color:#999;
 }
 
+/* ========================= */
+/* ✅ BANNER CAMPEÃO */
+/* ========================= */
+.champion-banner{
+ background:linear-gradient(135deg,#ffd700,#ffb700,#ff9500);
+ border-radius:20px;
+ padding:30px 20px;
+ text-align:center;
+ margin:20px auto 30px;
+ max-width:700px;
+ box-shadow:0 10px 40px rgba(255,180,0,0.5);
+ position:relative;
+ overflow:hidden;
+}
+.champion-banner .titulo-camp{
+ font-size:28px;
+ font-weight:900;
+ color:#7a4b00;
+ letter-spacing:2px;
+ text-transform:uppercase;
+ margin-bottom:15px;
+}
+.champion-name{
+ font-size:42px;
+ font-weight:900;
+ color:#fff;
+ text-shadow:0 3px 10px rgba(0,0,0,0.4);
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ gap:15px;
+ margin-bottom:5px;
+}
+.champion-name img{
+ width:55px;
+ border-radius:4px;
+ box-shadow:0 2px 8px rgba(0,0,0,0.3);
+}
+.vice-box{
+ margin-top:20px;
+ padding-top:15px;
+ border-top:2px solid rgba(255,255,255,0.4);
+}
+.vice-label{
+ font-size:16px;
+ font-weight:800;
+ color:#7a4b00;
+ text-transform:uppercase;
+ letter-spacing:1px;
+}
+.vice-name{
+ font-size:26px;
+ font-weight:800;
+ color:#fff;
+ text-shadow:0 2px 6px rgba(0,0,0,0.3);
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ gap:12px;
+ margin-top:5px;
+}
+.vice-name img{
+ width:38px;
+ border-radius:4px;
+}
 
 /* ========================= */
 /* ✅ MATA-MATA */
@@ -2001,6 +2066,63 @@ setInterval(()=>{
  loadBracket();
 }, 15000);
 
+ async function loadChampion(){
+
+  const finalGame = gamesCache.find(g => {
+    if(!g.group) return false;
+    const grp = g.group.toLowerCase();
+    return grp.includes("final") && !grp.includes("semi");
+  });
+
+  if(!finalGame || finalGame.score1 == null || finalGame.score2 == null){
+    return;
+  }
+
+  const s1 = finalGame.score1;
+  const s2 = finalGame.score2;
+
+  let campeao, vice;
+
+  if(s1 > s2){
+    campeao = finalGame.team1;
+    vice = finalGame.team2;
+  } else if(s2 > s1){
+    campeao = finalGame.team2;
+    vice = finalGame.team1;
+  } else {
+    campeao = finalGame.penalti_winner || finalGame.team1;
+    vice = (campeao === finalGame.team1) ? finalGame.team2 : finalGame.team1;
+  }
+
+  const html = `
+  <div class="champion-banner">
+    <div class="titulo-camp">🏆 Campeão do Mundo 🏆</div>
+    <div class="champion-name">
+      <img src="${flag(campeao)}">
+      ${campeao}
+    </div>
+    <div class="vice-box">
+      <div class="vice-label">🥈 Vice-Campeão</div>
+      <div class="vice-name">
+        <img src="${flag(vice)}">
+        ${vice}
+      </div>
+    </div>
+  </div>
+  `;
+
+  const cards = document.querySelector('.cards');
+  if(cards){
+    const antigo = document.getElementById('championBanner');
+    if(antigo) antigo.remove();
+
+    const div = document.createElement('div');
+    div.id = 'championBanner';
+    div.innerHTML = html;
+    cards.insertAdjacentElement('afterend', div);
+  }
+}
+ 
 async function init(){
   const res = await fetch('games.json');
   gamesCache = await res.json();
@@ -2013,6 +2135,7 @@ async function init(){
   loadGroup();
   loadMatches();
   loadBracket(); // ✅ ADICIONAR AQUI
+  loadChampion(); // 🏆 mostra campeão e vice
 }
 
 init();
