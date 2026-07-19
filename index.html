@@ -479,6 +479,66 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15) !important;
 }
 
 /* ========================= */
+/* ✅ BANNER CAMPEÃO DO BOLÃO */
+/* ========================= */
+.champion-bolao{
+ background:linear-gradient(135deg,#8b0015,#cc001a,#ff2e4c);
+ border-radius:20px;
+ padding:30px 20px;
+ text-align:center;
+ margin:20px auto 30px;
+ max-width:700px;
+ box-shadow:0 10px 40px rgba(230,0,35,0.4);
+}
+
+.champion-bolao .titulo-camp{
+ font-size:26px;
+ font-weight:900;
+ color:#fff;
+ letter-spacing:2px;
+ text-transform:uppercase;
+ margin-bottom:15px;
+ text-shadow:0 2px 6px rgba(0,0,0,0.4);
+}
+
+.bolao-champion-name{
+ font-size:40px;
+ font-weight:900;
+ color:#ffd700;
+ text-shadow:0 3px 10px rgba(0,0,0,0.5);
+ margin-bottom:5px;
+}
+
+.bolao-vice-box{
+ margin-top:20px;
+ padding-top:15px;
+ border-top:2px solid rgba(255,255,255,0.4);
+}
+
+.bolao-vice-label{
+ font-size:16px;
+ font-weight:800;
+ color:#fff;
+ text-transform:uppercase;
+ letter-spacing:1px;
+}
+
+.bolao-vice-name{
+ font-size:26px;
+ font-weight:800;
+ color:#eee;
+ text-shadow:0 2px 6px rgba(0,0,0,0.3);
+ margin-top:5px;
+}
+
+.bolao-pts{
+ font-size:16px;
+ color:rgba(255,255,255,0.85);
+ font-weight:700;
+ margin-top:4px;
+}
+ 
+/* ========================= */
 /* ✅ BANNER CAMPEÃO */
 /* ========================= */
 .champion-banner{
@@ -2122,6 +2182,53 @@ setInterval(()=>{
     cards.insertAdjacentElement('afterend', div);
   }
 }
+
+async function loadChampionBolao(){
+
+  const res = await fetch('ranking.json');
+  const data = await res.json();
+
+  if(!data || data.length === 0) return;
+
+  data.sort((a,b) => b.pts - a.pts);
+
+  const campeao = data[0];
+  const vice = data[1];
+
+  const html = `
+  <div class="champion-bolao">
+    <div class="titulo-camp">🏆 Campeão do Bolão 🏆</div>
+
+    <div class="bolao-champion-name">🥇 ${campeao.name}</div>
+    <div class="bolao-pts">${campeao.pts} pontos</div>
+
+    ${vice ? `
+    <div class="bolao-vice-box">
+      <div class="bolao-vice-label">🥈 Vice-Campeão</div>
+      <div class="bolao-vice-name">${vice.name}</div>
+      <div class="bolao-pts">${vice.pts} pontos</div>
+    </div>
+    ` : ''}
+  </div>
+  `;
+
+  const cards = document.querySelector('.cards');
+  if(cards){
+    const antigo = document.getElementById('championBolaoBanner');
+    if(antigo) antigo.remove();
+
+    const div = document.createElement('div');
+    div.id = 'championBolaoBanner';
+    div.innerHTML = html;
+
+    const bannerSelecoes = document.getElementById('championBanner');
+    if(bannerSelecoes){
+      bannerSelecoes.insertAdjacentElement('afterend', div);
+    } else {
+      cards.insertAdjacentElement('afterend', div);
+    }
+  }
+}
  
 async function init(){
   const res = await fetch('games.json');
@@ -2136,6 +2243,7 @@ async function init(){
   loadMatches();
   loadBracket(); // ✅ ADICIONAR AQUI
   loadChampion(); // 🏆 mostra campeão e vice
+  loadChampionBolao();  // 🏆 campeão e vice do BOLÃO
 }
 
 init();
